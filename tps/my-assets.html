@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的资产</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/my-assets.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>	
+		<!--start 我的资产-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">我的资产</span>
+		</div>
+		<div class="assets">
+			<p class="active">分红池</p>
+			<p>账户余额</p>
+			<p>代品券</p>
+		</div>
+		<!--end 我的资产-->
+		<div class="box">
+		<!--start 分红池-->
+			<div class="one">
+				<div class="one-fen">
+					<p>分红点数=普通分红点+奖励分红点</p>
+					<p>¥0.00</p>
+					<p>转分红池分红比例0%</p>	
+				</div>
+				<p class="first">奖励分红点不可转换为转出点数</p>
+				<p class="second">以当月第一天为分红依据，每月最多只能转出30%的分红点</p>
+				<p class="jiang">奖金自动转分红点</p>
+				<p class="zhuan">转出到账户余额</p>
+			</div>
+			<!--start 账户余额-->
+			<div class="one" style="display: none;">
+				<div class="one-fen two">
+					<p class="yu">现金余额</p>
+					<p class="money">¥0.00</p>
+				</div>
+				<p class="first four">奖励分红点不可转换为转出点数</p>
+				<p class="second five">以当月第一天为分红依据，每月最多只能转出30%的分红点</p>
+				<p class="jiang two">提现</p>
+				<p class="zhuan">转账</p>
+			</div>
+			<!--start 代品券-->
+			<div class="one" style="display: none;">
+				<div class="one-fen three">
+					<p>代品券余额</p>
+					<p>¥0.00</p>
+					<p>可在套餐升级区使用</p>	
+				</div>
+				<p class="first six">奖励分红点不可转换为转出点数</p>
+				<p class="second seven">以当月第一天为分红依据，每月最多只能转出30%的分红点</p>
+				<p class="jiang go"><a href="store-update.html">前往套餐专区</a></p>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	$(".assets p").click(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+		var index=$(this).index();
+		$(".box").children(".one").eq(index).show().siblings().hide();
+	})
+	$(window).scroll(function(){
+		if($(document).scrollTop()>=40){
+			$(".capital").addClass("position");
+		}
+		else{
+			$(".capital").removeClass("position");
+		}
+	})	
+</script>

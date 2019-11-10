@@ -1,0 +1,96 @@
+body{
+	background: #FAFAFA;
+}
+/*start 新建工单*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.1rem;
+}
+.join{
+	margin-top: 0.2rem;
+	background: #fff;
+	
+}
+.join li{
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.join li a:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.join a span{
+	color:#000;
+	float: left;
+	margin-top: 0.07rem;
+}
+.join li span{
+	margin-top: 0.07rem;
+}
+.join li a img{
+	float: right;
+	vertical-align: middle;
+	width: 0.5rem;
+}
+/*start 我的分享链接弹框*/
+.form{
+	position: fixed;
+	left: 0;
+	top:0;
+	background: rgba(200,200,200,0.6);
+	width: 100%;
+	height: 100%;
+}
+.my-link{
+	position: fixed;
+	left: 50%;
+	top:50%;
+	background: #fff;
+	width: 6.0rem;
+	margin-left: -3.0rem;
+	margin-top: -1.0rem;
+	padding-top: 0.5rem;
+	font-size: 0.35rem;
+	color:#000;
+}
+.share{
+	text-align: center;
+	padding-bottom: 0.3rem;
+	font-size: 0.4rem;
+}
+.link{
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	word-break: break-all;
+	overflow:hidden; 
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+.copy{
+	background: #F7F7F7;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.copy p{
+	padding: 0;
+	width: 2.95rem;
+	display: inline-block;
+	text-align: center;
+}
+.copy p:last-child{
+	color:#007AFF;
+	border-left: 1px solid #EFEFF4;
+}
+/*end 我的分享链接弹框*/

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<title>个人中心</title>
+		<link href="css/zu.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				document.documentElement.style.fontSize = w + 'px'//
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!--start top-->
+		<div class="top">							
+			<div class="top-left">
+				<a href="index1.html"><img src="img/zu1.png" class="img-responsive"/></a>
+			</div>
+			<div class="top-right">
+				<a href="zu.html"><img src="img/zu3.png" class="img-responsive"/></a>
+			</div>
+			<div class="clearfix"></div>						
+		</div>
+		<!--end top-->
+		<!--start 雨-->
+		<div class="middle-one">
+			<img src="img/zu01.png" />
+			<p>雨小草</p>
+		</div>
+		<!--end 雨-->
+		<!--start 获取积分-->
+		<div class="middle-two">
+			<a href="">
+				<div class="middle-left">
+					<p class="p-one">0.00</p>
+					<p class="p-two">我的积分</p>
+				</div>
+				<div class="middle-right">
+					<p>获取积分</p>
+				</div>
+				<div class="clearfix"></div>
+			</a>
+		</div>
+		<!--end 获取积分-->
+		<div class="clearfix"></div>
+		<!--start 租车信息-->
+		<div class="middle-three">
+			<div class="middle01">
+				<p class="ling">0.00</p>
+				<p class="yuan">租车押金  (元)</p>
+			</div>
+			<div class="middle02">
+				<p class="ling">0.00</p>
+				<p class="yuan">租车费用  (元)</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="middle01">
+				<p class="ling1">0</p>
+				<p class="yuan">我的电车  (辆)</p>
+			</div>
+			<div class="middle02">
+				<p class="ling1">0</p>
+				<p class="yuan">到期电车  (辆)</p>
+			</div>
+			<div class="clearfix"></div>			
+		</div>
+		<!--end 租车信息-->		
+	</body>
+</html>

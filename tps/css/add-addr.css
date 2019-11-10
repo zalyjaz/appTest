@@ -1,0 +1,89 @@
+body{
+	background: #FAFAFA;
+}
+
+/*start 新增收获地址*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.top span{
+	font-size: 0.4rem;
+	color: #000;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+
+/*start 收获地址信息*/
+.addr-info{
+	background: #fff;
+	margin-top: 0.1rem;
+}
+.addr-info ul li{
+	border-bottom: 1px solid #F5F5DC;
+	padding: 0 0.2rem;
+	font-size: 0.3rem;
+}
+.addr-info ul li input{
+	border: none;
+	background: #fff;
+	width: 5.4rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	margin-left: 0.1rem;
+}
+input::-webkit-input-placeholder{
+	color: grey;
+	font-size: 0.3rem;
+}
+.more{
+	width: 0.5rem;
+	vertical-align: middle;
+	float: right;
+	margin-top: 0.2rem;
+}
+.addr-info ul li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.addr-info ul li textarea{
+	border: none;
+	width: 5.4rem;
+	height: 2.0rem;
+	color: grey;
+	resize: none;
+	padding-top: 0.2rem;
+}
+.addr{
+	margin-top: 0.2rem;
+	margin-right: 0.2rem;
+	vertical-align: middle;
+	float: left;
+	display: block;
+}
+
+/*start 收获地址信息*/
+.info{
+	padding-top: 0.3rem;
+	padding-left: 0.2rem;
+}
+/*start 保存信息*/
+.keep{
+	background: gainsboro;
+	position: fixed;
+	bottom: 0;
+	width: 7.5rem;
+	text-align: center;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	font-size: 0.35rem;
+}
+
+
+

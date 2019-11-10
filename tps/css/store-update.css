@@ -1,0 +1,141 @@
+body{
+	background: #FAFAFA;
+}
+/*start 搜索*/
+.search{
+	width: 7.5rem;
+	padding-top: 0.1rem;
+	background: #fff;
+	position: fixed;
+	top:0;
+	z-index: 9999;
+	border-bottom: 1px solid #F5F5DC;
+	padding-bottom: 0.2rem;
+	padding-top: 0.2rem;
+}
+.search img{
+	width: 0.8rem;
+	vertical-align: middle;
+}
+.logo{
+	margin-left: 0.15rem;
+	width: 0.5rem !important;
+}
+.search input[type="text"]{
+	display: inline-block;
+	width: 4.8rem;
+	border: none;
+	background-color: #FAFAFA !important;
+	border-radius: 10px;
+	height:0.6rem;
+	line-height: 0.6rem;
+	padding-left: 0.6rem;
+	background: url(../img/search.png) 0.1rem no-repeat;
+	background-size: 0.5rem;
+	margin-left: 0.15rem;
+	vertical-align: middle;
+}
+input::-webkit-input-placeholder{
+	color: darkgrey;
+	font-size: 0.26rem;
+	height:0.6rem;
+	line-height: 0.6rem;
+}
+.search span{
+	margin-top: 0.1rem;
+	font-size: 0.35rem;
+	float: right;
+	margin-right: 0.2rem;
+}
+.search:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 商品*/
+.shops{
+	background: #fff;
+	margin-top: 1.0rem;
+	margin-bottom: 1.0rem;
+}
+.shops ul li{
+	border-bottom: 1px solid #F5F5DC;
+	padding: 0.2rem;
+}
+.shops ul li img{
+	width: 2.0rem;
+	height: 2.0rem;
+	vertical-align: middle;
+}
+.info{
+	display: inline-block;
+	width: 4.5rem;
+	margin-left: 0.2rem;
+	vertical-align: middle;
+}
+.info p:first-child{
+	color: #000;
+	font-size: 0.35rem;
+}
+.info p:nth-of-type(2n){
+	width: 0.8rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	border-radius: 5px;
+	background: #F6383A;
+	color: #fff;
+	margin-top: 0.3rem;
+}
+.price{
+	margin-top: 0.3rem;
+}
+.price:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.price span:first-child{
+	float: left;
+	color: #FF6600;
+	font-size: 0.35rem;
+}
+.price span:last-child{
+	float: right;
+	color: #fff;
+	background: #FF6600;
+	padding: 0.1rem 0.2rem;
+	border-radius: 5px;
+	margin-top: -0.1rem;
+	cursor: pointer;
+}
+/*start 结算*/
+.balance{
+	background: #fff;
+	width: 7.5rem;
+	position: fixed;
+	bottom: 0;
+	border-top:1px solid #F5F5DC;
+}
+.balance:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.balance p:first-child{
+	float: left;
+	color: #FF6600;
+	font-size: 0.35rem;
+	padding-left: 0.3rem;
+	padding-top: 0.2rem;
+}
+.balance p:last-child{
+	float: right;
+	background: #F00B0D;
+	width: 2.5rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.35rem;
+}

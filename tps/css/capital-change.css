@@ -1,0 +1,116 @@
+body{
+	background:#fff;
+}
+/*start 资金密码*/
+.top{
+	width: 7.5rem;
+	background:#0675BB;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	position: fixed;
+	left: 0;
+	top:0;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #fff;
+	vertical-align: middle;
+	margin-left: 2.0rem;
+}
+/*start 奖金*/
+.bonus{
+	background: #0675BB;
+	padding: 0.3rem 0;
+	margin-top: 0.9rem;
+}
+.day{
+	text-align: center;
+	font-size: 0.32rem;
+	color: #F7F7F8;
+}
+.init{
+	color: #fff;
+	font-size: 0.55rem;
+	text-align: center;
+}
+.total{
+	margin-top: 0.4rem;
+	color: #fff;
+}
+.month{
+	display: inline-block;
+	width: 3.65rem;
+	text-align: center;
+	border-right: 1px solid #fff;
+}
+.year{
+	display: inline-block;
+	width: 3.65rem;
+	text-align: center;
+}
+.month p:first-child{
+	color: #F7F7F8;
+	font-size: 0.32rem;
+}
+.year p:first-child{
+	color: #F7F7F8;
+	font-size: 0.32rem;
+}
+.month p:last-child{
+	color: #fff;
+	font-size: 0.55rem;
+}
+.year p:last-child{
+	color: #fff;
+	font-size: 0.55rem;
+}
+/*start 资金变动、奖金汇总*/
+.capital{
+	border-bottom: 1px solid #F5F5DC;
+	width: 7.5rem;
+	background: #fff;
+}
+.position{
+	position: fixed;
+	left: 0;
+	top:0.9rem;
+}
+.capital p{
+	width: 3.7rem;
+	display: inline-block;
+	text-align: center;
+	padding: 0.3rem 0;
+	font-size: 0.35rem;
+}
+.active{
+	border-bottom: 1.5px solid #0675BB;
+}
+.capital-one li{
+	border-bottom: 1px solid #F5F5DC;
+	padding: 0.3rem 0.3rem;
+}
+.capital-one li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.left{
+	float: left;
+	color: grey;
+	margin-top: 0.05rem;
+}
+.right{
+	float: right;
+	color: #F00B0D;
+	margin-top: 0.02rem;
+	font-size: 0.32rem;
+}
+.right img{
+	width: 0.5rem;
+	vertical-align: middle;
+	margin-top: -0.05rem;
+}

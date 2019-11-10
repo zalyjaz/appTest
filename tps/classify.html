@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/classify.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px'//
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 搜索-->
+		<div class="search">
+			<input type="text" placeholder="请输入关键字"/>
+		</div>
+		<!--end 搜索-->
+		<!--start 商品分类-->
+		<div class="assort">
+			<ul class="style">
+				<li class="active"><a href="#">母婴用品</a></li>
+				<li><a href="#">美妆个护</a></li>
+				<li><a href="#">运动户外</a></li>
+				<li><a href="#">医药保健</a></li>
+				<li><a href="#">家居日用</a></li>
+				<li><a href="#">食品酒水</a></li>
+				<li><a href="#">钟表首饰</a></li>
+				<li><a href="#">数码家电</a></li>
+				<li><a href="#">礼品箱包</a></li>
+				<li><a href="#">汽车用品</a></li>
+				<li><a href="#">服饰鞋帽</a></li>
+				<li><a href="#">宠物生活</a></li>
+				<li><a href="#">生活服务</a></li>
+				<li><a href="#">汽车用品</a></li>
+				<li><a href="#">服饰鞋帽</a></li>
+				<li><a href="#">宠物生活</a></li>
+				<li><a href="#">生活服务</a></li>
+			</ul>
+			<div class="shop-goods">
+				<div class="goods-top">
+					<p class="p-left">母婴用品</p>
+					<p class="p-right">价格<img src="img/shang.png" class="shang"/><img src="img/xia.png" class="xia"/></p>
+					<div class="clear"></div>
+				</div>
+				<div class="goods-one">
+					<ul class="one">
+						<li>
+							<img src="img/naifen.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/naifen.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/naifen.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/naifen.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/naifen.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="shop-goods" style="display: none;">
+				<div class="goods-top">
+					<p class="p-left">母婴用品</p>
+					<p class="p-right">价格<img src="img/shang.png" class="shang"/><img src="img/xia.png" class="xia"/></p>
+					<div class="clear"></div>
+				</div>
+				<div class="goods-one">
+					<ul class="one">
+						<li>
+							<img src="img/xiang.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/xiang.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/xiang.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/xiang.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/xiang.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>				
+			</div>
+			<div class="shop-goods" style="display: none;">
+				<div class="goods-top">
+					<p class="p-left">母婴用品</p>
+					<p class="p-right">价格<img src="img/shang.png" class="shang"/><img src="img/xia.png" class="xia"/></p>
+					<div class="clear"></div>
+				</div>
+				<div class="goods-one">
+					<ul class="one">
+						<li>
+							<img src="img/xiang.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/out.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/out.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/out.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/out.jpg" class="goods"/>
+							<div class="shop-right">
+								<p class="p-info">段1段段1段1段1段段段段段段段段段段</p>
+								<p>
+									<span class="left">¥50.00</span>
+									<img src="img/cadd.png" class="right cadd"/>
+									<div class="clear"></div>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>			
+			</div>
+		</div>
+		<!--end 商品分类-->
+		<!--start 底部-->
+		<div class="foot">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img src="img/shouye.png" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="classify.html">
+						<img src="img/fen1.png" />
+						<p>分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="collect.html">
+						<img src="img/shou1.png" />
+						<p>收藏</p>
+					</a>
+				</li>
+				<li>
+					<a href="car.html">
+						<img src="img/car2.png" />
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="my.html">
+						<img src="img/my1.png" />
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<!--end 底部-->
+		<script type="text/javascript" src="js/jquery.nicescroll.min.js" ></script>
+	</body>
+</html>
+<script>
+$(document).ready(function() {
+	$(".style").getNiceScroll().hide();
+	$(".style").niceScroll({
+		horizrailenabled:false,
+		cursorcolor: "#F5F5DC",
+	}) 
+});  
+
+$(".style li").click(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	var index=$(this).index();
+	console.log(index);
+	$(".shop-goods").eq(index).show().siblings().hide();
+	$(".style").show();
+	
+})	
+</script>

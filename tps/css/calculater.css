@@ -1,0 +1,78 @@
+body{
+	background:rgba(200,200,200,.3);
+	overflow: hidden;
+}
+/*start 支付密码*/
+.pwd{
+	background: #fff;
+	width: 7.0rem;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.2rem;
+	margin-top: 0.5rem;
+}
+.money{
+	color: #000;
+	font-weight: bold;
+	font-size: 0.45rem;
+	padding-bottom: 0.2rem;
+}
+.sum{
+	color: #999;
+	font-size: 0.32rem;
+}
+.pay-pwd{
+	width: 6.3rem;
+	margin: 0 auto;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	margin-top: 0.3rem;
+	color: #fff;
+}
+.pay-pwd input{
+	border: none;
+	border-right: 1px solid #F7F7F7;
+	width: 0.97rem;
+	text-align: center;
+	font-size: 0.8rem;
+	height: 0.8rem;
+	line-height: 0.5rem;
+	vertical-align: middle;
+	
+}
+.pay-pwd input:last-child{
+	border: none;
+}
+/*start 计算器*/
+.cal{
+	position: fixed;
+	width: 7.5rem;
+	background: #fff;
+	bottom: 0;
+	padding-top: 0.5rem;
+}
+.cal-num{
+	border-top: 1px solid #eee;
+}
+.cal-num input{
+	display: inline-block;
+	border: none;
+	width: 2.448rem;
+	text-align: center;
+	font-size:0.4rem;
+	color: #000;
+	height: 1.0rem;
+	line-height: 1.0rem;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.white,.ok{
+	color: #CFD5DA !important;
+	background: #CFD5DA;
+}
+.ok{
+	color: #000 !important;
+}
+
+

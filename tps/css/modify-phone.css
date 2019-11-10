@@ -1,0 +1,74 @@
+body{
+	background:#FAFAFA;
+}
+/*start 新建工单*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.0rem;
+}
+.top a{
+	float: right;
+	color: #007AFF;
+	font-size: 0.3rem;
+	margin-top: 0.05rem;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 邮箱*/
+.phone{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.phone li{
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+}
+.mobile{
+	height: 0.8rem;
+	width: 100%;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #F5F5DC;	
+}
+.mobile span{
+	margin-right: 0.2rem;
+	margin-top: 0.05rem;
+}
+.code input{
+	width: 4.2rem;
+	margin-left: 0.2rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border: none;
+	border-right: 1px solid #F5F5DC;
+}
+.code span{
+	margin-left: 0.1rem;
+}
+.new-phone{
+	height: 0.8rem;
+	width: 100%;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #F5F5DC;	
+}
+.new-phone input{
+	border: none;
+	width: 5.2rem;
+}
+.new-phone span{
+	margin-right: 0.2rem;
+	margin-top: 0.05rem;
+}

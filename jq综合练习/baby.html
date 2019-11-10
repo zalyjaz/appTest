@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!DOCTYPE html style="font-size:100px;">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	  	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css" />
+	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/baby.css"/>
+	  	<script type="text/javascript" src="js/jquery.min.js"></script>
+	  	<script type="text/javascript" src="js/baby.js"></script>
+		<title>首页</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+
+				document.documentElement.style.fontSize = w + 'px'//
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<ul class="head col-xs-12">
+			<li class="col-xs-1">
+				<a href="index.html"><img src="img/sousuo/back_03.png">	</a>
+			</li>
+			<li class="choose col-xs-8">
+				<p class="active">商品</p>
+				<a href="xiangqing.html"><p id="xq">详情</p></a>
+				<a href="pingjia.html"><p>评价</p></a>
+			</li>
+			<li class="col-xs-3 last">
+				<a href="car.html"><img src="img/baby/car_03.png"/></a>
+				<span></span>
+				<span></span>
+				<span></span>
+			</li>
+			<div class="clearfix">
+				
+			</div>
+		</ul>
+		<div class="dior">
+			<img src="img/baby/kouhong_06.jpg"/>
+		</div>
+		<ul class="info" id="div3">
+			<li>
+				<span>庆特惠</span>
+				<span class="kill">克里斯汀迪奥DIOR魅惑蓝金口红3.5g#999</span>
+				<img src="img/baby/heart_09.png"/>
+			</li>
+			<li class="diao">
+				<p>迪奥999 16年哑光新版 现货 领券减100元！ ！ ！</p>
+				
+			</li>
+			<li class="jiage">
+				<p>￥<span>259</span>.00</p>
+				<span class="jiang">直降100元</span>
+				<p><span>03</span>天<span>06</span>:<span>24</span>:<span>03</span></p>
+			</li>
+			<li class="quan">
+				<span>领券</span>
+				<p>满99减5</p>
+				<p>满99减5</p>
+				<p>满99减5</p>
+			</li>
+			<li class="quan">
+				<span>促销</span>
+				<span class="kuang">免息</span>
+				<span class="free">新用户实物首单6000元内12期内免息</span>
+				<img src="img/user/zhankai.png"/>
+			</li>
+		</ul>
+		<ul class="chose">
+			<li>已选</li>
+			<li class="chungao">现货烈焰蓝莓唇膏#999 1件</li>
+			<img src="img/user/zhankai.png"/>
+			<div class="clearfix">
+				
+			</div>
+		</ul>
+
+		<ul class="huoyuan">
+			<li>货源</li>
+			<li><img src="img/baby/logo_03.jpg"/></li>
+		</ul>
+		<div class="huoyuan">
+			<ul class="songzhi">
+				<li>
+					<span>送至</span>
+				</li>
+				<li class="place">
+					<p class="one">河南省郑州市金水区</p>
+					<img src="img/baby/xiala.png"/>
+					<p>现货，审核完成后预计3之内发货</p>
+				</li>
+				<li>
+					<img src="img/user/zhankai.png"/>
+				</li>
+			</ul>
+			<ul class="songzhi serve">
+				<li>服务</li>
+				<li>
+					<img src="img/baby/zhengpin_13.png"/>
+					<span>正品保证</span>
+				</li>
+				<li>
+					<img src="img/baby/fahuo_18.png"/>
+					<span>闪电发货</span>
+				</li>
+				<li>
+					<img src="img/baby/qitian_15.png"/>
+					<span>七天退货</span>
+				</li>
+				<li>
+					<img src="img/baby/huankuan_21.png"/>
+					<span>不支持提前还款</span>
+				</li>
+				<li class="zhankai">
+					<img src="img/user/zhankai.png"/>
+				</li>
+				<div class="clearfix">
+					
+				</div>
+			</ul>
+		</div>
+		<div class="shop">
+			<ul class="head">
+				<li>
+					<img src="img/baby/logo_43.jpg"/>
+				</li>
+				<li>
+					<p class="shop1">纯美化妆品旗舰店</p>
+					<p class="world">全球美妆一站式采购</p>
+				</li>
+				<li class="foot">
+					<p>综合<span>9.6分</span></p>
+				</li>
+				<div class="clearfix">
+					
+				</div>
+			</ul>
+			<div class="con">
+				<div class="line">
+					<p>商品<span class="num1">9.6</span><span>高</span></p>
+					<p class="num">3456</p>
+					<p>关注人数</p>
+				</div >
+				<div class="line">
+					<p>商品<span class="num1">9.6</span><span>高</span></p>
+					<p class="num">3456</p>
+					<p>关注人数</p>
+				</div>
+				<div class="line footer">
+					<p>商品<span class="num1">9.6</span><span>高</span></p>
+					<p class="num">3456</p>
+					<p>关注人数</p>
+				</div>
+				<div class="clearfix">
+					
+				</div>
+			</div>
+			<ul class="foot1">
+				<li class="first">联系客服</li>
+				<li class="right">进入店铺</li>
+				<div class="clearfix">
+					
+				</div>
+			</ul>
+		</div>
+		<div class="up chose">
+			<span>上拉查看图文详情</span>
+		</div>
+		
+		
+		<div class="tt" style="display: none;">
+			<div class="tan">
+				<ul class="header">
+					<li>
+						<img src="img/baby/shangpin_03.jpg"/>
+					</li>
+					<li class="two">
+						<p class="red">259.00</p>
+						<span class="blue">有货</span>
+					</li>
+					<li class="right">
+						<img src="img/baby/chahao_06.png"/>
+					</li>
+					<div class="clearfix">
+						
+					</div>
+					
+				</ul>
+				<ul class="cont">
+					<li>
+						<span class="active">零首付</span>
+						<span>5%</span>
+						<span>10%</span>
+						<span class="no">20%</span>
+						<span>30%</span>
+						<span>40%</span>
+						<span>50%</span>
+						<div class="clearfix">
+							
+						</div>
+					</li>
+					<li>
+						<p class="qian">分期数</p>
+						<img src="img/baby/lana_11.png" />
+						<p>新用户实物单超过6000元，12期内免息</p>
+					</li>
+					<li>
+						<span class="active">不分期</span>
+						<span>3期</span>
+						<span>6期</span>
+						<span class="no">9期</span>
+						<span>12期</span>
+						<span>15期</span>
+						<span>18期</span>
+						<span class="no">24期</span>
+						<div class="clearfix">
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--底部-->
+		<ul class="foot">
+			<li>
+				月供
+				<p class="money">9.90元</p>
+				起
+			</li>
+			<li class="other">
+				<a href="car.html"><p class="join">加入购物车</p></a>
+				<p class="buy">立即购买</p>
+			</li>
+			
+			<div class="clearfix">
+				
+			</div>
+		</ul>
+	
+	
+		<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+		
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+

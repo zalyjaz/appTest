@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<title>租车订单有</title>
+		<link href="css/order1.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				document.documentElement.style.fontSize = w + 'px' //
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!--start top-->
+		<div class="top">
+			<div class="top-left">
+				<a href="index1.html"><img src="img/zu1.png" class="img-responsive" /></a>
+			</div>
+			<div class="top-right">
+				<a href="zu.html"><img src="img/zu3.png" class="img-responsive" /></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--end top-->
+		<!--start 搜索-->
+		<div class="serach">
+			<input type="text" placeholder="搜索" class="inpt" />
+		</div>
+		<!--end 搜索-->
+		<!--start 骑租租车电动车-->
+		<div class="middle-one">
+			<p>骑租租车电动车</p>
+			<p class="yi">已出租</p>
+			<p>车辆编号：472383</p>	
+			<div class="jds" >
+				<img src="img/jds.PNG" class="center-block" id="ta1"/>
+			</div>
+		</div>
+		<!--end 骑租租车电动车-->
+		<!--start 张大-->
+		<div class="middle-two" id="middlet" style="display: none;">
+			<div class="middle-tab" id="mask">
+				<span class="zhang">租赁人： 张大</span>
+				<span class="tian">距到期<i>200</i>天</span>
+				<p class="">联系方式： 12813129883</p>
+				<p>租赁时长： 一年</p>
+				<p>租赁费用： 400元/年/辆</p>
+			</div>
+			<div class="" >
+				<img src="img/more_03.png" class="center-block" />
+			</div>
+		</div>
+		<!--end 张大-->
+		<!--start 出租-->
+		<div class="middle-one">
+			<p>骑租租车电动车</p>
+			<p class="yi">已出租</p>
+			<p>车辆编号：472383</p>
+			<div class="jds" >
+				<img src="img/jds.PNG" class="center-block" id="ta2"/>
+			</div>
+		</div>
+		<!--end 出租-->
+		<!--start 张小小-->
+		<div class="middle-two" style="display: none;">
+			<div class="middle-tab" id="mask1">
+				<span class="zhang ">租赁人： 张小小</span> 
+				<span class="tian1 ">距到期<i>100</i>天</span>
+				<p class=" ">联系方式：  12813129883</p>
+				<p>租赁时长：  一年</p>
+				<p>租赁费用：  400元/年/辆</p>
+			</div>
+			<div class="" >
+				<img src="img/more_03.png " class="center-block" id="tab3"/>
+			</div>
+			
+		</div>
+		<!--end 张小小-->
+		<!--start 出租-->
+		<div class="middle-one">
+			<p>骑租租车电动车</p>
+			<p class="yi">已出租</p>
+			<p>车辆编号：472383</p>
+			<div class="jds" >
+				<img src="img/jds.PNG" class="center-block" id="ta3"/>
+			</div>
+		</div>
+		<!--end 出租-->
+		<!--start 张小小-->
+		<div class="middle-two" style="display: none;">
+			<div class="middle-tab" id="mask2">
+				<span class="zhang ">租赁人： 张小小</span> 
+				<span class="tian1 ">距到期<i>100</i>天</span>
+				<p class=" ">联系方式：  12813129883</p>
+				<p>租赁时长：  一年</p>
+				<p>租赁费用：  400元/年/辆</p>
+			</div>
+			<div class="" >
+				<img src="img/more_03.png " class="center-block" id="tab4"/>
+			</div>
+			
+		</div>
+		<!--end 张小小-->
+		
+		<script type="text/javascript " src="js/jquery.min.js " ></script>
+		<script type="text/javascript " src="js/bootstrap.min.js " ></script>
+	</body>
+</html>
+<script>
+	$(".middle-one").click(function(){
+ 	$(this).next(".middle-two").show().children(".middle-tab").show();
+ 	$(this).children("div").hide();	 	
+ })
+
+	$(".middle-two").click(function(){
+	    $(this).hide().children(".middle-tab").hide();
+	 	$(".jds").show();	 	
+})
+	
+	
+	
+</script>

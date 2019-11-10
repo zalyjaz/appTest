@@ -1,0 +1,44 @@
+body{
+	background:#fff;
+}
+/*start 更改手机号成功*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.7rem;
+}
+.top a{
+	float: right;
+	color: #007AFF;
+	font-size: 0.3rem;
+	margin-top: 0.05rem;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 成功*/
+.ok{
+	/*background: #FAFAFA;*/
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 1.0rem;
+	padding-bottom: 0.5rem;
+}
+.ok img{
+	width: 2.0rem;
+}
+.change-ok{
+	font-size: 0.4rem;padding-bottom: 0.2rem;
+}
+.last{
+	font-size: 0.32rem;
+}

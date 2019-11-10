@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/calculater.css" />
+		<script type="text/javascript" src="js/zepto.min(1).js" ></script>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px'//
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 支付密码-->
+		<div class="pwd">
+			<p class="money">¥199.00</p>
+			<p class="sum">余额</p>
+			<div class="pay-pwd">
+				<input type="password" readonly=""/>
+				<input type="password" readonly="" />
+				<input type="password" readonly="" />
+				<input type="password" readonly="" />
+				<input type="password" readonly="" />
+				<input type="password" readonly="" />
+			</div>
+		</div>
+		<!--end 支付密码-->
+		
+		<!--start 计算器-->
+		<div class="cal">
+			<div class="cal-num">
+				<input class="nums" type="tel" readonly="" value="1" readonly=""/>
+				<input class="nums" type="tel" readonly="" value="2"readonly=""/>
+				<input class="nums" type="tel" value="3" readonly=""/>
+				<input class="nums" type="tel" value="4" readonly=""/>
+				<input class="nums" type="tel" value="5" readonly=""/>
+				<input class="nums" type="tel" value="6" readonly=""/>
+				<input class="nums" type="tel" value="7" readonly=""/>
+				<input class="nums" type="tel" value="8" readonly=""/>
+				<input class="nums" type="tel" value="9" readonly=""/>
+				<input class="white" value="1" >
+				<input class="nums" type="text" value="0" readonly="">
+				<input class="ok" value="确定" readonly=""></input>
+			</div>
+		</div>
+		<!--end 计算器-->
+	</body>
+</html>
+<script>
+	var $input= $(".pay-pwd > input");  
+	var numbers='';
+    $(".nums").click(function(){  
+    	
+        var pwd = $(this).val().trim();
+        numbers+=pwd;
+        var len = $input.length;
+        for (var i = 0; i < len; i++) {  
+            $input.eq("" + i + "").val(numbers[i]);  
+        }  
+        $input.each(function() {  
+            var index = $(this).index();  
+            if (index >= len) {  
+                $(this).val("");  
+            }  
+        }); 
+        if (len == 6) {  
+            //执行其他操作  
+        }  
+    });  
+</script>

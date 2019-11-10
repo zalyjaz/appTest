@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>公告</title>
+		<link rel="stylesheet" href="css/notice.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="js/amazeui.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 公告-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">公告</span>
+		</div>
+		<!--end 公告-->	
+		<ul class="announce">
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>			
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">关于最近两天出现的非法地址诈骗信息的广告</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+			<li>
+				<span class="left">《关于长期发放消费积分双倍卡的公告》</span>
+				<img src="img/more.png" class="right"/>
+			</li>
+		</ul>
+		<p class="more" id="my-scrollspy">
+			<span>正在加载</span>
+			<img src="img/more1.png" />
+		</p>
+		<p class="finish" style="display: none;padding-top: 0.2rem;text-align: center;">已完成全部加载</p>
+	</body>
+</html>
+<script>
+	$(".assort p").click(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+		var index=$(this).index();
+		$(".box").children().eq(index).show().siblings().hide();
+	})
+
+	$('#my-scrollspy').scrollspy({
+	    animation: 'slide-left',
+	    delay: 500
+	})
+	
+	$(function(){
+		$('#my-scrollspy').on('inview.scrollspy.amui', function() {
+		    alert('进入视口');
+		}).on('outview.scrollspy.amui', function() {
+		    alert('离开视口');
+		});
+	})
+		
+</script>

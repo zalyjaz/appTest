@@ -1,0 +1,302 @@
+/*骑租招商页面 样式*/
+body{
+	background: #f3f3f3 !important;	
+}
+input:link, input:visited, input:hover, input:active{
+	 outline: none;
+	/*border: none;*/
+}
+/*去掉输入边框*/
+.inpt{
+	outline: none !important;
+}
+/*start top*/
+.top{
+	background: url(../img/zu1_02.jpg) no-repeat;
+	height:0.90rem;
+}
+.top-left{
+	float:left;
+	width: 1.57rem;
+	height: 0.54rem;
+	margin-left: 0.28rem;
+	margin-top: 0.16rem;
+}
+.top-right{
+	float:right;
+	width: 0.84rem;
+	height: 0.82rem;
+	margin-right: 0.25rem;
+	margin-top: 0.035rem;
+}
+/*start 返回*/
+.top2{
+	height:0.91rem;
+	background: #fbb33e;
+	padding-top: 0.18rem;
+	border-radius: 0.3rem;	
+	margin-top: 0.02rem;
+}
+.top2-left{
+	width: 1.12rem;
+	display: inline-block;
+	margin-left: 0.28rem;
+	float: left;
+	margin-top: 0.06rem;
+}
+.top2-middle{
+	width:1.6rem;
+	display: inline-block;
+	font-family: PingFang !important;
+	font-size: 0.36rem;
+	color: #504e4e;
+	margin-left: 1.47rem;
+	letter-spacing: 0.03rem;
+}
+.top2 a{
+	background: #f3f3f3;
+	border-radius: 0.2rem;
+	color: #5f5d5d !important;
+	font-size: 0.30rem;
+	padding: 0.08rem 0.2rem;
+	box-shadow: 0 0 2 #bbbabb;	
+	font-family:PingFang !important;
+	letter-spacing: 1px;
+}
+.top2 a,
+.top2 a:hover,
+.top2 a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #5f5d5d !important;
+}
+.top2-right{
+	width: 1.12rem;
+	display: inline-block;
+	margin-left: 1.45rem;
+	margin-right: 0.2rem;
+	float: right;
+	margin-top: 0.06rem;
+}
+/*start 输入*/
+.middle-one{
+	background: #fff;
+	/*margin-top: 0.45rem;*/
+	width: 7.5rem;
+	padding-top: 0.1rem;
+}
+
+.middle-one label{
+	font-family: PingFang;
+	font-size: 0.36rem;
+	color: #5f5d5d;
+	font-weight: 100 !important;
+	margin-left: 0.63rem;
+	letter-spacing: 0.05rem;
+}
+.input1,.input2{
+	
+}
+.input1 input[type="text"]{
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 0.02rem solid #C5C2C3;
+	width: 4.8rem;
+	height: 1.0rem;
+	margin-left: 0.9rem;
+	padding-top: 0.45rem;
+	font-size: 0.3rem;	
+}
+.input2 input[type="text"]{
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 0.02rem solid #C5C2C3;
+	width: 4.8rem;
+	height: 1.0rem;
+	margin-left: 0.08rem;
+	padding-top: 0.5rem;
+	font-size: 0.3rem;
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+	color: #c5c2c3;
+	font-size: 0.30rem;
+	font-family: PingFang;
+	letter-spacing: 2px;
+}
+/*start 身份证*/
+.middle-two{
+	height:5.25rem;
+	background: #fff;	
+}
+.identity-left{
+	width:2.39rem;
+	padding-top: 1.0rem;
+	padding-bottom: 1.0rem;
+	display: inline-block;
+	border-right:0.015rem dashed #ccc ;
+}
+.zheng,.fan{
+	color: #8b8989;
+	font-size: 0.3rem;
+	font-family: PingFang;
+	letter-spacing: 2px;
+	margin-left: 1.25rem;
+}
+.card{
+	color:#5f5d5d;
+	font-size: 0.36rem;
+	font-family: PingFang;
+	margin-left:0.6rem;
+	padding-top: 0.45rem;
+	padding-bottom: 0.45rem;
+	width:0.36rem;
+}
+.identity-right{
+	float:right;
+	width: 5.1rem;
+	display: inline-block;
+}
+.right-one{
+	height:2.13rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	border-bottom:0.015rem dashed #ccc ;
+	width: 4.8rem;	
+}
+.btn1{
+	border: 0.04rem solid #e8e6e6 !important;
+	border-radius:0.2rem !important;
+	padding: 0.1rem 0.1rem !important;
+	width: 1.50rem;
+	height: 1.5rem;
+	display: block;
+	margin-left:1.2rem;
+	position: relative;
+}
+.btn1 span.line1{
+	width: 0.95rem;
+	/*height: 180px;*/
+	display: block;
+	border-bottom:0.04rem solid #e8e6e6;
+	margin: 0 auto;
+	vertical-align: middle;
+	margin-top: 0.55rem;
+}
+.btn1 span.line2{
+	position: absolute;
+	height: 0.95rem;
+	border-left: 0.04rem solid #e8e6e6;
+	display: block;
+	left: 0.66rem;
+	top:0.2rem;
+}
+.right-one img,.right-two img,.hand-one img{
+	margin-left: 1.28rem;
+  	display: none;  
+}
+.right-two{
+	height:2.12rem;
+	margin-top: 0.5rem;
+	/*margin-bottom: 0.5rem;*/
+	border-bottom:0.015rem dashed #ccc ;
+	/*padding-left:1.2rem;*/
+	width: 4.8rem;
+}
+input[type="file"]{
+	width:4.0rem;
+}
+/*start 上传*/
+.middle-three{
+	height:2.36rem;
+	background: #fff;		
+}
+.hand{
+	width:2.39rem;
+	padding-top: 0.85rem;
+	padding-bottom: 0.5rem;
+	display: inline-block;
+	border-right:0.015rem dashed #ccc;
+	font-size: 0.36rem;
+	color: #5f5d5d;
+}
+.hand1{
+	margin-left: 0.7rem;
+}
+.hand2{
+	margin-left: 0.5rem;
+}
+.hand-right{
+	float:right;
+	width: 5.1rem;
+	display: inline-block;
+}
+.hand-one{
+	height:2.37rem;
+	padding-top: 0.5rem;	
+	border-bottom:0.02rem solid #c5c2c3 ;
+	width: 4.8rem;
+}
+.middle-three inpuy[type="file"]{
+	width:4.2rem;
+}
+/*start 信息*/
+.middle-four{	
+	background: #fff;		
+	padding: 0.2rem 0;
+}
+.middle-four label{
+	font-family: PingFang!important;
+	font-size: 0.36rem;
+	color: #5f5d5d;
+	font-weight: 100 !important;
+	margin-left: 0.63rem;
+	letter-spacing: 0.05rem;
+}
+.input11 input[type="text"],.input22 input[type="text"],.input3 input[type="text"],.input4 input[type="text"]{
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 0.02rem solid #C5C2C3;
+	width: 4.8rem;
+	height: 1.0rem;
+	margin-left: 0.47rem;
+	padding-top: 0.5rem;
+	font-size: 0.3rem;	
+}
+.input3 input[type="text"],.input4 input[type="text"]{
+	margin-left: 0.07rem !important;
+	font-size: 0.3rem;
+}
+/*start 留言*/
+.middle-five{
+	background: #fff;	
+	padding: 0.3rem 0;
+	margin-bottom: 0.3rem;
+}
+.liu{
+	margin-left: 0.63rem;
+	font-size: 0.36rem;
+	color: #5f5d5d;
+	letter-spacing: 4px;
+}
+.text1{
+	height:2.15rem;
+	margin-top: 0.15rem;
+	margin-left: 0.6rem;
+}
+textarea{
+	width:6.4rem;
+	height:2.13rem;
+	resize: none;
+	border-radius: 0.3rem;
+	background: #f3f3f3;
+	box-shadow:0.0rem 0.01rem 0.02rem #9f9d9e ;
+	border: none;
+	text-indent:0.3rem;	
+	-webkit-box-shadow: inset 0.01rem 0.01rem 0.04rem #747273;
+	-moz-box-shadow: inset 0.01rem 0.01rem 0.04rem #747273;
+	box-shadow: inset 0.01rem 0.01rem 0.04rem #747273;
+}

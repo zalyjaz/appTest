@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>账户邮箱</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/e-mail.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--start 账户邮箱-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">账户信息</span>
+			<a href="#"><span>完成</span></a>
+		</div>
+		<!--end 账户邮箱-->
+		<!--start 邮箱-->
+		<ul class="mail">
+			<li class="input-mail">
+				<input type="text" placeholder="请输入您的邮箱"/>
+			</li>
+			<li class="code">
+				<input type="text" placeholder="请输入验证码"/>
+				<span>获取验证码</span>
+			</li>
+		</ul>
+		
+		
+		<!--end 邮箱-->
+	</body>
+</html>
+<script>
+	/*$(".top a").click(function(){
+		$(".save-ok").show().delay(800).hide(1000);
+	})*/
+</script>

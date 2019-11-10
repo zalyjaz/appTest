@@ -1,0 +1,43 @@
+body{
+	background: #FAFAFA;
+}
+/*start 店铺升级*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+	margin-top: -0.05rem;
+}
+/*start 制度条例*/
+.system-regulations{
+	background: #fff;
+}
+.system-regulations ul li{
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.system-regulations ul li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.system-regulations ul li span{
+	float: left;
+	/*vertical-align: middle;*/
+	margin-top: 0.06rem;
+}
+.system-regulations ul li img{
+	float: right;
+	vertical-align: middle;
+	width: 0.5rem;
+}

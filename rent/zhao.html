@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<title>骑租招商</title>
+		<link href="css/zhao.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+
+				document.documentElement.style.fontSize = w + 'px'//
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<!--start top-->
+		<div class="top">							
+			<div class="top-left">
+				<a href="index1.html"><img src="img/zu1.png" class="img-responsive"/></a>
+			</div>
+			<div class="top-right">
+				<a href="zu.html"><img src="img/zu3.png" class="img-responsive"/></a>
+			</div>
+			<div class="clearfix"></div>						
+		</div>
+		<!--end top-->
+		<!--start 返回-->
+		<div class="top2">
+			<div class="top2-left">
+				<a href="index1.html">返回</a>
+			</div>
+			<div class="top2-middle">
+				<span>租车招商</span>
+			</div>
+			<div class="top2-right">
+				<a href="zu.html">完成</a>
+			</div>
+		</div>
+		<!--end 返回-->
+		<!--start 输入-->
+		<div class="middle-one">
+			<div class="input1">
+				<label for="username">姓名</label>
+				<input type="text" id="username" name="姓名" placeholder="请输入您的真实姓名" class="inpt"/>
+			</div>
+			<div class="input2">
+				<label for="tele">联系方式</label>
+				<input type="text" name="姓名" placeholder="您的联系方式" class="inpt" id="tele"/>
+			</div>						
+		</div>
+		<!--end 输入-->
+		<!--start 身份证-->
+		<div class="middle-two">
+			<div class="identity-left">
+				<span class="zheng">正面</span>
+				<div class="card">
+					<span>身份证</span>
+				</div>				
+				<span class="fan">背面</span>
+			</div>
+			<div class="identity-right">
+				<div class="right-one">
+					<!--<img src="img/zhengmian_03.png"/>-->
+					<label class="btn1">
+						<input type="file" id="" name="file" style="left:-99.99rem;position: absolute;"/>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</label>
+					<img src="img/apply-02_03.jpg" style="width:1.5rem;height:1.5rem"/>
+				</div>
+				<div class="right-two">
+					
+					<label class="btn1">
+						<input type="file" id="" name="file" style="left:-99.99rem;position: absolute;"/>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</label>
+					<img src="img/apply-02_03.jpg" style="width:1.5rem;height:1.5rem"/>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--end 身份证-->
+		<!--start 上传-->
+		<div class="middle-three">
+			<div class="hand">
+				<div class="hand1">
+					<span>手持</span>
+				</div>
+				<div class="hand2">
+					<span>身份证</span>
+				</div>
+				
+			</div>
+			<div class="hand-right">
+				<div class="hand-one">
+					<!--<img src="img/zhengmian_03.png"/>-->
+					<label class="btn1">
+						<input type="file" id="" name="file" style="left:-99.99rem;position: absolute;"/>
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</label>
+					<img src="img/apply-02_03.jpg" style="width:1.5rem;height:1.5rem"/>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--end 上传-->
+		<!--start 信息-->
+		<div class="middle-four">
+			<div class="input11">
+				<label for="sheng">所在省</label>
+				<input type="text" id="sheng" class="inpt"/>
+			</div>
+			<div class="input22">
+				<label for="shi">所在市</label>
+				<input type="text" class="inpt" id="shi"/>
+			</div>
+			<div class="input3">
+				<label for="xian">所在区县</label>
+				<input type="text" class="inpt" id="xian"/>
+				
+			</div>
+			<div class="input4">
+				<label for="address">详细地址</label>
+				<input type="text" class="inpt" id="address"/>
+				
+			</div>
+		</div>
+		<!--end 信息-->
+		<!--start 留言-->
+		<div class="middle-five">			
+			<div class="liu">
+				<span>申请流言</span>
+			</div>
+			<div class="text1">
+				<textarea class="inpt"></textarea>				
+			</div>			
+		</div>
+		<!--end 留言-->
+	</body>
+</html>

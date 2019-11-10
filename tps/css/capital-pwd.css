@@ -1,0 +1,44 @@
+body{
+	background:#FAFAFA;
+}
+/*start 资金密码*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	margin-bottom: 0.2rem;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+.top a{
+	float: right;
+	color: #007AFF;
+	font-size: 0.3rem;
+	margin-top: 0.05rem;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 密码*/
+.pwd{
+	background: #fff;
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.pwd input{
+	width: 5.5rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border: none;
+	margin-left: 0.1rem;
+}

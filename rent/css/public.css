@@ -1,0 +1,31 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+input:link,input:visited, input:hover,input:active{
+	outline: none !important;
+	/*border: none;*/
+}
+a{
+	text-decoration: none;
+}
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none !important;
+	/*color: #fff !important;*/
+}
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #fff !important;
+}
+body{
+	width:7.5rem;
+	margin: 0 auto !important;
+	font-family: "微软雅黑" !important;
+	/*background: #f3f3f3 !important;*/	
+}

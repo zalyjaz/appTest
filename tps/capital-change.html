@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资金变动报表</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/capital-change.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>	
+		<!--start 资金变动报表-->
+		<div class="top">
+			<img src="img/return.png" />
+			<span class="center">资金变动报表</span>
+		</div>
+		<!--end 资金变动报表-->
+		<!--start 奖金-->
+		<div class="bonus">
+			<p class="day">当日奖金(USD)</p>
+			<p class="init">0.00</p>
+			<div class="total">
+				<div class="month">
+					<p>当月奖金</p>
+					<p>0.00</p>
+				</div>
+				<div class="year">
+					<p>年度统计</p>
+					<p>0.00</p>
+				</div>
+			</div>
+		</div>
+		<!--end 奖金-->	
+		<!--start 资金变动、奖金汇总-->
+		<div class="capital">
+			<p class="active">资金变动</p>
+			<p>奖金汇总</p>
+		</div>
+		<div class="ul">
+			<ul class="capital-one">
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li><li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+			</ul>
+			<ul class="capital-one" style="display: none;">
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+				<li>
+					<p class="left">每月精英销售提成奖</p>
+					<p class="right">+¥0.00 <img src="img/more.png"/></p>
+				</li>
+			</ul>
+		</div>
+		<!--end 资金变动、奖金汇总-->				
+	</body>
+</html>
+<script>
+	$(".capital p").click(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+		var index=$(this).index();
+		$(".ul").children("ul").eq(index).show().siblings().hide();
+	})
+	
+	$(window).scroll(function(){
+		if($(document).scrollTop()>=40){
+			$(".capital").addClass("position");
+		}
+		else{
+			$(".capital").removeClass("position");
+			
+		}
+	})	
+</script>

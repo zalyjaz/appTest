@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资金密码</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/capital-pwd.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>	
+		<!--start 上传证件-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">资金密码</span>
+			<a href="personal-data.html"><span>完成</span></a>
+		</div>
+		<!--end 上传证件-->
+		
+		<!--start 密码-->
+		<div class="pwd">
+			<span>输入密码:</span>
+			<input type="text" placeholder="请输入密码"/>
+		</div>
+		<div class="pwd">
+			<span>确认密码:</span>
+			<input type="text" placeholder="请确认密码"/>
+		</div>
+		<!--end 密码-->	
+		</div>		
+	</body>
+</html>
+<script>
+	/*$(".next").click(function(){
+		$(".box").hide().next().show();
+		$(".finish").click(function(){	
+		})
+	})*/
+</script>

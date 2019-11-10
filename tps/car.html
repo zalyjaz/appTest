@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/car.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px'//
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 购物车-->
+		<div class="house">
+			<p>购物车</p>
+			<p class="bian" data-status=0>编辑</p>
+		</div>
+		<!--end 购物车-->
+		<div class="box">	
+			<!--start 全部宝贝-->
+			<div class="objects">		
+				<ul class="objects-no">
+					<li>
+						<img src="img/no.png" class="no" click_status="0"/>
+						<img src="img/naifen.jpg" class="nai1"/>
+						<div class="summary1">
+							<p class="name">澳大利亚进口&nbsp;艾薇牛婴儿配方奶粉1段(0-6月) 900g/罐&nbsp;全国包邮</p>
+							
+							<p class="price">¥196.41</p>
+							<div class="number">
+								<img src="img/add.png" class="add"/>
+								<input type="text" value="1"/>
+								<img src="img/sub.png" class="sub"/>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="img/no.png" class="no" click_status="0"/>
+						<img src="img/naifen.jpg" class="nai1"/>
+						<div class="summary1">
+							<p class="name">澳大利亚进口&nbsp;艾薇牛婴儿配方奶粉1段(0-6月) 900g/罐&nbsp;全国包邮</p>
+							
+							<p class="price">¥196.41</p>
+							<div class="number">
+								<img src="img/add.png" class="add"/>
+								<input type="text" value="1"/>
+								<img src="img/sub.png" class="sub"/>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="img/no.png" class="no" click_status="0"/>
+						<img src="img/naifen.jpg" class="nai1"/>
+						<div class="summary1">
+							<p class="name">澳大利亚进口&nbsp;艾薇牛婴儿配方奶粉1段(0-6月) 900g/罐&nbsp;全国包邮</p>
+							
+							<p class="price">¥196.41</p>
+							<div class="number">
+								<img src="img/add.png" class="add"/>
+								<input type="text" value="1"/>
+								<img src="img/sub.png" class="sub"/>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="img/no.png" class="no" click_status="0"/>
+						<img src="img/naifen.jpg" class="nai1"/>
+						<div class="summary1">
+							<p class="name">澳大利亚进口&nbsp;艾薇牛婴儿配方奶粉1段(0-6月) 900g/罐&nbsp;全国包邮</p>
+							
+							<p class="price">¥196.41</p>
+							<div class="number">
+								<img src="img/add.png" class="add"/>
+								<input type="text" value="1"/>
+								<img src="img/sub.png" class="sub"/>
+							</div>
+							
+						</div>
+					</li>
+					<li>
+						<img src="img/no.png" class="no" click_status="0"/>
+						<img src="img/naifen.jpg" class="nai1"/>
+						<div class="summary1">
+							<p class="name">澳大利亚进口&nbsp;艾薇牛婴儿配方奶粉1段(0-6月) 900g/罐&nbsp;全国包邮</p>
+							
+							<p class="price">¥196.41</p>
+							<div class="number">
+								<img src="img/add.png" class="add"/>
+								<input type="text" value="1"/>
+								<img src="img/sub.png" class="sub"/>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!--start 编辑-->
+				<div class="edit">
+					<p class="p-choose">
+						<img src="img/no.png" click_status="0"/>
+						<span>全选</span>
+					</p>
+					<div class="p-total">
+						<p class="total">总计:<span>¥0.00</span></p>
+						<p class="cut">结算</p>
+					</div>
+				</div>
+				
+				<!--start 完成时删除-->
+				<div class="delete" style="display: none;">
+					<p class="p-choose">
+						<img src="img/no.png" click_status="0"/>
+						<span>全选</span>
+					</p>
+					<p class="p-delete">删除</p>
+				</div>
+			</div>
+			<!--end 全部宝贝-->
+			
+			<!--start 为你推荐-->
+			<div class="suggest">
+				<p class="you">为你推荐</p>
+				<ul>
+					<li>
+						<img src="img/ying.jpg" class="ying"/>
+						<p class="explain">钙铁锌咀嚼片 4-17岁幼儿、钙铁锌咀嚼片 4-17岁幼儿</p>
+						<p class="money">
+							<span>¥196.41</span>
+							<img src="img/zhong.png" />
+						</p>	
+					</li>
+					<li>
+						<img src="img/ying.jpg" class="ying"/>
+						<p class="explain">钙铁锌咀嚼片 4-17岁幼儿、钙铁锌咀嚼片 4-17岁幼儿</p>
+						<p class="money">
+							<span>¥196.41</span>
+							<img src="img/zhong.png" />
+						</p>	
+					</li>
+					<li>
+						<img src="img/ying.jpg" class="ying"/>
+						<p class="explain">钙铁锌咀嚼片 4-17岁幼儿、钙铁锌咀嚼片 4-17岁幼儿</p>
+						<p class="money">
+							<span>¥196.41</span>
+							<img src="img/zhong.png" />
+						</p>	
+					</li>
+					<li>
+						<img src="img/ying.jpg" class="ying"/>
+						<p class="explain">钙铁锌咀嚼片 4-17岁幼儿、钙铁锌咀嚼片 4-17岁幼儿</p>
+						<p class="money">
+							<span>¥196.41</span>
+							<img src="img/zhong.png" />
+						</p>	
+					</li>
+				</ul>
+								
+			</div>
+			<!--end 为你推荐-->
+		</div>
+		
+		<!--start 底部-->
+		<div class="foot">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img src="img/shouye.png" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="classify.html">
+						<img src="img/fen2.png" />
+						<p>分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="collect.html">
+						<img src="img/shou1.png" />
+						<p>收藏</p>
+					</a>
+				</li>
+				<li>
+					<a href="car.html">
+						<img src="img/car1.png" />
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="my.html">
+						<img src="img/my1.png" />
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--end 底部-->	
+	</body>
+</html>
+<script>
+	/*编辑、完成*/
+	$(".bian").click(function(){
+		if($(this).html()=="编辑"){
+			$(this).html("完成").css("color","#007AFF");
+			$(".edit").hide().next().show();
+		}
+		else{
+			$(this).html("编辑").css("color","grey");
+			$(".edit").show().next().hide();
+		}
+	})
+	/*全选 反选*/
+	$(".p-choose").click(function(){
+		if($(this).children("img").attr("click_status")==0 && $(".no").attr("click_status")==0){
+			$('.bian').removeClass('bian2').addClass('bian1')
+			$(this).children("img").attr("src","img/yes.png");
+			$(".no").attr("src","img/yes.png");
+			$(this).children("img").attr("click_status","1");
+			$(".no").attr("click_status","1");
+			$(".cut").css("background","#ecec21");
+			$(".cut").css("color","#fff");
+			$(document).on('click','.bian1',function(){
+				if($(".p-choose").children("img").attr("click_status")==1){
+					$(".edit").hide().next().show();
+					$(".p-choose").children("img").attr("src","img/yes.png");
+					$(".p-choose").children("img").attr("click_status","0");
+					$(".p-delete").css("background","red");
+					$(".p-delete").css("color","#fff");
+				}
+				else{
+					$(".edit").show().next().hide();
+					$(".p-choose").children("img").attr("src","img/yes.png");
+					$(".p-choose").children("img").attr("click_status","1");
+				}		
+			})
+		}
+		else{
+			$('.bian').removeClass('bian1').addClass('bian2')
+			$(this).children("img").attr("src","img/no.png");
+			$(".no").attr("src","img/no.png");
+			$(this).children("img").attr("click_status","0");
+			$(".no").attr("click_status","0");
+			$(".cut").css("background","#F5F5DC");
+			$(".cut").css("color","#000");
+			$(document).on('click','.bian2',function(){
+				var status=$(this).attr('data-status')*1
+				console.log('status',status);
+				/*var $that=$(this);*/
+				if(status==0){
+					$(this).attr('data-status',1)
+					/*console.log(2)*/
+					$(this).html("完成").css("color","#007AFF");
+					$(".edit").hide().next().show();
+					$(".p-choose").children("img").attr("src","img/no.png");
+					$(".p-choose").children("img").attr("click_status","0");
+					$(".p-delete").css("background","#F5F5DC");
+					$(".p-delete").css("color","#000");
+				}
+				else{
+					$(this).attr('data-status',0)
+					$(this).html("编辑").css("color","grey");
+					$(".edit").show().next().hide();
+					$(".p-choose").children("img").attr("src","img/no.png");
+					$(".p-choose").children("img").attr("click_status","1");
+				}
+			})
+		}		
+	})
+	/*单选*/
+	$(".no").click(function(){
+		if($(this).attr("click_status")==0){
+			$(this).attr("src","img/yes.png");
+			$(this).attr("click_status","1");
+			/*$(".p-delete").css("background","red");
+			$(".p-delete").css("color","#fff");*/
+			$(".p-delete").click(function(){
+				$(".no[click_status='1']").parent().hide();
+			})
+		}
+		else{
+			$(this).attr("src","img/no.png");
+			$(this).attr("click_status","0");
+			$(".p-delete").css("background","#F5F5DC");
+			$(".p-delete").css("color","#000");
+		}		
+		if($(".no[click_status='1']").length == $(".no").length){
+			$(".p-choose").children("img").attr("src","img/yes.png");
+			$(".p-choose").children("img").attr("click_status","1");
+			$(".cut").css("background","#ecec21");
+			$(".cut").css("color","#fff");
+			$(".p-delete").css("background","red");
+			$(".p-delete").css("color","#fff");
+		}
+		else if($(".no[click_status='1']").length < $(".no").length){
+			$(".p-choose").children("img").attr("src","img/no.png");
+			$(".p-choose").children("img").attr("click_status","0");
+			$(".cut").css("background","#F5F5DC");
+			$(".cut").css("color","#000");
+			$(".p-delete").css("background","#F5F5DC");
+			$(".p-delete").css("color","#000");
+		}
+		if($(".no[click_status='1']").length==0){
+			$(".p-delete").css("background","#F5F5DC");
+			$(".p-delete").css("color","#000");
+			$(".cut").css("background","#F5F5DC");
+			$(".cut").css("color","#000");
+		}
+	})
+
+	/*改变商品数量*/
+	$(".add").click(function(){
+		var num=$(this).next().val()*1;
+		$(this).next().attr("value",num*1+1);
+		var number=$(this).next().val();
+	})
+	$(".sub").click(function(){
+		var num=$(this).prev().val()*1;
+		$(this).prev().attr("value",num*1-1);
+		var number=$(this).prev().val();
+		if(number < 1){
+			number=1;
+			$(this).prev().val(number);
+		}
+	})
+
+</script>

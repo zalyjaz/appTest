@@ -1,0 +1,176 @@
+body{
+	background:#fff;
+}
+/*start 我的订单*/
+.top{
+	width: 7.5rem;
+	padding:0.2rem 0;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+	padding-left: 0.2rem;
+}
+.center{
+	font-size: 0.4rem;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+.top a{
+	float: right;
+	color: #007AFF;
+	font-size: 0.35rem;
+	margin-top: 0.05rem;
+	padding-right:0.2rem;
+}
+.top a:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.assort{
+	padding-top: 0.2rem;
+	font-size: 0.3rem;
+	color: grey;
+	border-bottom: 1px solid #F5F5DC;
+}
+.assort p{
+	width: 1.75rem;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 0.2rem;
+}
+.active{
+	color: #000;
+	border-bottom: 1.5px solid #0000FF;
+}
+/*start 店铺订单*/
+.store-order{
+	
+}
+.time{
+	background: #FAFAFA;
+	padding: 0.3rem;
+	color: grey;
+}
+.main-order{
+	padding-top: 0.4rem;
+	padding-left: 0.2rem;
+	font-size: 0.28rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.main-order p{
+	padding-bottom: 0.2rem;
+}
+.status span{
+	color: grey;
+}
+.total span{
+	color: #FF0000;
+}
+.main-order p span,.order p span{
+	margin-left: 0.05rem;
+}
+.order p{
+	padding-top: 0.2rem;
+	padding-left: 0.2rem;
+	font-size: 0.26rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.shops{
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.shops img{
+	width: 2.0rem;
+	height: 2.0rem;
+	vertical-align: middle;
+}
+.mean{
+	width: 4.8rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.15rem;
+	font-size: 0.26rem;
+}
+.mean p:first-child{
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 	
+   	-webkit-box-orient:vertical;	
+	-webkit-line-clamp:2; 
+}
+.mean p:nth-of-type(2n){
+	color: grey;
+	padding-bottom: 0.4rem;
+}
+.mean p:last-child:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.left{
+	float: left;
+	color: #FF0000;
+}
+.right{
+	float: right;
+}
+.numbers{
+	text-align: right;
+	padding: 0.2rem 0;
+	padding-right: 0.2rem;
+	font-size: 0.3rem;
+	border-bottom:1px solid #F5F5DC;
+}
+/*start 消费订单*/
+.consumer-order{
+	padding-top: 1.0rem;
+	padding-bottom: 0.5rem;
+	text-align: center;
+}
+.consumer-order img{
+	width: 2.0rem;
+}
+.first{
+	color: grey;
+	font-size: 0.32rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+.second{
+	color: grey;
+	font-size: 0.28rem;
+	padding-bottom: 0.4rem;
+}
+.consumer-order a{
+	color: #fff;
+	padding: 0.15rem 0.3rem;
+	background: #F00B0D;
+	border-radius: 5px;
+	margin-top: 0.3rem;
+}
+/*start 沃好商城*/
+.wo ul{
+	background: #fff;
+}
+.wo ul li{
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	color: grey;
+	font-size:0.28rem;
+}
+.wo ul li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.left1{
+	float: left;
+}
+.right1{
+	color: #FF0000;
+}

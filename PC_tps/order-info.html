@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/order-info.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.colorAnimations.js" ></script>
+	</head>
+	<body>
+		<!--start 顶部-->
+		<div class="main-header">
+			<div class="container">
+				<div class="left">
+					<span>中国</span>
+					<span>人民币</span>
+				</div>
+				<div class="right">
+					<p>
+						<a href="#" class="phone">
+							<img src="img/phone.png"/>
+							<span>下载手机TPS</span>
+						</a>
+					</p>
+					<p>
+						<a href="#" class="login"><span>登陆</span></a>
+						<a href="#" class="register"><span>注册</span></a>
+					</p>
+					<a href="#"><span class="my-pay">我的关注(0)</span></a>
+					<a href="#"><span>个人中心</span></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>	
+		<!--end 顶部-->
+		<!--start 搜索-->
+		<div class="search">
+			<div class="container txt-line">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo.png"/>
+						<img src="img/Logo2.png" class="logo2"/>
+					</a>					
+				</div>
+				<div class="car">
+					<a href="#">
+						<img src="img/car2.png" />
+						<span>购物车</span>
+					</a>					
+				</div>
+				<div class="input-txt">
+					<div class="input_one">
+						<input type="text" placeholder="请输入关键词搜索商品"/>
+						<button type="submit">
+							<img src="img/search.png"/>
+						</button>
+					</div>
+					<div class="input_two">
+						<a href="#">大米</a>
+						<b>|</b>
+						<a href="#">面膜</a>
+						<b>|</b>
+						<a href="#">凉鞋</a>
+						<b>|</b>
+						<a href="#">奶粉</a>
+						<b>|</b>
+						<a href="#">啤酒</a>
+						<b>|</b>
+						<a href="#">食用油</a>
+						<b>|</b>
+						<a href="#">牛奶</a>
+						<b>|</b>
+						<a href="#">纸尿裤</a>
+						<b>|</b>
+						<a href="#">背包</a>
+						<b>|</b>
+						<a href="#">被子</a>
+					</div>
+				</div>				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!--end 搜索-->
+		<!--start 导航-->
+		<div class="nav-header">
+			<div class="container">
+				<div class="shops">
+					<p>
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+						全部商品分类
+					</p>
+					<ul class="style">
+						<li><a href="#">母婴用品</a></li>
+						<li><a href="#">美妆个护</a></li>
+						<li><a href="#">运动户外</a></li>
+						<li><a href="#">医药保健</a></li>
+						<li><a href="#">家居日用</a></li>
+						<li><a href="#">食品酒水</a></li>
+						<li><a href="#">钟表首饰</a></li>
+						<li><a href="#">数码家电</a></li>
+						<li><a href="#">礼品箱包</a></li>
+						<li><a href="#">汽车用品</a></li>
+						<li><a href="#">服饰鞋帽</a></li>
+						<li><a href="#">宠物生活</a></li>
+						<li><a href="#">生活服务</a></li>
+						<li><a href="#">汽车用品</a></li>
+						<li><a href="#">服饰鞋帽</a></li>
+						<li><a href="#">宠物生活</a></li>
+						<li><a href="#">生活服务</a></li>
+					</ul>
+				</div>
+				<ul class="page">
+					<li><a href="index.html">商城首页</a></li>
+					<li><a href="new_goods.html">新品上市</a></li>
+					<li><a href="#">口碑热卖</a></li>
+					<li><a href="#">特惠专区</a></li>
+					<li>
+						<a href="#">生活服务<img src="img/xia.png"/></a>
+						<ul class="two_child">
+							<li><a href="#">旅游</a></li>
+							<li><a href="#">餐饮</a></li>
+							<li><a href="#">酒店</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">关于我们<img src="img/xia.png"/></a>
+						<ul class="two_child">
+							<li><a href="#">公司官网</a></li>
+							<li><a href="#">物流配送</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">物流配送</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">意见反馈</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="clearfix"></div>				
+			</div>
+		</div>
+		<!--end 导航-->
+		
+		<!--start 确认订单信息-->
+		<div class="order-infos">
+			<div class="container">
+				<p class="info_title">确认订单信息</p>
+				<div class="receipt_info">
+					<p class="title_one">
+						<span class="left">收货信息</span>
+						<a href="#" class="right">+&nbsp;&nbsp;新增收货地址</a>
+					</p>
+					<div class="addr_info">
+						<div class="addr_one defaulted">
+							<div class="to">
+								<img src="img/addr.png" />
+								<span>寄送至</span>
+							</div>
+							<div class="to_addr">
+								<p class="p_left">
+									<input type="radio" class="radios"/>
+									<span>中国 江西省 青山湖区 紫阳大道3088号泰豪科技广场A座1310室 33098(叶从发  收)</span>
+									<span>17770875131</span>
+									<span class="default_addr">默认地址</span>
+								</p>
+								<p class="p_right">
+									<a href="#">修改</a>
+									<a href="#">删除</a>
+								</p>
+							</div>
+						</div>
+						<div class="addr_one">
+							<div class="to">
+								<img src="img/addr.png" />
+								<span>寄送至</span>
+							</div>
+							<div class="to_addr">
+								<p class="p_left">
+									<input type="radio" class="radios"/>
+									<span>中国 江西省 青山湖区 紫阳大道3088号泰豪科技广场A座1310室 330000(胡弯弯  收)</span>
+									<span>17770875131</span>
+									<!--<span class="default_addr">默认地址</span>-->
+								</p>
+								<p class="p_right">
+									<a href="#">设为默认地址</a>
+									<a href="#">修改</a>
+									<a href="#">删除</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<p class="hint">因地址有误或电话不正确造成退货退款或拒收退货的情况，在退款时会扣除来回运费。请仔细检查收货地址！</p>
+					<p class="title_one"><span class="left">订单商品信息</span></p>
+					<div class="info_table">
+						<div class="table_title">
+							<div class="col-md-5 "><span class="pace">TPS138 发货清单</span></div>
+							<div class="col-md-2 center"><span>属性</span></div>
+							<div class="col-md-2 center"><span>单价</span></div>
+							<div class="col-md-1 center"><span>数量</span></div>
+							<div class="col-md-2 center"><span>配送信息</span></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="goods_list">
+							<div class="goods_one">
+								<div class="col-md-7">
+									<div class="g-info">
+										<div class="img_info">
+											<img src="img/goods1.jpg" />
+										</div>
+										<div class="txt_info">
+											<p>武汉地区鑫美雅静加政服务350元代金券上门服务(仅限武汉市内)</p>
+											<p>商品编码:710213252-1</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 center paces"><span class="prices">￥346.20</span></div>
+								<div class="col-md-1 center paces"><span>1</span></div>
+								<div class="col-md-2 center paces">
+									<select>
+										<option>快递</option>
+									</select>
+									<p>运费:<span>0.00</span></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="goods_one">
+								<div class="col-md-7">
+									<div class="g-info">
+										<div class="img_info">
+											<img src="img/goods1.jpg" />
+										</div>
+										<div class="txt_info">
+											<p>武汉地区鑫美雅静加政服务350元代金券上门服务(仅限武汉市内)</p>
+											<p>商品编码:710213252-1</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 center paces"><span class="prices">￥346.20</span></div>
+								<div class="col-md-1 center paces"><span>1</span></div>
+								<div class="col-md-2 center paces">
+									<select>
+										<option>快递</option>
+									</select>
+									<p>运费:<span>0.00</span></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="goods_one last">
+								<div class="col-md-7">
+									<div class="g-info">
+										<div class="img_info">
+											<img src="img/goods1.jpg" />
+										</div>
+										<div class="txt_info">
+											<p>武汉地区鑫美雅静加政服务350元代金券上门服务(仅限武汉市内)</p>
+											<p>商品编码:710213252-1</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 center paces"><span class="prices">￥346.20</span></div>
+								<div class="col-md-1 center paces"><span>1</span></div>
+								<div class="col-md-2 center paces">
+									<select>
+										<option>快递</option>
+									</select>
+									<p>运费:<span>0.00</span></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							
+							
+						</div>
+						
+						
+						
+						
+					</div>
+					<div class="time">
+						<p class="time_left">
+							配送时间:<select>
+								<option>周一至周日均可</option>
+								<option>周一至周五</option>
+								<option>周六日、节假日</option>
+							</select>
+						</p>
+						<p class="time_right">
+							运费：<span>￥</span><span>0.00</span>&nbsp;&nbsp;
+							本订单金额：<span>￥</span><span class="color">1,049.98</span>
+						</p>
+						<div class="clearfix"></div>
+					</div>					
+					
+					<div class="add_remark">
+						添加订单备注：<textarea>限45字以内</textarea>
+						<span>提示：&nbsp;为了确保您的信息安全，请勿填写有支付、发票方面的信息</span>
+					</div>
+					<div class="pay_style">
+						<p> <input type="radio"/><img src="img/pay.png"/></p>
+						<p> <input type="radio"/><img src="img/pay.png"/></p>
+						<p> <input type="radio"/><img src="img/pay.png"/></p>
+					</div>					
+					<div class="total_info">
+						<div class="total_left">
+							<span>收货信息:</span>
+							<p>中国  江西省 南昌市 西湖区 江西省南昌市西湖区沿江大道268号禾丽医疗美容三楼护士站</p>
+							<div class="clearfix"></div>
+						</div>
+						<div class="total_right">
+							<p class="shops_money">商品金额： <span>￥1,049.98</span></p>
+							<p class="post">运费：<span>￥0.00</span></p>
+							
+							<p class="shi_money">实付金额：<span>￥1,049.98</span></p>
+							<p class="agree"><input type="checkbox" checked="checked"/> 我同意<a href="#">《TPS用户购买须知》</a></p>
+							<p class="submit">提交订单</p>
+						</div>
+					</div>
+					
+					
+				</div>
+				
+				
+			</div>		
+		</div>
+		<!--end 确认订单信息-->
+		
+		<!--start 新增收货地址弹框-->
+		<div class="form">
+			<div class="add_addr">
+				<p class="addr_title">
+					<span>新增收货地址</span>
+					<img src="img/close.png" class="close"/>
+				</p>
+				<p class="prompt">新增收货地址  电话号码、手机号选填一项，其余均为必填项</p>
+				<div class="areas">
+				 	<p class="p_area">所在地区<span>*</span></p> 
+				 	<p class="choose">
+				 		<select><option>中国</option></select>
+					 	<select><option>省份/直辖市</option>
+					 		<option>北京市</option>
+					 		<option>天津市</option>
+					 		<option>河北省</option>
+					 	</select>
+					 	<select><option>城市</option></select>
+					 	<select><option>区县</option></select>
+					 	<select><option>街道</option></select>
+				 	</p>
+				</div>
+				<div class="detail-addr">
+					<p class="p_area">详细地址<span>*</span></p>
+					<textarea>请填写详细收货地址</textarea>					
+				</div>
+				<div class="receiver">
+					<p class="p_area">收货人<span>*</span></p>
+					<input type="text" />				
+				</div>
+				<div class="phone receiver">
+					<p class="p_area">手机号码<span>*</span></p>
+					<input type="text" />				
+				</div>
+				<div class="phone receiver">
+					<p class="p_area">备用号码<span>*</span></p>
+					<input type="text" />				
+				</div>
+				<div class="phone receiver">
+					<p class="p_area">邮政编码</p>
+					<input type="text" />				
+				</div>
+				<div class="phone receiver">
+					<p class="p_area">手机号码<span>*</span></p>
+					<input type="text" />				
+				</div>
+				<div class="add">
+					<p>新增收货地址</p>				
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--end 新增收货地址弹框-->	
+		
+		<!--start 底部-->
+		<div class="foot">
+			<div class="container">
+				<div class="foot_left">
+					<ul>
+						<li>
+							<a href="#">公司官网</a>
+							<a href="#">物流配送</a>
+							<a href="#">售后服务</a>
+							<a href="#">帮助中心</a>
+							<a href="#">意见反馈</a>
+						</li>
+						<li><a href="#" class="website"><img src="img/website.png" /></a></li>
+						<li>
+							<p>食品经营许可证:JY1440304003964 &nbsp;&nbsp;增值电信业务经营许可证:&nbsp;<span>粤B2-20160705</span></p>
+							<p>第二类医疗器械经营备案凭证:&nbsp;&nbsp;<span>粤深食药监械经营备20171931号</span></p>
+							<p>&copy;2014-2018 TPS138.com 深圳前海云集品电子商务有限公司 版权所有.&nbsp;<span>粤ICP备14072989号-2</span></p>
+							<p><img src="img/ico_beian.png" class="icon_img"/><span>粤公网安备 44030402000508号</span></p>
+						</li>						
+						
+					</ul>
+				</div>
+				<div class="foot_center">
+					<ul>
+						<li>联系方式</li>
+						<li>0755-88694880</li>
+						<li>广东省深圳市福田区泰然工贸园泰然四路204栋东座4楼</li>
+					</ul>
+				</div>
+				<div class="foot_right">
+					<img src="img/code.jpg" />
+					<p>下载手机APP</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!--end 底部-->
+		
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		
+	</body>
+</html>
+<script>
+	$(".style li").mouseenter(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+	
+	$(".addr_one").click(function(){
+		$(this).addClass("defaulted").siblings().removeClass("defaulted").children(".p_right").hide();
+		
+	})
+	
+	$(".addr_one").hover(function(){
+		
+		$(this).css("background","#fff3f3");
+		$(this).find(".p_right").show();
+		
+	},function(){
+		
+		$(this).css("background","#fff");
+		$(this).find(".p_right").hide();
+	})
+
+	$(".title_one a").click(function(){
+		$(".form").show();	
+		var overflow = $('body').css('overflow');
+		$('body').css('overflow','hidden').prop('old_overflow',overflow);
+	})
+	
+	$(".close").click(function(){		
+		$(".form").hide();
+		var overflow = $('body').css('overflow');
+		$('body').css('overflow','auto').prop('old_overflow',overflow);		
+	})
+</script>

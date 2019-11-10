@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>重置密码成功</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/reset-ok.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 重置成功-->
+		<div class="top">
+			<span class="center">重置密码</span>
+			<a href="login.html"><span>完成</span></a>
+		</div>
+		<!--end 重置成功-->
+		<!--start 成功-->
+		<div class="ok">
+			<img src="img/yes.png"/>
+			<p class="change-ok">重置成功</p>
+			<p class="last">请保管好您的个人资料，防止泄露</p>
+		</div>
+		<!--end 成功-->		
+	</body>
+</html>
+<script>
+	$(".next").click(function(){
+		$(".box").hide().next().show();
+		$(".finish").click(function(){	
+		})
+	})
+</script>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>更改手机号</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/modify-phone.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="box">
+			<!--start 更改手机号-->
+			<div class="top">
+				<img src="img/return1.png" />
+				<span class="center">更改手机号</span>
+				<a href="#" class="next"><span>下一步</span></a>
+			</div>
+			<!--end 更改手机号-->
+			<!--start 手机号码-->
+			<ul class="phone">
+				<li class="mobile">
+					<span>手机号码</span>
+					<span>18878927938</span>
+					<!--<input type="text" placeholder="请输入您的邮箱"/>-->
+				</li>
+				<li class="code">
+					<span>验证码</span>
+					<input type="text" placeholder="请输入验证码"/>
+					<span>获取验证码</span>
+				</li>
+			</ul>
+			<!--end 手机号码-->
+		</div>
+		<!--start -->
+		<div class="box1" style="display: none;">
+			<!--start 更改手机号-->
+			<div class="top">
+				<img src="img/return1.png" />
+				<span class="center">更改手机号</span>
+				<a href="#" class="finish"><span>完成</span></a>
+			</div>
+			<!--end 更改手机号-->
+			<!--start 新手机号码-->
+			<ul class="phone">
+				<li class="new-phone">
+					<span>新手机号码</span>
+					<input type="text" placeholder="请输入手机号"/>
+				</li>
+				<li class="code">
+					<span>验证码</span>
+					<input type="text" placeholder="请输入验证码"/>
+					<span>获取验证码</span>
+				</li>
+			</ul>
+			<!--end 新手机号码-->
+		</div>
+	</body>
+</html>
+<script>
+	$(".next").click(function(){
+		$(".box").hide().next().show();
+		$(".finish").click(function(){
+			
+			
+		})
+	})
+</script>

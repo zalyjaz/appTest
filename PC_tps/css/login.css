@@ -1,0 +1,393 @@
+/*start 顶部*/
+.main-header{
+	width: 100%;
+	padding: 10px 0;
+	background: #f1f1f1;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.right p{
+	display: inline-block;
+	margin-left: 15px;
+}
+.right p img{
+	width: 20px;
+}
+.right span{
+	vertical-align: middle;
+}
+.right a{
+	color: #000;
+}
+.my-pay{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.login{
+	color: #ee4242 !important;
+}
+.login span{
+	border-right: 2px solid #000;
+	padding-right: 10px;
+}
+.register{
+	padding-left: 5px;
+	color: #ee4242 !important;
+}
+.phone{
+	color: #000 !important;
+}
+.search{
+	padding: 50px 0 30px 0;
+}
+.logo a img{
+	width: 10.0rem;
+}
+.logo2{
+	margin-left: 5px;
+	width:8.5rem !important;
+}
+.right p a:hover,.right a:hover{
+	color: #ee4242 !important;
+}
+.txt-line{
+	text-align: center;
+}
+.logo{
+	display: inline-block;
+	float: left;
+}
+.input-txt{
+	width: 40%;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+.input-txt input{
+	width: 90%;
+	height: 45px;
+	line-height: 45px;
+	border: none;
+	border: 1.5px solid #163672;
+	padding-left: 10px;
+}
+.input-txt button img{
+	width: 2.5rem;
+}
+.input-txt button{
+	background:#163672;
+	width: 10%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	border: none;
+	position: absolute;
+	left: 95%;
+	top: 0;
+}
+.input_two{
+	margin-top:10px;
+	font-size: 12px !important;
+}
+.input_two b{
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.input_two a{
+	color: #000 !important;
+}
+.input_two a:hover,.page li a:hover{
+	color: #ee4242 !important;
+}
+.car{
+	display: inline-block;
+	float: right;
+	border: 1.5px solid #F5F5F5;
+}
+.car img{
+	width: 30px;
+	margin:7px;
+}
+.car span{
+	background: #ddd;
+	padding: 13px 15px 12px 15px;
+	color: #fff;
+	margin-top: 10px;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #000 !important;
+}
+/*start 导航*/
+.nav-header{
+	border-bottom: 2px solid #163672;
+}
+.glyphicon {
+    color: #fff !important;
+}
+.shops{
+	background: #163672;
+	position: relative;
+    zoom: 1;
+    z-index: 10;
+    width:12.0rem;
+    color: #fff;
+    border-bottom: 2px solid #163672;
+    float: left;
+}
+.shops p{
+	height: 45px;
+	line-height: 45px;
+	font-size: 15px !important;
+	text-align: center;
+}
+.shops:hover .style{
+	display: block;
+}
+.style{
+	background: rgba(22,54,114,.9);
+	width: 12.0rem;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	float: left;
+}
+.style li{
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+}
+.style li a{
+	font-size: 14px;
+	color: #fff;
+}
+.active{
+	background: #fff;
+	border-left: 1px solid #F9F9F9;
+	border-right: 1px solid #F9F9F9;
+}
+.active a{
+	color: #000 !important;
+}
+.page{
+	float: left;
+}
+.page li{
+	float: left;
+	width: 8.0rem;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+}
+.page li a{
+	color: #000;
+}
+.page li a img{
+	width: 1.5rem;
+}
+.page li:hover .two_child{
+	display: block;
+	background: rgba(255,255,255,.8);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    box-shadow: 0 4px 6px rgba(0,0,0,.2);
+    border: solid 1px #dfdfdf;
+}
+.two_child{
+	display: none;
+	width: 8.0rem;
+	background: #F0AD4E;
+	position: absolute;
+	left: 0;
+	right: auto;
+	top:45px;
+	z-index: 9999;
+}
+.two_child li{
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+}
+.two_child li a{
+	color: #000;
+}
+/*start 登录、注册、忘记密码*/
+.reg{
+	background: url(../img/reg_bg.jpg) center no-repeat;
+	width: 100%;
+	height: 600px;
+}
+.login_in{
+	position: relative;
+}
+.reg_login{
+	position: absolute;
+	right: 1%;
+	top: 120px;
+	box-sizing: border-box;
+	width: 32%;
+	background: #fff;
+	padding: 3% 4%;
+}
+.p-login{
+	color: #999;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 12%;
+}
+.input-info li{
+	position: relative;
+}
+.input-info li .glyphicon{
+	color: #000 !important;
+	position: absolute;
+	font-size: 16px;
+    top: 13px;
+    left: 10px;
+}
+.input-info li input[type="text"]{
+	box-sizing: border-box;
+    padding-left: 35px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 1.2rem;
+}
+.pwd{
+	width: 1.7rem;
+	position: absolute;
+    top: 9px;
+    left: 10px;
+}
+.input_code input{
+	width: 50% !important;
+	padding-left: 20px !important;
+	float: left;
+}
+.input_code{
+	vertical-align: middle;
+}
+.code{
+	width:42% !important;
+	float: right !important;
+	height: 40px;
+}
+.input_code:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.input-info li input[type="button"]{
+	box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    outline: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    background: #ED4242;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.input-info li input[type="button"]:hover{
+	background: rgb(210, 34, 21);
+}
+.vip{
+	font-size: 12px;
+	padding-top: 5px;
+}
+.vip:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.vip a{
+	color: #3388ff !important;
+}
+.vip a:last-child{
+	float: right;
+}
+
+
+
+/*start 底部*/
+.foot{
+	width: 100%;
+	background: #eee;
+	border-top: 1px solid #ddd
+}
+.foot a{
+	color: #000;
+	margin-right: 10px;
+}
+.foot a:hover{
+	color: #ff0000;
+}
+.foot_left{
+	float: left;
+	width: 45%;
+	padding-top: 15px;
+}
+.foot_left ul li{
+	padding-bottom: 15px;
+}
+.foot_left ul li p{
+	color: #999 !important;
+	font-size: 12px;
+	height: 1.8;
+	line-height: 1.8;
+}
+.foot_left ul li p span{
+	color: #000;
+}
+.website{
+	display: block;
+	margin-top: 15px;
+}
+.website img{
+	text-align: left !important;
+}
+.icon_img{
+	width: 1.5rem;
+	margin-right: 5px;
+}
+.foot_center{
+	width: 35%;
+	float: left;
+	color: #999;
+	padding-top: 15px;
+}
+.foot_center ul li{
+	line-height: 2.0;
+}
+.foot_right{
+	float: right;
+	background: #e65050;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+	width: 20%;
+}
+.foot_right img{
+	width: 10.0rem;
+	height: 10.0rem;
+	margin-bottom: 20px;
+}
+.foot_right p{
+	padding-bottom: 10px;
+}

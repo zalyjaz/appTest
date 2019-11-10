@@ -1,0 +1,123 @@
+/*租车订单有页面样式 */
+body{
+	background: #f3f3f3 !important;	
+}
+/*start top*/
+.top{
+	background: url(../img/zu1_02.jpg) no-repeat;
+	height:0.90rem;
+}
+.top-left{
+	float:left;
+	width: 1.57rem;
+	height: 0.54rem;
+	margin-left: 0.25rem;
+	margin-top: 0.16rem;
+}
+.top-right{
+	float:right;
+	width: 0.84rem;
+	height: 0.82rem;
+	margin-right: 0.25rem;
+	margin-top: 0.035rem;
+}
+/*start 搜索*/
+.serach{
+	background: #fff;
+	padding: 0.05rem 0;
+}
+.serach input[type="text"]{
+	height:0.77rem;
+	width:7.5rem;
+	background: url(../img/search_03.png) 0.1rem no-repeat;
+	background-size: 0.44rem 0.44rem;
+	text-indent:0.7rem;
+	font-size: 0.30rem;	
+	-webkit-border-radius: 0.38rem;
+	-moz-border-radius: 0.38rem;
+	border-radius: 0.38rem;
+	
+}
+.inpt{
+	outline: none !important;
+}
+input::-webkit-input-placeholder{
+	color: #f6770a;
+	font-size: 0.30rem;
+	font-family: PingFang!important;
+	letter-spacing: 2px;
+	line-height: 0.5rem;
+}
+/*start 出租*/
+.middle-one{
+	background: #fff;
+	margin-top: 0.15rem;
+	padding-top: 0.28rem;
+	padding-left: 0.45rem;
+	padding-bottom: 0.2rem;
+	-webkit-box-shadow: 0.01rem 0.01rem 0.01rem rgba(0,0,0,.32);
+	-moz-box-shadow: 0.01rem 0.01rem 0.01rem rgba(0,0,0,.32);
+	box-shadow: 0.01rem 0.01rem 0.01rem rgba(0,0,0,.32);
+}
+.middle-one p{
+	color: #707070;
+	font-size: 0.3rem;
+	letter-spacing: 0.05rem;
+	margin-bottom: 0 !important;	
+}
+.yi{
+	text-align: right;
+	color: #f6770a !important;
+	padding-right: 0.45rem;
+}
+/*start 张大*/
+.middle-two{
+	background: #fff;
+	width: 7.3rem;
+	margin-left: 0.1rem;
+	border-radius: 0.1rem;
+	box-shadow: 0.01rem 0.02rem 0.05rem #a7a6a6;
+	margin-top: 0.03rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.15rem;
+	-webkit-border-radius: 0.1rem;
+	-moz-border-radius: 10px;
+	-webkit-box-shadow: 0.01rem 0.01rem 0.02rem rgba(0,0,0,.41);
+	-moz-box-shadow: 0.01rem 0.01rem 0.02rem rgba(0,0,0,.41);
+	box-shadow: 0.01rem 0.01rem 0.02rem rgba(0,0,0,.41);
+}
+.middle-tab{
+	display: none;
+}
+.middle-two p,.middle-two span{
+	margin-left: 0.9rem;
+	font-size: 0.24rem;
+	color: #707070;
+	letter-spacing: 0.03rem;
+}
+.middle-one img,.middle-two img{
+	width:0.61rem;
+	height:0.19rem;
+}
+span.zhang{
+	letter-spacing: 0.1rem !important;
+}
+.middle-two p{
+	margin-top: 0.2rem;
+}
+.tian{
+	padding-left: 1.1rem;
+}
+.tian1{
+	padding-left: 0.7rem;
+}
+span i{
+	color: #f6770a;
+}
+.middle-two img{
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);	
+}
+.jds{
+	margin-right: 0.45rem;
+}

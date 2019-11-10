@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/car.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.colorAnimations.js" ></script>
+	</head>
+	<body>
+		<!--start 顶部-->
+		<div class="main-header">
+			<div class="container">
+				<div class="left">
+					<span>中国</span>
+					<span>人民币</span>
+				</div>
+				<div class="right">
+					<p>
+						<a href="#" class="phone">
+							<img src="img/phone.png"/>
+							<span>下载手机TPS</span>
+						</a>
+					</p>
+					<p>
+						<a href="#" class="login"><span>登陆</span></a>
+						<a href="#" class="register"><span>注册</span></a>
+					</p>
+					<a href="#"><span class="my-pay">我的关注(0)</span></a>
+					<a href="#"><span>个人中心</span></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>	
+		<!--end 顶部-->
+		<!--start 搜索-->
+		<div class="search">
+			<div class="container txt-line">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo.png"/>
+						<img src="img/Logo2.png" class="logo2"/>
+					</a>					
+				</div>
+				<div class="car">
+					<a href="#">
+						<img src="img/car2.png" />
+						<span>购物车</span>
+					</a>					
+				</div>
+				<div class="input-txt">
+					<div class="input_one">
+						<input type="text" placeholder="请输入关键词搜索商品"/>
+						<button type="submit">
+							<img src="img/search.png"/>
+						</button>
+					</div>
+					<div class="input_two">
+						<a href="#">大米</a>
+						<b>|</b>
+						<a href="#">面膜</a>
+						<b>|</b>
+						<a href="#">凉鞋</a>
+						<b>|</b>
+						<a href="#">奶粉</a>
+						<b>|</b>
+						<a href="#">啤酒</a>
+						<b>|</b>
+						<a href="#">食用油</a>
+						<b>|</b>
+						<a href="#">牛奶</a>
+						<b>|</b>
+						<a href="#">纸尿裤</a>
+						<b>|</b>
+						<a href="#">背包</a>
+						<b>|</b>
+						<a href="#">被子</a>
+					</div>
+				</div>				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!--end 搜索-->
+		<!--start 导航-->
+		<div class="nav-header">
+			<div class="container">
+				<div class="shops">
+					<p>
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+						全部商品分类
+					</p>
+					<ul class="style">
+						<li><a href="#">母婴用品</a></li>
+						<li><a href="#">美妆个护</a></li>
+						<li><a href="#">运动户外</a></li>
+						<li><a href="#">医药保健</a></li>
+						<li><a href="#">家居日用</a></li>
+						<li><a href="#">食品酒水</a></li>
+						<li><a href="#">钟表首饰</a></li>
+						<li><a href="#">数码家电</a></li>
+						<li><a href="#">礼品箱包</a></li>
+						<li><a href="#">汽车用品</a></li>
+						<li><a href="#">服饰鞋帽</a></li>
+						<li><a href="#">宠物生活</a></li>
+						<li><a href="#">生活服务</a></li>
+						<li><a href="#">汽车用品</a></li>
+						<li><a href="#">服饰鞋帽</a></li>
+						<li><a href="#">宠物生活</a></li>
+						<li><a href="#">生活服务</a></li>
+					</ul>
+				</div>
+				<ul class="page">
+					<li><a href="index.html">商城首页</a></li>
+					<li><a href="new_goods.html">新品上市</a></li>
+					<li><a href="#">口碑热卖</a></li>
+					<li><a href="#">特惠专区</a></li>
+					<li>
+						<a href="#">生活服务<img src="img/xia.png"/></a>
+						<ul class="two_child">
+							<li><a href="#">旅游</a></li>
+							<li><a href="#">餐饮</a></li>
+							<li><a href="#">酒店</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">关于我们<img src="img/xia.png"/></a>
+						<ul class="two_child">
+							<li><a href="#">公司官网</a></li>
+							<li><a href="#">物流配送</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">物流配送</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">意见反馈</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="clearfix"></div>				
+			</div>
+		</div>
+		<!--end 导航-->
+		
+		<!--start 全部商品-->
+		<div class="all_shops">
+			<div class="container">
+				<div class="all_top">
+					<span class="all_title">全部商品</span><span class="all_number">2</span>
+					<div class="lines">
+						<div class="line_one">
+							<div class="col-md-1 middle"><input type="checkbox" class="box all_checked"/><span>全选</span></div>
+							<div class="col-md-3 the_left"><span>商品名称</span></div>
+							<div class="col-md-1 middle"><span>属性</span></div>
+							<div class="col-md-2 middle"><span>单价</span></div>
+							<div class="col-md-2 middle"><span>数量</span></div>
+							<div class="col-md-2 middle"><span>小记</span></div>
+							<div class="col-md-1 middle">操作</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="line_two">
+							<div class="col-md-1 middle" style="position: relative;"><span class="box1" ><input type="checkbox" class="box" /></span><span class="white">全选</span></div>
+							<div class="col-md-3">
+								<div class="left_img">
+									<img src="img/thumb.jpg" />
+								</div>
+								<div class="right_mean">
+									<p>欧锐铂欢乐e家 涮烤一体火锅ORB-049 规格425x110x360mm</p>
+									<p class="p_code">商品编码: <span>456954789-1</span></p>
+									<span class="postage">包邮</span>
+								</div>
+								<div class="clearfix"></div>
+								
+							</div>
+							<div class="col-md-1 middle"></div>
+							<div class="col-md-2 middle tops"><span class="money">￥403.42</span></div>
+							<div class="col-md-2 middle nums tops">
+								<a class="sub">-</a><input type="text" value="1"/><a class="add">+</a>
+							</div>
+							<div class="col-md-2 middle tops"><span class="price">￥403.42</span></div>
+							<div class="col-md-1 middle tops"><img src="img/delete.png" class="delete"/></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="line_two">
+							<div class="col-md-1 middle" style="position: relative;"><span class="box1" ><input type="checkbox" class="box"/></span><span class="white">全选</span></div>
+							<div class="col-md-3">
+								<div class="left_img">
+									<img src="img/thumb.jpg" />
+								</div>
+								<div class="right_mean">
+									<p>欧锐铂欢乐e家 涮烤一体火锅ORB-049 规格425x110x360mm</p>
+									<p class="p_code">商品编码: <span>456954789-1</span></p>
+									<span class="postage">包邮</span>
+								</div>
+								<div class="clearfix"></div>								
+							</div>
+							<div class="col-md-1 middle"></div>
+							<div class="col-md-2 middle tops"><span class="money">￥403.42</span></div>
+							<div class="col-md-2 middle nums tops">
+								<a class="sub">-</a><input type="text" value="1"/><a class="add">+</a>
+							</div>
+							<div class="col-md-2 middle tops"><span class="price">￥403.42</span></div>
+							<div class="col-md-1 middle tops"><img src="img/delete.png" class="delete"/></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="line_three">							
+							<div class="col-md-1 middle"><input type="checkbox" class="box all_checked"/><span>全选</span></div>
+							<div class="col-md-5 the_left"><span class="checked_shops">删除选中的商品</span></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="line_last">
+							<p>共两件商品 总价(不含运费):</p>
+							<p>￥669.85</p>
+							<p class="account"><a href="#">立即结算</a></p>
+							
+						</div>
+					</div>										
+				</div>				
+			</div>
+		</div>		
+		<!--end 全部商品-->	
+				
+		<!--start 批量删除商品弹框-->	
+		<div class="form">
+			<div class="batch_delete">
+				<p class="p_name">
+					<img src="img/delete1.png" />
+					<span>删除选中的商品？</span>
+				</p>
+				<p class="no-yes"><span class="ok">确定</span><span class="cancel">取消</span></p>
+				
+			</div>
+		</div>
+		<!--end 批量删除商品弹框-->		
+				
+		<!--start 底部-->
+		<div class="foot">
+			<div class="container">
+				<div class="foot_left">
+					<ul>
+						<li>
+							<a href="#">公司官网</a>
+							<a href="#">物流配送</a>
+							<a href="#">售后服务</a>
+							<a href="#">帮助中心</a>
+							<a href="#">意见反馈</a>
+						</li>
+						<li><a href="#" class="website"><img src="img/website.png" /></a></li>
+						<li>
+							<p>食品经营许可证:JY1440304003964 &nbsp;&nbsp;增值电信业务经营许可证:&nbsp;<span>粤B2-20160705</span></p>
+							<p>第二类医疗器械经营备案凭证:&nbsp;&nbsp;<span>粤深食药监械经营备20171931号</span></p>
+							<p>&copy;2014-2018 TPS138.com 深圳前海云集品电子商务有限公司 版权所有.&nbsp;<span>粤ICP备14072989号-2</span></p>
+							<p><img src="img/ico_beian.png" class="icon_img"/><span>粤公网安备 44030402000508号</span></p>
+						</li>						
+						
+					</ul>
+				</div>
+				<div class="foot_center">
+					<ul>
+						<li>联系方式</li>
+						<li>0755-88694880</li>
+						<li>广东省深圳市福田区泰然工贸园泰然四路204栋东座4楼</li>
+					</ul>
+				</div>
+				<div class="foot_right">
+					<img src="img/code.jpg" />
+					<p>下载手机APP</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!--end 底部-->
+		
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		
+	</body>
+</html>
+<script>
+	$(".style li").mouseenter(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+	//全选、反选
+	$(".all_checked").click(function(){
+		if(this.checked == true){
+			$(".box").each(function(){
+				this.checked = true;
+				$(".account a").css("background","#ed4242");
+				$(".account a").css("color","#fff");
+				$(".account a").hover(function(){
+					$(this).css("color","#fff");
+					
+				})
+			})
+		}
+		else{
+			$(".box").each(function(){
+				this.checked = false;
+				$(".account a").css("background","#999");
+				$(".account a").css("color","#000");
+			})
+		}		
+	})
+	$(".line_two .box").click(function(){
+		var chks=$(".line_two .box:checked");
+		var len=chks.length;
+		if(len == $(".line_two .box").length){
+			$(".all_checked").each(function(){
+				this.checked = true;
+			})
+		}
+		else if(len < $(".line_two .box").length){
+			$(".all_checked").each(function(){
+				this.checked = false;
+			})
+		}
+			
+	})
+	
+	/*改变商品数量*/
+	$(".add").click(function(){
+		var num=$(this).prev().val()*1;
+		$(this).prev().attr("value",num*1+1);
+		var number=$(this).prev().val();
+	})
+	$(".sub").click(function(){
+		var num=$(this).next().val()*1;
+		$(this).next().attr("value",num*1-1);
+		var number=$(this).next().val();
+		if(number < 1){
+			number=1;
+			$(this).next().val(number);
+		}
+	})
+	//删除商品
+	$(".checked_shops").click(function(){		
+		if($(".line_two .box:checked").length > 0){
+			$(".form").show();
+			var overflow = $('body').css('overflow');
+			$('body').css('overflow','hidden').prop('old_overflow',overflow);
+			$(".form").click(function(){
+				$(this).hide();
+			})
+			$(".cancel").click(function(){
+				$(".form").hide();
+			})
+		}
+		else{			
+			$(".box1").animate({
+				borderWidth:'16px',
+				left:'31px',
+				top:'15px',
+				borderColor:'rgb(236,87,102)',
+				borderStyle:'solid',
+				borderRadius:'10px'
+			},600,function(){
+				$(".box1").animate({
+					borderWidth:'0px',
+					left:'25px',
+					top:'40px',
+					borderColor:'rgb(0,0,0)',
+					borderStyle:'solid',
+					borderRadius:'0px'
+				},600)
+			});
+		}	
+	})
+	$(".ok").click(function(){
+		$(".line_two .box:checked").parents('.line_two').remove();
+		$(".form").hide();
+	})	
+	$(".delete").click(function(){
+		$(this).parent().parent().hide();		
+	})
+	
+</script>

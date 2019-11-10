@@ -1,0 +1,128 @@
+body{
+	background: #F5F5DC;
+}
+
+/*start 个人中心头像等信息*/
+.top{
+	background: url(../img/bg.jpg) center no-repeat;
+	background-size: 7.5rem 3.2rem;
+	width: 7.5rem;
+	height: 3.2rem;
+}
+.top-img{
+	position: relative;
+	vertical-align: middle;
+	display: inline-block;
+	padding-left: 0.5rem;
+	padding-top: 0.5rem;
+}
+.top-img img{
+	border-radius: 50%;
+	width: 1.8rem;
+	height:1.8rem;
+	padding: 0.1rem;
+	border:1px solid #fff;
+}
+.top-img p{
+	background: #fff;
+	width: 1.4rem;
+	text-align: center;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	border-radius: 5px;
+	position: absolute;
+	left: 0.8rem;
+	top:2.2rem;
+}
+.top-info{
+	display: inline-block;
+	padding-left: 0.4rem;
+	vertical-align: middle;
+	padding-top: 0.5rem;
+}
+.top-info .name{
+	color: #fff;
+	font-size: 0.35rem;
+	padding-bottom: 0.2rem;
+}
+.id{
+	color:#0d1331;
+}
+.grade{
+	background: #fff;
+	padding: 0.05rem 0.2rem;
+	border-radius: 10px;
+	color: grey; 
+	margin-left: 0.2rem; 
+}
+.share{
+	color:#0d1331;
+	padding-top: 0.4rem;
+}
+.num{
+	padding-left: 0.2rem;
+}
+/*start 个人中心第一部分*/
+.my-one{
+	margin-top: 0.2rem;
+	margin-bottom: 0.9rem;
+}
+.my-one ul li:after{
+	content: '';
+	display:block;
+	clear: both;
+}
+.my-one ul li{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.p-left{
+	float: left;
+	padding-left: 0.2rem;
+	color: #000;
+	font-size: 0.3em;
+	vertical-align: middle;
+}
+.p-right{
+	float: right;
+	padding-right: 0.2rem;
+	color: #808080;
+	vertical-align: middle;
+	padding-top: 0.03rem;
+}
+.p-left img{
+	width: 0.5rem;
+	vertical-align: middle;
+	padding-right: 0.1rem;
+	margin-top: -0.05rem;
+}
+.p-right img{
+	width: 0.5rem;
+	margin-top: -0.05rem;
+	vertical-align: middle;
+}
+.my-one ul{
+	background: #fff;
+	margin-bottom: 0.15rem;
+}
+/*start 底部*/
+.foot{
+	background: #fff;
+	padding: 0.1rem 0;
+	position: fixed;
+	bottom: 0;
+	width: 7.5rem;
+}
+.foot ul li a{
+	color: #000;
+	display: block;
+}
+.foot ul li{
+	display: inline-block;
+	width: 1.4rem;
+	text-align: center;
+}
+.foot ul li a img{
+	width: 0.5rem;
+}

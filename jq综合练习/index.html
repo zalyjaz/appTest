@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!DOCTYPE html style="font-size:100px;">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	  	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css" />
+	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	  	<script type="text/javascript" src="js/jquery.min.js"></script>
+	  	<script type="text/javascript" src="js/index.js"></script>
+	  	<script type="text/javascript" src="js/public.js"></script>
+		<title>首页</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+
+				document.documentElement.style.fontSize = w + 'px'//
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<!--轮播-->		
+		<div id="myCarousel" class="carousel slide">
+			<!-- 轮播空心指标 -->
+			<!-- 轮播图片-->
+			<div class="swiper-container swiper-container-horizontal">
+				<div class="carousel-inner swiper-wrapper" style="width: 7.5rem;">
+					<div class="item active swiper-slide swiper-slide-active">
+						<img src="img/shouye/nav_01.png" alt="First slide">
+					</div>
+					<div class="item swiper-slide swiper-slide-next">
+						<img src="img/shouye/nav_01.png" alt="Second slide">
+					</div>
+					<div class="item swiper-slide">
+						<img src="img/shouye/nav_01.png" alt="Third slide">
+					</div>
+					<div class="item swiper-slide">
+						<img src="img/shouye/nav_01.png" alt="four slide">
+					</div>
+					<div class="item swiper-slide">
+						<img src="img/shouye/nav_01.png" alt="five slide">
+					</div>
+					<div class="item swiper-slide">
+						<img src="img/shouye/nav_01.png" alt="six slide">
+					</div>
+				</div>
+			</div>
+			<div class="carousel-indicators swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+				<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+				<span class="swiper-pagination-bullet"></span>
+			</div>   
+			
+			<ul class="head" id="dingbu">
+				<li>
+					<img src="img/shouye/sao_03.png"/>
+					<p>扫一扫</p>
+				</li>
+				<li class="sousuo">	
+					<div class="ss">
+						<img src="img/shouye/search_06.png"/>
+						<input type="text" placeholder="新品抢购"/>
+					</div>
+				</li>
+				<li>
+					<img src="img/shouye/xioaxi_05.png"/>
+					<a href="sousuo.html"><p>消息</p></a>
+				</li>
+			</ul>
+		</div> 
+		<div class="content">
+			<!--限时惠购-->
+			<ul class="col-xs-12">				
+				<li class="col-xs-3">
+					<img src="img/shouye/hui_03.png"/>
+					<p>限时惠购</p>
+				</li>
+				<li class="col-xs-3">
+					<img src="img/shouye/hui_03.png"/>
+					<p>新品抢购</p>
+				</li>
+				<li class="col-xs-3">
+					<img src="img/shouye/hui_03.png"/>
+					<p>同城分期</p>
+				</li>
+				<li class="col-xs-3">
+					<img src="img/shouye/hui_03.png"/>
+					<p>分类</p>
+				</li>
+			</ul>
+			<div class="change">
+				<div class="hg">
+					<ul class="col-xs-12 hg-head">
+						<li class="col-xs-3">限时惠购</li>
+						<li class="col-xs-5 hg-head1">
+							<span>10点场</span>
+							<!--倒计时-->
+							<span class="timespan"></span>
+						</li>
+						<li class="col-xs-4">
+							<span>好货抢先购</span>
+							<img src="img/shouye/you_03.png"/>
+						</li>
+					</ul>
+					<ul class="col-xs-12 hg-con">
+						<li class="col-xs-4">
+							<img src="img/shouye/phone_03.png"/>
+							<p>
+								￥88.00
+								<span>×12期</span>
+							</p>
+						</li>
+						<li class="col-xs-4">
+							<img src="img/shouye/dianshi_03.png"/>
+							<p>
+								￥88.00
+								<span>×12期</span>
+							</p>
+						</li>
+						<li class="col-xs-4">
+							<img src="img/shouye/naifen_06.png"/>
+							<p>
+								￥88.00
+								<span>×12期</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!--手机类型-->
+			<div class="shouji">
+				<img src="img/shouye/banner_11.png"/>
+			</div>
+			<div class="shouji1">				
+				<!--导航栏-->
+				<div class="daohang col-xs-12">								   
+			        <span class="col-xs-6">手机通讯</span>			    
+				    <div class="dian col-xs-6">				        	            						
+			            <ul>
+			            	<li></li>
+			            	<li></li>
+			            	<li></li>
+			            </ul>			      		               				               
+				    </div>	
+				    <div class="clearfix">
+				    	
+				    </div>
+				</div>
+				<div class="dh">
+					<ul class="col-xs-12 daohang1 ">
+						<li class="col-xs-6">
+							<p class="col-xs-12">OPPO R9s Plus新品</p>						
+							<p class="col-xs-7 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-5" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-6">
+							<p class="col-xs-12">OPPO R9s Plus新品</p>						
+							<p class="col-xs-7 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-5" src="img/shouye/phone_03.png"/>
+						</li>
+					</ul>
+					<ul class="col-xs-12 daohang2">
+						<li class="col-xs-4">
+							<p class="col-xs-12">中兴</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-4">
+							<p class="col-xs-12">华为</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-4">
+							<p class="col-xs-12">小米</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+					</ul>
+				</div>
+					
+				
+			</div>
+			<div class="shouji">
+				<img src="img/shouye/haifan_02.jpg"/>
+			</div>
+			<div class="shouji1">				
+				<!--导航栏-->
+				<div class="daohang col-xs-12">								   
+			        <span class="col-xs-6">智能生活</span>			    
+				    <div class="dian col-xs-6">				        	            						
+			            <ul>
+			            	<li></li>
+			            	<li></li>
+			            	<li></li>
+			            </ul>			      		               				               
+				    </div>	
+				    <div class="clearfix">
+				    	
+				    </div>
+				</div>
+				<div class="dh">
+					<ul class="col-xs-12 daohang1 ">
+						<li class="col-xs-6">
+							<p class="col-xs-12">OPPO R9s Plus新品</p>						
+							<p class="col-xs-7 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-5" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-6">
+							<p class="col-xs-12">OPPO R9s Plus新品</p>						
+							<p class="col-xs-7 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-5" src="img/shouye/phone_03.png"/>
+						</li>
+					</ul>
+					<ul class="col-xs-12 daohang2">
+						<li class="col-xs-4">
+							<p class="col-xs-12">中兴</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-4">
+							<p class="col-xs-12">华为</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-4">
+							<p class="col-xs-12">小米</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="shouji">
+				<img src="img/shouye/zhineng.png"/>
+			</div>
+			<div class="shouji1">				
+				<!--导航栏-->
+				<div class="dh">
+					<ul class="col-xs-12 daohang1 ">
+						<li class="col-xs-6">
+							<p class="col-xs-12">OPPO R9s Plus新品</p>						
+							<p class="col-xs-7 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-5" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-6">
+							<p class="col-xs-12">OPPO R9s Plus新品</p>						
+							<p class="col-xs-7 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-5" src="img/shouye/phone_03.png"/>
+						</li>
+					</ul>
+					<ul class="col-xs-12 daohang2">
+						<li class="col-xs-4">
+							<p class="col-xs-12">中兴</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-4">
+							<p class="col-xs-12">华为</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-4">
+							<p class="col-xs-12">小米</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="shouji">
+				<img src="img/shouye/baobao.png"/>
+			</div>
+			<div class="shouji1">				
+				<!--导航栏-->
+				<div class="daohang col-xs-12">								   
+			        <span class="col-xs-6">母婴用品</span>			    
+				    <div class="dian col-xs-6">				        	            						
+			            <ul>
+			            	<li></li>
+			            	<li></li>
+			            	<li></li>
+			            </ul>			      		               				               
+				    </div>	
+				    <div class="clearfix">
+				    	
+				    </div>
+				</div>
+				<div class="dh">
+					<ul class="col-xs-12 daohang1 ">
+						<li class="col-xs-6">
+							<p class="col-xs-12">OPPO R9s Plus新品</p>						
+							<p class="col-xs-7 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-5" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-6">
+							<p class="col-xs-12">OPPO R9s Plus新品</p>						
+							<p class="col-xs-7 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-5" src="img/shouye/phone_03.png"/>
+						</li>
+					</ul>
+					<ul class="col-xs-12 daohang2">
+						<li class="col-xs-4">
+							<p class="col-xs-12">中兴</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-4">
+							<p class="col-xs-12">华为</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+						<li class="col-xs-4">
+							<p class="col-xs-12">小米</p>						
+							<p class="col-xs-12 red">
+								￥88.00
+								<span>×12期</span>
+							</p>
+							<img class="col-xs-12" src="img/shouye/phone_03.png"/>
+						</li>
+					</ul>
+				</div>	
+				
+			</div>
+			<!--教育培训-->
+			<div class="shouji1">				
+				<!--导航栏-->
+				<div class="daohang col-xs-12">								   
+			        <span class="col-xs-6">教育培训</span>			    
+				    <div class="dian col-xs-6">				        	            						
+			            <ul>
+			            	<li></li>
+			            	<li></li>
+			            	<li></li>
+			            </ul>			      		               				               
+				    </div>	
+				    <div class="clearfix">
+				    	
+				    </div>
+				</div>
+				<ul class="col-xs-12 daohang1 daohang2 think">
+					<li class="col-xs-4">
+						<img src="img/shouye/peixun_03.png"/>
+						<p>语言学习</p>
+					</li>
+					<li class="col-xs-4">
+						<img src="img/shouye/peixun_03.png"/>
+						<p>职场技能</p>
+					</li>
+					<li class="col-xs-4">
+						<img src="img/shouye/peixun_03.png"/>
+						<p>考试考证</p>
+					</li>
+				</ul>	
+			</div>
+			<div class="shouji">
+				<img src="img/shouye/hanyu_06.jpg"/>
+			</div>		
+			<!--为你优选-->		
+			<div class="jingxuan">
+				<img src="img/shouye/xin.png"/>
+				<span>为你优选</span>
+			</div>
+			<!--商品-->
+			<ul class="goods">
+				<li class="goods1">
+					<img src="img/shouye/thing_06.jpg"/>
+					<p>铂爱 S6创意迷你单个七彩灯音响笔记本台式电脑小音响积分ID设计公司</p>					
+					<div class="down col-xs-12">								   
+				        <p class="col-xs-6">￥49<span>×12</span></p>			    
+					    <div class="dian1 col-xs-6">
+					    	<span>25人付款</span>
+				            <div class="dian2">
+				            	<span></span>
+				            	<span></span>
+				            	<span></span>
+				            </div>	
+				            <div class="clearfix">
+				            	
+				            </div>
+					    </div>	
+					    <div class="clearfix">
+					    	
+					    </div>
+					</div>					
+				</li>
+				<li class="goods1">
+					<img src="img/shouye/thing_06.jpg"/>
+					<p>铂爱 S6创意迷你单个七彩灯音响笔记本台式电脑小音响积分ID设计公司</p>					
+					<div class="down col-xs-12">								   
+				        <p class="col-xs-6">￥49<span>×12</span></p>			    
+					    <div class="dian1 col-xs-6">
+					    	<span>25人付款</span>
+				            <div class="dian2">
+				            	<span></span>
+				            	<span></span>
+				            	<span></span>
+				            </div>	
+				            <div class="clearfix">
+				            	
+				            </div>
+					    </div>	
+					    <div class="clearfix">
+					    	
+					    </div>
+					</div>					
+				</li>
+				<li class="goods1">
+					<img src="img/shouye/thing_06.jpg"/>
+					<p>铂爱 S6创意迷你单个七彩灯音响笔记本台式电脑小音响积分ID设计公司</p>					
+					<div class="down col-xs-12">								   
+				        <p class="col-xs-6">￥49<span>×12</span></p>			    
+					    <div class="dian1 col-xs-6">
+					    	<span>25人付款</span>
+				            <div class="dian2">
+				            	<span></span>
+				            	<span></span>
+				            	<span></span>
+				            </div>	
+				            <div class="clearfix">
+				            	
+				            </div>
+					    </div>	
+					    <div class="clearfix">
+					    	
+					    </div>
+					</div>					
+				</li>
+				<li class="goods1">
+					<img src="img/shouye/thing_06.jpg"/>
+					<p>铂爱 S6创意迷你单个七彩灯音响笔记本台式电脑小音响积分ID设计公司</p>					
+					<div class="down col-xs-12">								   
+				        <p class="col-xs-6">￥49<span>×12</span></p>			    
+					    <div class="dian1 col-xs-6">
+					    	<span>25人付款</span>
+				            <div class="dian2">
+				            	<span></span>
+				            	<span></span>
+				            	<span></span>
+				            </div>	
+				            <div class="clearfix">
+				            	
+				            </div>
+					    </div>	
+					    <div class="clearfix">
+					    	
+					    </div>
+					</div>					
+				</li>
+				<li class="goods1">
+					<img src="img/shouye/thing_06.jpg"/>
+					<p>铂爱 S6创意迷你单个七彩灯音响笔记本台式电脑小音响积分ID设计公司</p>					
+					<div class="down col-xs-12">								   
+				        <p class="col-xs-6">￥49<span>×12</span></p>			    
+					    <div class="dian1 col-xs-6">
+					    	<span>25人付款</span>
+				            <div class="dian2">
+				            	<span></span>
+				            	<span></span>
+				            	<span></span>
+				            </div>	
+				            <div class="clearfix">
+				            	
+				            </div>
+					    </div>	
+					    <div class="clearfix">
+					    	
+					    </div>
+					</div>					
+				</li>
+				<div class="clearfix">
+					
+				</div>
+			</ul>
+		</div>
+		<!--底部-->
+		<ul class="foot">
+			<li  id="foot">
+				<a href="index.html">
+					<img class="an" src="img/shouye/home.png" style="display: none;"/>
+					<img class="liang" src="img/shouye/shouye .png" />
+					<p class="active">首页</p>
+				</a>
+			</li>
+			<li>
+				<a href="classify.html">
+					<img class="an" src="img/shouye/feilei.png"/>
+					<img class="liang" src="img/shouye/classify.png" style="display: none;"/>
+					<p>分类</p>
+				</a>
+			</li>
+			<li>
+				<a href="baby.html">
+					<img class="an" src="img/shouye/qianbao.png"/>
+					<img class="liang" src="img/shouye/qianbao.png" style="display: none;"/>
+					<p>信用钱包</p>
+				</a>				
+			</li>
+			
+			<li>
+				<a href="car.html">
+					<img class="an" src="img/shouye/car.png"/>
+					<img class="liang" src="img/shouye/shopcar.png" style="display: none;"/>
+					<p>购物车</p>
+				</a>			
+			</li>
+			<li>
+				<a href="user.html">
+					<img class="an" src="img/shouye/user.png"/>
+					<img class="liang" src="img/shouye/my.png" style="display: none;"/>
+					<p>用户</p>
+				</a>			
+			</li>
+			<div class="clearfix">
+				
+			</div>
+		</ul>
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true
+});
+</script>

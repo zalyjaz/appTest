@@ -1,0 +1,319 @@
+<!DOCTYPE html style="font-size:100px;">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	  	<link rel="stylesheet" type="text/css" href="css/car.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	  	<script type="text/javascript" src="js/public.js"></script>
+		<title>手机端</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+
+				document.documentElement.style.fontSize = w + 'px'//
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+	<!--顶部-->
+		<div class="dingbu">	
+			<p>购物车<span>(5)</span></p>
+			<div class="db">
+				<span class="bianji">编辑</span>
+				<img src="img/bianji_03.png" id="test"/>	
+			</div>		
+		</div>
+		<div class="denglu">
+			<p>登陆后同步电脑与手机购物车中的商品</p>
+			<span>登录</span>
+			<div class="clearfix">
+				
+			</div>
+		</div>
+		<!--内容-->
+		<div class="contents">
+			<div class="choice">
+				<ul class="model">
+					<li class="head col-xs-12">
+						<img class="col-xs-2  one" src="img/dianji2.png"/>
+						<img class="col-xs-2  one1" src="img/dianji.png" style="display: none;"/>
+						<p class="col-xs-4">wacon影拓专业风啊个人挖个热爱</p>
+						<p class="col-xs-4">></p>
+						<span class="col-xs-2" id="bianji">编辑</span>
+						<div class="clearfix">
+							
+						</div>
+					</li>
+					<li class="col-xs-12 content">
+						<img class="col-xs-2  one" src="img/dianji2.png"/>
+						<img class="col-xs-2  one1" src="img/dianji.png" style="display: none;"/>
+						<img class="col-xs-3  two" src="img/QQ图片20171012175706.png"/>
+						<ul class="col-xs-5 three">
+							<li>惠多 厨房地垫套装 长条浴室 防滑垫入户门垫床边飘窗垫费劲儿艾欧放假奥斯方格网</li>
+							<li class="wenzi">颜色分类：CTL-671/KO-F</li>
+							<li>
+								<span class="left">价格：￥2000.00</span>
+								<span class="right">×3</span>
+							</li>
+							<li class="num">
+								<em class="jian">-</em>
+								<input type="text" value="1" class="num" />
+								<em class="add">+</em>
+							</li>
+						</ul>
+						<p class="col-xs-2">删除</p>
+					</li> 
+					<li class="col-xs-12 content">
+						<img class="col-xs-2  one" src="img/dianji2.png"/>
+						<img class="col-xs-2  one1" src="img/dianji.png" style="display: none;"/>
+						<img class="col-xs-3  two" src="img/QQ图片20171012175706.png"/>
+						<ul class="col-xs-7 three">
+							<li>惠多 厨房地垫套装 长条浴室 防滑垫入户门垫床边飘窗垫费劲儿艾欧放假奥斯方格网</li>
+							<li class="wenzi">颜色分类：CTL-671/KO-F</li>
+							<li>
+								<span class="left">价格：￥2000.00</span>
+								<span class="right">×3</span>
+							</li>
+						</ul>
+						<p class="col-xs-2">删除</p>
+					</li>
+					<div class="clearfix">
+						
+					</div>
+				</ul>
+			</div>
+			<div class="choice">
+				<ul class="mode">
+					<li class="head col-xs-12">
+						<img class="col-xs-2  one" src="img/dianji2.png"/>
+						<img class="col-xs-2  one1" src="img/dianji.png" style="display: none;"/>
+						<p class="col-xs-4">wacon影拓专业风啊个人挖个热爱</p>
+						<p class="col-xs-4">></p>
+						<span class="col-xs-2" id="bianji">编辑</span>
+						<div class="clearfix">
+							
+						</div>
+					</li>
+					<li class="col-xs-12 content">
+						<img class="col-xs-2  one" src="img/dianji2.png"/>
+						<img class="col-xs-2  one1" src="img/dianji.png" style="display: none;"/>
+						<img class="col-xs-3  two" src="img/QQ图片20171012175706.png"/>
+						<ul class="col-xs-7 three">
+							<li>惠多 厨房地垫套装 长条浴室 防滑垫入户门垫床边飘窗垫费劲儿艾欧放假奥斯方格网</li>
+							<li class="wenzi">颜色分类：CTL-671/KO-F</li>
+							<li>
+								<span class="left">价格：￥2000.00</span>
+								<span class="right">×3</span>
+							</li>
+						</ul>
+						<p class="col-xs-2">删除</p>
+					</li>
+					<li class="col-xs-12 content">
+						<img class="col-xs-2  one" src="img/dianji2.png"/>
+						<img class="col-xs-2  one1" src="img/dianji.png" style="display: none;"/>
+						<img class="col-xs-3  two" src="img/QQ图片20171012175706.png"/>
+						<ul class="col-xs-7 three">
+							<li>惠多 厨房地垫套装 长条浴室 防滑垫入户门垫床边飘窗垫费劲儿艾欧放假奥斯方格网</li>
+							<li class="wenzi">颜色分类：CTL-671/KO-F</li>
+							<li>
+								<span class="left">价格：￥2000.00</span>
+								<span class="right">×3</span>
+							</li>
+						</ul>
+						<p class="col-xs-2">删除</p>
+					</li>
+					<li class="col-xs-12 dibu">
+						<img class="col-xs-2  one" src="img/dianji2.png" id="quanxuan"/>
+						<img class="col-xs-2  one1" src="img/dianji.png" id="quanbuxuan" style="display: none;"/>
+						<span class="col-xs-2" id="change">全选</span>
+						<ul class="col-xs-7 two">
+							<li class="suo">
+								<p id="money">合计:￥0.00</p>
+								<span>详情</span>	
+								<div class="clearfix">
+									
+								</div>
+							</li>
+							<li class="shoufu">
+								<p id="money">首付：￥5.00</p>
+								<span>首期月供：￥1355.00</span>
+								<div class="clearfix">
+									
+								</div>
+							</li>
+							
+						</ul>
+						<p class="col-xs-1 three">结算(<span id="geshu">0</span>)</p>
+					</li>
+					<div class="clearfix">
+						
+					</div>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		<!--底部-->
+		<ul class="foot">
+			<li  id="foot">
+				<a href="index.html">
+					<img class="an" src="img/shouye/home.png"/>
+					<img class="liang" src="img/shouye/shouye .png" style="display: none;"/>
+					<p>首页</p>
+				</a>
+			</li>
+			<li>
+				<a href="classify.html">
+					<img class="an" src="img/shouye/feilei.png"/>
+					<img class="liang" src="img/shouye/classify.png" style="display: none;"/>
+					<p>分类</p>
+				</a>
+			</li>
+			<li>
+				<a href="baby.html">
+					<img class="an" src="img/shouye/qianbao.png"/>
+					<img class="liang" src="img/shouye/qianbao.png" style="display: none;"/>
+					<p>信用钱包</p>
+				</a>				
+			</li>
+			
+			<li>
+				<a href="car.html">
+					<img class="an" src="img/shouye/car.png" style="display: none;"/>
+					<img class="liang" src="img/shouye/shopcar.png" />
+					<p class="active">购物车</p>
+				</a>	 		
+			</li>
+			<li>
+				<a href="user.html">
+					<img class="an" src="img/shouye/user.png"/>
+					<img class="liang" src="img/shouye/my.png" style="display: none;"/>
+					<p>用户</p>
+				</a>			
+			</li>
+			<div class="clearfix">
+				
+			</div>
+		</ul>	
+	
+		
+		
+		
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+<script type="text/javascript">
+	//商品选择
+	$(".content").children(".one").click(function () {
+		$(this).hide();
+		$(this).next(".one1").show();
+		$(".content").children(".one1").click(function () {
+			$(this).hide();
+			$(this).prevAll(".one").show();
+			$(this).parent().prevAll(".head").children(".one1").hide();
+			$(this).parent().prevAll(".head").children(".one").show();
+			$("#quanxuan").show();
+			$("#quanbuxuan").hide();
+			$("#change").text("全选");			
+		})
+		
+//		var tupian = $(this).next(".one1").show();
+//		console.log(val);
+//		if(){
+//			
+//		}
+	});
+	
+	//店铺选择
+	$(".head").children(".one").click(function () {
+		$(this).hide();
+		$(this).next(".one1").show();
+		
+		$(this).parent().nextAll(".content").children(".one").hide();
+		$(this).parent().nextAll(".content").children(".one").next(".one1").show();
+		
+	
+		$(".head").children(".one1").click(function () {
+			$(this).hide();
+			$(this).prevAll(".one").show();
+			$(".content").children(".one1").hide();
+			$(".content").children(".one1").prevAll(".one").show();
+		})	
+	});
+	
+	
+	
+	
+	//全选/全不选
+	$("#quanxuan").click(function () {
+		$(".one").hide();
+		$(".one1").show();
+		$("#change").text("反选");
+		$("#quanbuxuan").click(function () {
+			$(".one").show();
+			$(".one1").hide();
+			$("#change").text("全选");
+		})
+	})
+	//增加减少
+	$(".add").click(function() {
+		var n = $(this).prev().val();
+		var num = parseInt(n) + 1;
+		if(num == 0) {
+			return;
+		}
+		$(this).prev().val(num);
+	});
+	//减的效果
+	$(".jian").click(function() {
+		var n = $(this).next().val();
+		var num = parseInt(n) - 1;
+		if(num == 0) {
+			return
+		}
+		$(this).next().val(num);
+	});
+	
+	//编辑 
+	$(".head").children('span').click(function () {
+		$(this).parent().siblings(".content").children(".three").css("width","50.33%");
+		$(this).parent().siblings(".content").children("p").show();
+		//删除
+		$("#bianji").text("完成");		
+		$(this).parent().siblings(".content").children("p").click(function() {
+			$(this).parent().remove();
+			$(this).parent().siblings(".content").children("p").hide();
+			$(this).parent().siblings(".content").children(".three").css("width","67.66%");
+			$("#bianji").text("编辑");		
+		});	
+			var val = $(this).parent().siblings(".content").length;		
+			console.log(val);
+			if(val==0){
+				$(this).parent().parent().remove();
+			}
+	});
+	
+	
+</script>

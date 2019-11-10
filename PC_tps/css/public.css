@@ -1,0 +1,61 @@
+/*公共部分*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Microsoft Yahei;
+}
+ul{
+	margin-bottom: 0 !important;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body,html{
+	height: 100%;
+	text-size-adjust: none;
+}
+body{
+	width: 100%;
+	font-family: Microsoft Yahei;
+	word-wrap: break-word;
+    word-break: break-all;
+}
+a,
+input,
+button,
+img,
+textarea {
+	outline: none;
+}
+.clear{
+	clear: both;
+}
+/*所有超链接不要下划线*/
+a:link,a:visited,a:hover{
+	text-decoration:none !important; 
+	outline:none;
+}
+a:hover{
+	text-decoration:none !important; 
+	outline:none;
+	color: #000;
+}
+/*任何标签、包括它前面、后面生成的内容都不要影响盒子的边框*/	
+*, *:after, *:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+img, input{
+    vertical-align: middle;
+}
+p{
+	margin-bottom: 0 !important;
+}
+a{
+	color: #000;
+}

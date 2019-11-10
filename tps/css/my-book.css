@@ -1,0 +1,48 @@
+body{
+	background:#FAFAFA;
+}
+/*start 我的资产*/
+.top{
+	background: #fff;
+	width: 7.5rem;
+	padding:0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.center{
+	font-size: 0.4rem;
+	vertical-align: middle;
+	margin-left: 2.0rem;
+}
+.right{
+	float: right;
+	margin-right: 0.5rem;
+	font-size: 0.3rem;
+	margin-top: 0.08rem;
+}
+.book{
+	border-bottom: 1px solid #F5F5DC;
+	width: 7.5rem;
+	background: #fff;
+}
+.book p{
+	width: 3.7rem;
+	display: inline-block;
+	text-align: center;
+	padding-top: 0.3rem;
+	padding-bottom: 0.2rem;
+	font-size: 0.3rem;
+	color: grey;
+}
+.active{
+	border-bottom: 1.5px solid #0675BB;
+	color: #000 !important;
+}

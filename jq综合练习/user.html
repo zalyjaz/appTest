@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!DOCTYPE html style="font-size:100px;">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	  	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css" />
+	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/user.css"/>
+	  	<script type="text/javascript" src="js/public.js"></script>
+		<title>首页</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+
+				document.documentElement.style.fontSize = w + 'px'//
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<div class="head">
+			<img src="img/user/user_bg_02.jpg"/>	
+			<ul>
+				<li class="col-xs-12 head1">
+					<img src="img/user/shezhi_07.png"/>
+					<img src="img/user/mine_03.png"/>
+				</li>
+				<li class="col-xs-12 info">
+					<img src="img/user/user_logo_07.png"/>
+					<span>青木</span>
+				</li>
+			</ul>
+			<ul class="money">
+				<li>
+					<p>￥1000.00</p>
+					<p>余额</p>
+				</li>
+				<li>
+					<p>￥500.00</p>
+					<p>奖励金</p>
+				</li>
+				<li>
+					<p>3</p>
+					<p>优惠券</p>
+				</li>
+			</ul>			
+		</div>
+		<!--账单-->
+		<div class="col-xs-12 zhangdan">
+			<ul class="head col-xs-12">
+				<li class="col-xs-6 left">
+					<img src="img/user/zhangdan_03.png"/>
+					<span>我的账单</span>
+				</li>
+				<li class="col-xs-6 right">
+					<img src="img/user/zhankai.png"/>		
+				</li>
+				<div class="clearfix">
+					
+				</div>
+			</ul>
+			<ul class="con col-xs-12">
+				<li class="col-xs-4">
+					<p>256.00</p>
+					<p>本期应还</p>
+				</li>
+				<li class="col-xs-4">
+					<p>3</p>
+					<p>消费笔数</p>
+				</li>
+				<li class="col-xs-4">
+					<p>剩余<span>10</span>天数</p>
+					<p>还款日</p>
+				</li>
+			</ul>
+		</div>
+		<!--订单-->
+		<div class="col-xs-12 zhangdan">
+			<ul class="head col-xs-12">
+				<li class="col-xs-6 left">
+					<img src="img/user/dingdan_06.png"/>
+					<span>我的定单</span>
+				</li>
+				<li class="col-xs-6 right">
+					<img src="img/user/zhankai.png"/>		
+				</li>
+			</ul>
+			<ul class="con col-xs-12">
+				<li class="col-xs-3">
+					<img src="img/user/daifukuan_10.png"/>
+					<p>待付款</p>
+				</li>
+				<li class="col-xs-3">
+					<img src="img/user/daifahuo_10.png"/>
+					<p>待发货</p>
+				</li>
+				<li class="col-xs-3">
+					<img src="img/user/shouhuo_12.png"/>
+					<p>待收货</p>
+				</li>
+				<li class="col-xs-3">
+					<img src="img/user/huankuan_15.png"/>
+					<p>还款日</p>
+				</li>
+			</ul>
+		</div>
+		<!--粉丝-->
+		<div class="col-xs-12 zhangdan">
+			<ul class="head col-xs-12">
+				<li class="col-xs-6 left">
+					<img src="img/user/fans_09.png"/>
+					<span>我的粉丝</span>
+				</li>
+				<li class="col-xs-6 right">
+					<img src="img/user/zhankai.png"/>		
+				</li>
+			</ul>
+			<ul class="con col-xs-12" style="display: none;">
+				<li class="col-xs-4">
+					<img src="img/user/daifukuan_10.png"/>
+					<p>待付款</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="img/user/daifahuo_10.png"/>
+					<p>待发货</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="img/user/shouhuo_12.png"/>
+					<p>待收货</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="img/user/huankuan_15.png"/>
+					<p>还款日</p>
+				</li>
+			</ul>
+		</div>
+		<!--二维码-->
+		<div class="col-xs-12 zhangdan">
+			<ul class="head col-xs-12">
+				<li class="col-xs-6 left">
+					<img src="img/user/erweima_12.png"/>
+					<span>推广二维码</span>
+				</li>
+				<li class="col-xs-6 right">
+					<img src="img/user/zhankai.png"/>		
+				</li>
+			</ul>
+			<ul class="con col-xs-12" style="display: none;">
+				<li class="col-xs-4">
+					<img src="img/user/daifukuan_10.png"/>
+					<p>待付款</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="img/user/daifahuo_10.png"/>
+					<p>待发货</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="img/user/shouhuo_12.png"/>
+					<p>待收货</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="img/user/huankuan_15.png"/>
+					<p>还款日</p>
+				</li>
+			</ul>
+		</div>
+		<!--更多-->
+		<ul class="col-xs-12 more">
+			<li class="col-xs-4">
+				<img src="img/user/youhuiquan_15.png"/>
+				<p>优惠券</p>
+			</li>
+			<li class="col-xs-4">
+				<img src="img/user/yuyue_18.png"/>
+				<p>我的预约</p>
+			</li>
+			<li class="col-xs-4">
+				<img src="img/user/youhuiquan_15.png"/>
+				<p>优惠券</p>
+			</li>
+			<li class="col-xs-4">
+				<img src="img/user/yuyue_18.png"/>
+				<p>我的预约</p>
+			</li>
+			<li class="col-xs-4">
+				<img src="img/user/youhuiquan_15.png"/>
+				<p>优惠券</p>
+			</li>
+			<li class="col-xs-4">
+				<img src="img/user/yuyue_18.png"/>
+				<p>我的预约</p>
+			</li>
+			<li class="col-xs-4">
+				<img src="img/user/youhuiquan_15.png"/>
+				<p>优惠券</p>
+			</li>
+			<div class="clearfix">
+				
+			</div>
+		</ul>
+	
+	
+		<!--底部-->
+		<ul class="foot">
+			<li  id="foot">
+				<a href="index.html">
+					<img class="an" src="img/shouye/home.png"/>
+					<img class="liang" src="img/shouye/shouye .png" style="display: none;"/>
+					<p>首页</p>
+				</a>
+			</li>
+			<li>
+				<a href="classify.html">
+					<img class="an" src="img/shouye/feilei.png"/>
+					<img class="liang" src="img/shouye/classify.png" style="display: none;"/>
+					<p>分类</p>
+				</a>
+			</li>
+			<li>
+				<a href="baby.html">
+					<img class="an" src="img/shouye/qianbao.png"/>
+					<img class="liang" src="img/shouye/qianbao.png" style="display: none;"/>
+					<p>信用钱包</p>
+				</a>				
+			</li>
+			
+			<li>
+				<a href="car.html">
+					<img class="an" src="img/shouye/car.png"/>
+					<img class="liang" src="img/shouye/shopcar.png" style="display: none;"/>
+					<p>购物车</p>
+				</a>			
+			</li>
+			<li>
+				<a href="user.html">
+					<img class="an" src="img/shouye/user.png" style="display: none;"/>
+					<img class="liang" src="img/shouye/my.png" />
+					<p class="active">用户</p>
+				</a>			
+			</li>
+			<div class="clearfix">
+				
+			</div>
+		</ul>
+	
+	
+	
+	
+	
+	
+	
+		<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+.header {
+	background: url(../img/bg01.jpg);
+    padding-top: 15px;
+    background-size: cover;
+}
+
+.header .right a {
+	font-size: 16px;
+	color: #fff;
+}
+
+.header .right ul li {
+	display: inline-block;
+}
+
+.login:after {
+	content: "|";
+	padding-left: 3px;
+}
+
+#mask{
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#mask-content {
+	background: blue;
+	width: 300px;
+	height: 200px;
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin: -100px 0 0 -150px;
+}
+#mask-content .close_icon{
+	position: absolute;
+    right: 10px;
+    top: 10px
+}

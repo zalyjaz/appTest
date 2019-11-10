@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的订单</title>
+		<link rel="stylesheet" href="css/my-orders.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 我的订单-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">我的订单</span>
+			<a class="screen" href="#"><span>筛选</span></a>
+		</div>
+		<div class="assort">
+			<p class="active">店铺订单</p>
+			<p>消费订单</p>
+			<p>沃好商城</p>
+			<p>商城联盟</p>
+		</div>
+		<!--end 我的订单-->	
+		<div class="box">
+			<!--start 店铺订单-->
+			<div class="store-order">
+				<div class="time">
+					<span>2018-01-05</span>
+					<span>17:08:56</span>
+				</div>
+				<div class="main-order">
+					<p>主订单号  <span>N201801051708567830</span></p>
+					<p class="status">订单状态  <span>已拆分</span></p>
+					<p>业绩年月  <span>201801</span></p>
+					<p class="total">订单总额  <span>¥10.04</span></p>
+				</div>
+				<div class="order">
+					<p>子订单号 <span>N201801051708567830</span></p>
+				</div>
+				<div class="shops">
+					<img src="" />
+					<div class="mean">
+						<p>日本原装进口 相模原创相模原创002相模原创002</p>
+						<p>规格：3个装</p>
+						<p>
+							<span class="left">¥10.04</span>
+							<span class="right">x1</span>
+						</p>
+					</div>
+				</div>
+				<p class="numbers">共一件商品&nbsp;合计:<span>¥10.04(含运费0.00)</span></p>			
+			</div>
+			<!--end 店铺订单-->
+			<!--start 消费订单-->
+			<div class="consumer-order" style="display: none;">
+				<img src="img/problem.png" />
+				<p class="first">没有订单奥</p>
+				<p class="second">TPS商城为您准备了更多意想不到的精彩</p>
+				<a href="index.html">发现精彩内容</a>
+			</div>
+			<!--end 消费订单-->
+			<!--start 沃好商城-->
+			<div class="wo" style="display: none;">
+				<div class="time">
+					<span>2018-01-05</span>
+				</div>
+				<ul>
+					<li>
+						<span class="left1">订单号</span>
+						<span class="right">订单金额(USD)</span>
+					</li>
+					<li>
+						<span class="left1">W-201801081642045208</span>
+						<span class="right right1">146.44</span>
+					</li>
+				</ul>
+			</div>
+			<!--end 沃好商城-->
+			<!--start 商城联盟-->
+			<div class="consumer-order" style="display: none;">
+				<img src="img/problem.png" />
+				<p class="first">没有订单奥</p>
+				<p class="second">TPS商城为您准备了更多意想不到的精彩</p>
+				<a href="index.html">发现精彩内容</a>
+			</div>
+			<!--end 商城联盟-->				
+		</div>
+	</body>
+</html>
+<script>
+	$(".assort p").click(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+		var index=$(this).index();
+		$(".box").children().eq(index).show().siblings().hide();
+	})
+</script>

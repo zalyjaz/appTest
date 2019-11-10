@@ -1,0 +1,67 @@
+body{
+	background:#CFD5DA;
+}
+/*start 新建工单*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	width: 7.5rem;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 1.6rem;
+}
+.top a{
+	float: right;
+	color: #007AFF;
+	font-size: 0.3rem;
+	margin-top: 0.05rem;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 二维码*/
+.code{
+	background: #fff;
+	width: 5.0rem;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top:50%;
+	margin-top: -3.0rem;
+	left: 50%;
+	margin-left: -2.5rem;
+	padding-top: 0.2rem;
+	
+}
+.code img{
+	width: 4.7rem;
+}
+/*start 保存成功*/
+.save-ok{
+	background: #8E8E93;
+	width: 2.5rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	color: #fff;
+	left: 50%;
+	top: 50%;
+	position: fixed;
+	margin-left: -1.25rem;
+	border-radius: 5px;
+	font-size: 0.32rem;
+	margin-top: -0.4rem;
+	display: none;
+}
+
+/*end 保存成功*/

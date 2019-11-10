@@ -1,0 +1,40 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+/*底部*/
+.foot {
+	width: 7.5rem;
+	background-color: #fff;
+	display:inline-block;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 0;
+}
+.foot li{
+	width: 20%;
+	float: left;
+	padding: 0.2rem 0;
+	text-align: center;
+	
+}
+.foot li img{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.foot li p{
+	font-family: NotoSansCJKsc;
+	font-size: 0.2rem;
+	color: #323232;
+	padding: 0.1rem 0 0 0;
+}
+.foot li p.active{
+	color: #ca1f2d;
+}

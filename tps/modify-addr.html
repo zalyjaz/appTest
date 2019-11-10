@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>修改收货地址</title>
+		<link rel="stylesheet" href="css/sm-extend.min.css" />
+		<link rel="stylesheet" href="css/sm.min.css" />
+		<link rel="stylesheet" href="css/modify-addr.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px'//
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body class="page">
+		<!--start 新增收获地址-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span>修改收货地址</span>
+		</div>
+		<!--end 新增收获地址-->
+		<!--start 收获地址信息-->
+		<div class="addr-info">
+			<ul>
+				<li>
+					<span>收货人</span>
+					<input type="text" placeholder="请填写收货人姓名"/>
+				</li>
+				<li>
+					<span>手机号码</span>
+					<input type="text" placeholder="请填写收货人电话"/>
+				</li>
+				<li>
+					<span>备用电话</span>
+					<input type="text" placeholder="请填写备用联系电话"/>
+				</li>
+				<li>
+					<span>邮政编码</span>
+					<input type="text" placeholder="请填写收货地址邮政编码"/>
+				</li>
+				<li id="problem_picker">
+					<span>地区</span>
+					<p>请选择你的收货地区</p>
+					<img src="img/more.png" class="more"/>
+				</li>
+				<li>
+					<span class="addr">详细地址</span>
+					<!--<input type="text" placeholder="请填写完整的收货地址" class="full"/>-->
+					<textarea>请填写完整的收货地址</textarea>
+				</li>
+			</ul>
+		</div>
+		<!--end 收获地址信息-->
+		<p class="info">为了保证您的收货地址无误，请完整填写以上相关信息</p>
+		
+		<!--start 保存信息-->
+		<p class="keep">保存信息</p>
+		<!--end 保存信息-->
+		
+		<script type="text/javascript" src="js/zepto.min(1).js"></script>
+		<script type="text/javascript" src="js/sm-extend.min.js"></script>
+		<script type="text/javascript" src="js/sm.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	</body>
+</html>
+<script>
+	$("textarea").focus(function(){
+		$(this).html('');
+	})
+	$("textarea").blur(function(){
+		$(this).html('请填写完整的收货地址');
+	})
+	$('input').bind('input propertychange', function(){
+		$(this).attr("status","1");
+		if($("input").length == $("input[status='1']").length){
+			$("textarea").bind('input propertychange',function(){
+				$(".keep").css("background","midnightblue");
+				$(".keep").css("color","#fff");
+			})
+		}
+	});
+	$.noConflict();
+	$("#problem_picker").picker({
+		toolbarTemplate: '<header class="bar bar-nav">\
+		<span class="button button-link pull-left close-picker">取消</span>\
+		<span class="button button-link pull-right close-picker">确定</span>\
+		<h5 class="title">问题类型</h5>\
+	    </header>',
+		cols: [{
+			textAlign: 'center',
+			values: ['升级/支付问题', '平台管理费', '店铺转让', '产品推荐', '奖金问题',
+				'提现问题', '账户信息问题', '降级/退出申请', '更改收货信息', '取消订单', '用户建议',
+				'催货/物流问题', '产品破损', '产品错发/漏发', '退货问题'
+			],
+		}],
+		onClose:function (e){
+			jQuery("#problem_picker p").html(e.displayValue[0]);
+		}
+	});
+	$.init()
+</script>

@@ -1,0 +1,160 @@
+/*start 搜索*/
+.search{
+	width: 7.5rem;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-bottom: 1px solid #F5F5DC;
+	position: fixed;
+	top:0;
+	z-index: 9999 !important;
+	background: #fff;
+}
+.search input[type="text"]{
+	margin-left: 0.5rem;
+	width: 6.5rem;
+	border: none;
+	background-color: #FAFAFA !important;
+	border-radius: 10px;
+	background: url(../img/search.png) 0.1rem no-repeat;
+	background-size:0.4rem 0.4rem;
+	padding-left: 0.6rem;
+	height:0.7rem;
+	line-height: 0.7rem;
+}
+input::-webkit-input-placeholder{
+	color: darkgrey;
+	font-size: 0.26rem;
+}
+/*start 商品分类*/
+.assort{
+	margin-top: 1.2rem;
+	margin-bottom: 1.0rem;
+}
+.assort:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.style{
+	float: left;
+	width: 2.0rem;
+	background: #FAFAFA;
+	position: fixed;
+	overflow-y: scroll;
+	height:calc(100vh - 1.2rem - 1.0rem);
+}
+.style li{
+	height:0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+}
+.style li a{
+	color: #000;
+	font-size: 0.28rem;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+}
+.active{
+	background: #fff;
+}
+.active a{
+	border-left:3px solid #F00B0D;
+	padding-left: 0.2rem;
+}
+.shop-goods{
+	float: right;
+	width: 5.45rem;
+}
+.goods-one{
+}
+.goods-one p img{
+	width: 0.4rem;
+	vertical-align: middle;
+}
+.one{
+	padding: 0.2rem;
+}
+.goods{
+	width: 2.0rem;
+}
+.goods-top{
+	background: #FAFAFA;
+	padding: 0.2rem;
+}
+.p-left{
+	float: left;
+	color: #F00B0D;
+}
+.p-right{
+	float: right;
+}
+.p-right img{
+	width: 0.4rem;
+	height: 0.4rem;
+	vertical-align: middle;
+}
+.shang{
+	margin-top: -0.1rem;
+}
+.xia{
+	margin-left: -0.4rem;
+}
+.one li{
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #F7F7F8;
+	padding: 0.2rem 0;
+}
+.cadd{
+	vertical-align: middle;
+	width: 0.45rem;
+}
+.goods{
+	width: 1.5rem;
+	vertical-align: middle;
+}
+.p-info{
+	width: 100%;
+	white-space: pre-wrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    font-size: 0.24rem;
+    padding-bottom: 0.2rem;
+}
+.shop-right{
+	display: inline-block;
+	width: 3.4rem;
+	vertical-align: middle;
+}
+.left{
+	float: left;
+	font-size: 0.3rem;
+	color: #F00B0D;
+}
+.right{
+	float: right;
+}
+/*start 底部*/
+.foot{
+	background: #fff;
+	padding: 0.1rem 0;
+	position: fixed;
+	bottom: 0;
+	width: 7.5rem;
+}
+.foot ul li a{
+	color: #000;
+	display: block;
+}
+.foot ul li{
+	display: inline-block;
+	width: 1.4rem;
+	text-align: center;
+}
+.foot ul li a img{
+	width: 0.5rem;
+}

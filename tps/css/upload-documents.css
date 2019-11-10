@@ -1,0 +1,107 @@
+body{
+	background:#FAFAFA;
+}
+/*start 上传证件*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+.top a{
+	float: right;
+	color: #007AFF;
+	font-size: 0.3rem;
+	margin-top: 0.05rem;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 身份证号*/
+.card{
+	background: #fff;
+	margin-top: 0.15rem;
+	padding: 0.2rem 0.1rem 0.2rem 0.2rem;
+}
+.card input{
+	width: 5.6rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	border: none;
+	margin-left: 0.1rem;
+}
+input::-webkit-input-placeholder{
+	color: grey;
+}
+/*start 身份证正反面照片*/
+.photo{
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	background: #fff;
+	margin-top: 0.15rem;
+}
+.upload{
+	padding-top: 0.4rem;
+	text-align: center;
+}
+.btn1 input{
+	display: none;
+}
+.btn1 {
+    border:1px solid #e8e6e6 !important;
+    padding: 0.1rem 0.1rem !important;
+    width:2.5rem;
+    height: 2.5rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    position: relative;
+    display: inline-block;
+}
+.btn1 span.line1 {
+    width: 1.2rem;
+    display: block;
+    border-bottom: 4px solid #e8e6e6;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 1.0rem;
+}
+.btn1 span.line2 {
+    position: absolute;
+    height: 1.2rem;
+    border-left: 4px solid #e8e6e6;
+    display: block;
+    left: 1.3rem;
+    top: 0.5rem;
+}
+.btn1 p{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 2.2rem;
+    width:2.7rem;
+    background: #F5F5DC;
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+.imgs{
+	display: none;
+}
+.prompt{
+	color: darkgrey;
+	padding: 0.2rem;
+	padding-top: 0.8rem;
+	font-size: 0.2rem !important;
+}

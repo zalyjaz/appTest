@@ -1,0 +1,225 @@
+body{
+	background: #FAFAFA;
+}
+/*start 订单详情*/
+.top{
+	background: #fff;
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	position: fixed;
+	width: 7.5rem;
+	top:0;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+/*start 个人信息*/
+.info{
+	background: #fff;
+	margin-top: 0.1rem;
+	padding: 0.2rem;
+	font-size: 0.32rem;
+	color: grey;
+	margin-top: 1.0rem;
+}
+.pepole{
+	margin-top: 0.2rem;
+	margin-bottom: 0.05rem;
+}
+.pepole img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.pepole p:first-child{
+	float: left;
+}
+.pepole p:last-child{
+	float: right;
+	
+}
+.pepole:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 订单商品*/
+.shops{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.shops ul li{
+	border-bottom: 1px solid #F5F5DC;
+	padding: 0.2rem;
+}
+.shops ul li img{
+	width: 2.0rem;
+	height: 2.0rem;
+	vertical-align: middle;
+}
+.infos{
+	display: inline-block;
+	width: 4.5rem;
+	margin-left: 0.2rem;
+	vertical-align: middle;
+}
+.infos p:first-child{
+	color: #000;
+	font-size: 0.32rem;
+	color: grey;
+}
+.price{
+	color: #FF6600;
+	margin-top: 0.3rem;
+    font-size: 0.32rem;
+}
+.number{
+	margin-top: 0.3rem;
+}
+.number:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.number span:first-child{
+	float: left;
+	color: #FF6600;
+	font-size: 0.35rem;
+}
+.number span:last-child{
+	float: right;
+	cursor: pointer;
+	color: grey;
+}
+.amount{
+	padding: 0.2rem;
+	color: grey;
+	font-size: 0.32rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.first{
+	margin-bottom: 0.1rem;
+}
+.cash{
+	display: none;
+}
+.order-price{
+	padding: 0.2rem;
+	color: grey;
+	font-size: 0.32rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.order-price input[type="radio"]{
+	width: 0.35rem;
+	height: 0.35rem;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+}
+input[type="range"]{
+	vertical-align: middle;
+}
+.cash span{
+	vertical-align: middle;
+}
+.order-price:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.order-price span:last-child{
+	color:#FF6600;
+}
+/*start 买家留言*/
+.words{
+	background: #fff;
+	padding: 0.2rem;
+	margin-top: 0.2rem;
+	font-size: 0.32rem;
+	margin-bottom: 1.0rem;
+}
+.words p{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2.4rem;
+	color: grey;
+}
+.words textarea{
+	width: 5.4rem;
+	display: inline-block;
+	margin-left: 0.2rem;
+	resize: none;
+	border: none;
+	height: 1.5rem;
+	color: grey;
+}
+/*start 提交订单*/
+.submit{
+	background: #fff;
+	width: 7.5rem;
+	position: fixed;
+	bottom: 0;
+	border-top:1px solid #F5F5DC;
+}
+.submit:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.submit p:first-child{
+	float: left;
+	color: #FF6600;
+	font-size: 0.35rem;
+	padding-left: 0.3rem;
+	padding-top: 0.25rem;
+}
+.submit p:last-child{
+	float: right;
+	background: #F00B0D;
+	width: 2.5rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.35rem;
+}
+/*end 订单详情*/
+
+/*start 选择收获地址*/
+.top{
+	content: '';
+	display: block;
+	clear: both;
+}
+.center1{
+	margin-left: 1.9rem;
+}
+.manager{
+	float: right;
+	margin-top: 0.1rem;
+	margin-right: 0.5rem;
+	font-size: 0.32rem;
+	color: #000;
+}
+/*start 收货地址*/
+.addr{
+	margin-top: 1.0rem;
+	background:#fff;
+}
+.addr ul li{
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	font-size: 0.32rem;
+	color: grey;
+}

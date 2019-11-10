@@ -1,0 +1,84 @@
+body{
+	background: #fff;
+}
+/*start 登陆*/
+.reset{
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.reset img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.reset p{
+	display: inline-block;
+	margin-left: 2.2rem;
+	font-size: 0.4rem;
+	color: #0D1331;
+	vertical-align: middle;
+}
+.reset-pwd{
+	font-size: 0.6rem;
+	padding-bottom: 0.3rem;
+	color: #FF6600;
+}
+.reset-info{
+	padding: 0.4rem 0.1rem 0.1rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	color: #000;
+}
+.reset-info img{
+	display: none;
+}
+.id{
+	font-size: 0.35rem;
+	padding-bottom: 0.3rem;
+}
+.input-id:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.input-id input{
+	float: left;
+	width: 6.5rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	border:none;
+}
+.input-id img{
+	width: 0.5rem;
+	float: right;
+	vertical-align: middle;
+	margin-top: 0.1rem;
+}
+.code{
+	width: 5.6rem !important;
+	border-right: 1px solid #F5F5DC !important;
+}
+.input-id span{
+	float: right;
+	margin-top: 0.2rem;
+}
+input::-webkit-input-placeholder{
+	color: grey;
+}
+.code{
+	width: 4.5rem;
+}
+/*start 提交*/
+.next{
+	width: 7.1rem;
+	margin: 0 auto;
+	background: #FF6600;
+	margin-top: 1.0rem;
+	text-align: center;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-radius: 5px;
+}
+.next a{
+	color:#fff;
+	font-size: 0.35rem;
+}

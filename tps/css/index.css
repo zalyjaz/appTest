@@ -1,0 +1,173 @@
+body{
+	background: #F5F5DC;
+}
+/*start 搜索*/
+.search{
+	width: 7.5rem;
+	padding-top: 0.1rem;
+	background: #fff;
+	position: fixed;
+	top:0;
+	z-index: 9999;
+}
+.search img{
+	width: 0.8rem;
+}
+.logo{
+	margin-left: 0.15rem;
+}
+.search input[type="text"]{
+	display: inline-block;
+	width: 4.8rem;
+	border: none;
+	background-color: #F5F5DC !important;
+	border-radius: 10px;
+	height:0.6rem;
+	line-height: 0.6rem;
+	padding-left: 0.6rem;
+	background: url(../img/search.png) 0.1rem no-repeat;
+	background-size: 0.5rem;
+	margin-top: -0.6rem;
+	vertical-align: middle;
+}
+input::-webkit-input-placeholder{
+	color: darkgrey;
+	font-size: 0.26rem;
+}
+.zhong{
+	margin-right: 0.15rem;
+	margin-top: -0.6rem;
+	vertical-align: middle;
+}
+/*start 商品标签*/
+.shop{
+	overflow: hidden;
+	height: 1.0rem;
+}
+.shops{
+	padding-top: 0.3rem;
+	background: #fff;
+	width: 100%;
+	overflow-x: hidden;
+	white-space: nowrap;
+	overflow-x: auto;
+	height: 1.2rem;
+}
+.shops p{
+	display: inline-block;
+	width: 1.43rem;
+	text-align: center;
+	font-size: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+.shops p:first-child{
+	border-bottom: 1.5px solid #000;
+}
+/*start 轮播*/
+.swiper-container{
+	margin-top: 2.0rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.one{
+	width:7.5rem;
+	height:170px;
+}
+/*start 新品上架*/
+.new-shops{
+	margin-top: 0.2rem;
+	background: #fff;
+	padding: 0.15rem 0;
+	margin-bottom: 0.2rem;
+}
+.left{
+	float: left;
+	height: 0.75rem;
+	line-height: 0.68rem;
+	font-size: 0.4rem;
+	padding-left:0.15rem;
+}
+.right{
+	float: right;
+}
+.right img{
+	width: 0.6rem;
+}
+.right p{
+	display: inline-block;
+	margin-top: -0.4rem;
+	vertical-align: middle;
+}
+.new{
+	width: 7.5rem;
+	height:145px;
+}
+.goods{
+	padding-top:0.3rem;
+}
+.goods ul{
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+.goods ul li{
+	display: inline-block;
+	width: 3.5rem;
+	height:5.6rem;
+}
+.cheng{
+	width: 3.5rem;
+}
+.mean{
+	width: 100%;
+	height:1.0rem;
+	padding: 0.2rem 0.1rem 0.1rem 0.1rem;
+	white-space:pre-wrap;
+	overflow:hidden !important; 
+    text-overflow:ellipsis !important;
+    display:-webkit-box !important; 
+    -webkit-box-orient:vertical !important;
+    -webkit-line-clamp:2 !important; 
+}
+.price .left{
+	float: left;
+	color: red;
+	font-size:0.26rem;
+}
+.price img{
+	width: 0.4rem;
+	height:0.4rem;
+	border-radius: 50%;
+	float: right;
+	margin-top: 0.1rem;
+}
+.price:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+.box{
+	margin-bottom:1.3rem;
+}
+/*start 底部*/
+.foot{
+	background: #fff;
+	padding: 0.1rem 0;
+	position: fixed;
+	bottom: 0;
+	width: 7.5rem;
+}
+.foot ul li a{
+	color: #000;
+	display: block;
+}
+.foot ul li{
+	display: inline-block;
+	width: 1.4rem;
+	text-align: center;
+}
+.foot ul li a img{
+	width: 0.5rem;
+}

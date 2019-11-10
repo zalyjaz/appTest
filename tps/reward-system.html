@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>奖励制度</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/reward-system.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 奖励制度-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">奖励制度</span>
+			<!--<a href="#"><span>奖励制度</span></a>-->
+		</div>
+		<!--end 奖励制度-->
+		
+		<!-- start 奖励制度条例-->
+		<div class="system-regulations">
+			<ul>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				<li>
+					<span>个人店铺销售提成奖</span>
+					<img src="img/more.png"/>
+				</li>
+				
+			</ul>
+			
+		</div>
+		<!-- end 奖励制度条例-->
+	</body>
+</html>
+<script>
+	
+	
+	
+	
+</script>

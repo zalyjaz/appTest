@@ -1,0 +1,283 @@
+body{
+	background: #fff;
+}
+/*start 详情顶部*/
+.top{
+	background: #F5F5DC;
+	position: fixed;
+	top:0;
+	width: 7.5rem;
+	z-index: 9999;
+}
+.top ul li{
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	display: inline-block;
+	height: 1.0rem;
+	line-height: 1.0rem;
+}
+.detail{
+	width: 56%;
+	text-align:right;
+}
+.right{
+	float: right;
+}
+.top ul li a{
+	color: #000;
+	font-size: 0.35rem;
+}
+.top ul li a span{
+	padding-left: 0.15rem;
+	padding-right: 0.15rem;
+	padding-bottom: 0.25rem;
+}
+.top ul li img{
+	width: 0.4rem;
+	background:rgba(200,200,200,0.6);
+	border-radius: 50%;
+	padding: 4px;
+	vertical-align: middle;
+}
+.return img{
+	margin-top: -0.08rem;
+	vertical-align: middle;
+}
+.right img{
+	margin-top: -0.04rem;
+	vertical-align: middle;
+}
+.active span{
+	border-bottom: 2px solid #FF0000;
+}
+/*start 商品图片*/
+.swiper-container{
+	margin-top: 1.0rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.one{
+	width:7.5rem;
+	height:170px;
+}
+/*start 商品详情*/
+.shop-detail{
+	padding: 0.2rem;
+	
+}
+.new:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.p-new{
+	float: left;
+}
+.code{
+	float: right;
+}
+.p-new span{
+	color: #fff;
+	background: #FF0000;
+	padding: 1px 5px;
+	border-radius: 5px;
+	margin-right: 0.2rem;
+}
+.code{
+	color: grey;
+}
+.p-name{
+	padding-top: 0.2rem;
+	font-size: 0.32rem;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.price{
+	color: #FF0000;
+	font-size: 0.32rem;
+	padding-top: 0.2rem;
+}
+.other{
+	color: grey;
+	font-size: 0.2rem !important;
+	padding-top: 0.1rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.other p:first-child{
+	width: 20%;
+	display: inline-block;
+}
+.other p:nth-of-type(2n){
+	width: 60%;
+	text-align: center;
+	display: inline-block;
+}
+.other p:last-child{
+	float: right;
+	display: inline-block;
+}
+.number{
+	padding-top: 0.3rem;
+}
+.number:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.num-left{
+	float: left;
+	font-size: 0.32rem;
+}
+.num-right{
+	float: right;
+}
+.num-right img{
+	width: 0.4rem;
+}
+.num-right input[type="text"]{
+	border:none;
+	width: 0.8rem;
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	margin-top: -0.3rem;
+	vertical-align: middle;
+	font-size: 0.3rem;
+}
+/*start 图文详情*/
+.box{
+	margin-bottom: 1.5rem;
+}
+.title{
+	background: #F5F5DC;
+	padding: 0.2rem 0;
+	font-size: 0.35rem;
+	text-align: center;
+	position: relative;
+}
+.title:before,.title:after{
+	content: '';
+	position: absolute;
+	background: gainsboro;
+	top:52%;
+	left: 16%;
+	width: 1.3rem;
+	height: 1.5px;
+}
+.title:after{
+	left: 67%;
+}
+.images img{
+	width: 7.5rem;
+}
+/*相关推荐*/
+.suggest{
+	padding-top:0.2rem;
+	padding-bottom: 0.2rem;
+}
+.suggest ul li{
+	display: inline-block;
+	width:3.7rem;
+}
+.ying{
+	width:3.4rem;
+	text-align: center;
+}
+.explain{
+	white-space: nowrap;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-left: 0.2rem;
+	padding-right:0.2rem;
+}
+.money{
+	content: '';
+	display: block;
+	clear: both;
+	padding-top: 0.2rem;
+}
+.money span{
+	color: red;
+	float: left;
+	padding-left: 0.2rem;
+}
+.money img{
+	width: 0.35rem;
+	height: 0.35rem;
+	border-radius: 50%;
+	float: right;
+	margin-top: -0.05rem;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+}
+/*加入购物车弹框*/
+.pop-up{
+	background: #A9A9A9;
+	width: 3.4rem;
+	height: 1.8rem;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-left: -1.7rem;
+	margin-top: -0.9rem;
+	padding: 0.3rem 0;
+	display: none;
+	font-size: 0.35rem;
+}
+.pop-up img{
+	width: 1.0rem;
+}
+
+
+/*start 底部加入购物车、购买*/
+.car-buy{
+	position: fixed;
+	bottom: 0;
+	width: 7.5rem;
+	border-top:1px solid #F5F5DC;
+	background: #fff;
+}
+.car-buy:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.index a,.collect a{
+	color: #000;
+}
+.index img,.collect img{
+	width: 0.5rem;
+}
+.index,.collect{
+	float: left;
+	width: 1.6rem;
+	text-align: center;
+	padding: 0.1rem 0;
+}
+.add-car,.buy{
+	float:left;
+	width: 2.15rem;
+	text-align: center;
+	font-size: 0.32rem;
+	padding: 0.37rem 0;
+}
+.add-car a,.buy a{
+	color: #fff !important;
+}
+.add-car{
+	background: #ecec21;
+	float: left;
+}
+.buy{
+	float: left;
+	background: #FF0000;
+}

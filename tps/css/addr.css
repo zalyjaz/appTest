@@ -1,0 +1,137 @@
+body{
+	background: #FAFAFA;
+}
+/*start 订单详情*/
+.top{
+	background: #fff;
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	position: fixed;
+	width: 7.5rem;
+	top:0;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+/*start 收货地址*/
+.addr{
+	margin-top: 1.0rem;
+	background: #fff;
+	margin-bottom: 1.0rem;
+}
+.addr ul li{
+	padding: 0.2rem;
+	font-size: 0.32rem;
+	color: grey;
+	border-bottom: 1px solid #F5F5DC;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.address{
+	padding: 0.2rem;
+	font-size: 0.32rem;
+	color: grey;
+}
+.address p{
+	display: inline-block;
+}
+.address p img{
+	width: 0.4rem;
+	height: 0.4rem;
+	vertical-align: middle;
+	margin-top: -0.1rem;
+	margin-right: 0.1rem;
+}
+.right a{
+	color: grey;
+}
+.bian{
+	margin-right: 0.2rem;
+}
+/*start 新增收货地址*/
+.add-addr{
+	width: 7.5rem;
+	position: fixed;
+	bottom: 0;
+	background: #FF6600;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.32rem;
+}
+/*start 无数据*/
+.no-data{
+	margin-top: 1.0rem;
+	text-align:center;
+	padding-top: 2.0rem;
+}
+.no-data img{
+	width: 2.5rem;
+	text-align: center;
+}
+.no-data p{
+	color: grey;
+	font-size: 0.32rem;
+	padding-top: 0.3rem;
+}
+.add{
+	width: 7.5rem;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	color: #fff;
+    background: #F00B0D;
+}
+/*start 删除收货地址弹框*/
+.form{
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(200,200,200,0.7);
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.content{
+	position: fixed;
+	top:50%;
+	left: 50%;
+	width: 6.0rem;
+	margin-left: -3.0rem;
+	margin-top: -1.5rem;
+	background: #fff;
+}
+.txt{
+	text-align: center;
+	padding-top: 0.8rem;
+	font-size: 0.35rem;
+	padding-bottom: 0.8rem;
+}
+.conceal{
+	background: #F7F7F7;
+}
+.conceal p{
+	display: inline-block;
+	width: 2.93rem;
+	text-align: center;
+	padding: 0.2rem 0;
+	font-size: 0.35rem;
+}
+.ok{
+	color: #0000FF;
+	border-left:1px solid #CFD5DA;
+}

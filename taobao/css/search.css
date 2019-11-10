@@ -1,0 +1,130 @@
+
+/*start top*/
+.top{
+	width:7.5rem;
+	background: #fff;
+	padding: 0.2rem 0;
+}
+.top img{
+	width:0.21rem;
+	height:0.4rem;
+	margin-left: 0.5rem;
+	margin-top: -0.1rem;
+}
+.top input[type="text"]{
+	border:1px solid #b1b1b1 ;
+	border-radius: 30px;
+	width:5.0rem;
+	font-family: NotoSansCJKsc !important;
+	font-size: 0.3rem;
+	height:0.65rem;
+	line-height: 0.65rem;
+	background: url(../img/search02_03.png) 4.2rem no-repeat;
+	background-size: 0.4rem 0.4rem;
+	padding-right: 0.2rem;
+	margin-left: 0.6rem;
+	padding-left: 0.2rem;
+	
+}
+.top input:link,.top input:visited,.top input:hover,.top input:active{
+	border:1px solid #b1b1b1 !important;
+}
+.inpt{
+	outline: none;
+}
+.top input::-webkit-input-placeholder{
+	color: #999;
+	padding-left: 0.1rem;
+}
+/*start 历史*/
+.record{
+	padding: 0.2rem 0;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+}
+.record p{
+	margin: 0;
+	font-family: NotoSansCJKsc !important;
+	font-size: 0.24rem;
+	color: #666;
+	display: inline-block;
+} 
+.record-right{
+	display: inline-block;
+	float:right;
+}
+.record-right img{
+	width:0.32rem;
+	height:0.32rem;
+	margin-right: 0.15rem;
+}
+/*start 历史记录信息*/
+.record-info{
+	background: #fff;
+	padding: 0.2rem 0.3rem 0.02rem 0.3rem;
+	
+}
+ul{
+	margin-bottom: 0;
+}
+.record-info ul li{
+	display: inline-block;
+	width:2.0rem;
+	text-align: center;
+	border-radius: 30px;
+	border:1px solid #b1b1b1;
+	font-family: NotoSansCJKsc !important;
+	font-size: 0.24rem;
+	color: #333;
+	height:0.6rem;
+	line-height: 0.6rem;
+	margin-left: 0.2rem;
+	margin-top: 0.12rem;
+	margin-bottom: 0.2rem;
+}
+/*start 弹框*/
+#confirm{
+	position: fixed;
+	height:100%;
+	width:7.5rem;
+	background: rgba(150,150,150,0.2);
+	z-index: 999;
+	top:0;
+	display: none;
+}
+.confirm-delete{
+	background: #fff;
+	width:4.0rem;
+	padding-top: 0.5rem;
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin-left: -2.0rem;
+	margin-top: -1.0rem;
+	height:2.0rem;
+}
+.wen{
+	padding-left: 0.2rem;
+	font-size: 0.25rem;
+	color: #333;
+	padding-bottom: 0.5rem;
+}
+.quxiao,.queding{
+	display: inline-block;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+	width:1.9rem;
+	height:0.5rem;
+	line-height: 0.5rem;
+	background: #C0C0C0;
+	margin-left: 0.05rem;
+	margin-bottom: 0.1rem;
+}
+.queding{
+	background: red;
+	margin-left: 0 !important;
+}
+.confirm-delete ul li a:hover{
+	color: #fff;
+}

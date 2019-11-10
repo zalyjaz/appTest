@@ -1,0 +1,112 @@
+body{
+	background: #FAFAFA;
+}
+/*start 店铺升级*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+	margin-top: -0.05rem;
+}
+.top a{
+	float: right;
+	color: #000;
+	font-size: 0.3rem;
+	margin-top: 0.05rem;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 店铺积分*/
+.shop-points{
+	background: #fff;
+	padding-top: 0.5rem;
+	padding-bottom: 0.7rem;
+}
+.points{
+	border:1.5px solid gainsboro;
+	width: 3.0rem;
+	margin: 0 auto;
+	height: 3.0rem;
+	
+	border-radius: 50%;
+	text-align: center;
+}
+.points p:first-child{
+	color: #000;
+	font-weight: 600;
+	font-size: 0.32rem;
+	padding-top: 0.3rem;
+}
+.user{
+	color: grey;
+	padding-top: 0.1rem;
+}
+.number{
+	color: gold;
+	font-size: 0.6rem;
+}
+.points p:last-child{
+	color: gold;
+	font-size: 0.45rem;
+	
+}
+.update{
+	margin-top: 0.55rem;
+	text-align: center;
+}
+.update a{
+	color: gold;
+	text-align: center;
+	padding: 0.2rem 1.5rem;
+	border: 1px solid gold;
+	border-radius: 15px;
+	font-size: 0.4rem;
+}
+/*start 用户等级*/
+.user-grade{
+	background:#fff;
+	margin-top: 0.2rem;
+}
+.user-grade ul li{
+	border-bottom: 1px solid #F5F5DC;
+	padding: 0.2rem;
+}
+.user-grade ul li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.user-grade ul li p:first-child{
+	float: left;
+}
+.user-grade ul li p img{
+	width:0.5rem;
+	height:0.5rem;
+	vertical-align: middle;
+}
+.user-grade ul li p span{
+	vertical-align: middle;
+	margin-left: 0.3rem;
+	font-size: 0.3rem;
+	color: grey;
+}
+.user-grade ul li p:last-child{
+	float: right;
+}
+.num{
+	vertical-align: middle;
+	margin-top: 0.07rem;
+}

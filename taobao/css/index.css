@@ -1,0 +1,545 @@
+/*start 搜索*/
+.item img{
+	width:7.5rem;
+	height:3.69rem;
+}
+.top-line{
+	position: fixed;
+	top:4%;
+	width:7.5rem;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0.05rem 0;
+}
+.top-line p{
+	color: #fff;
+	font-size: 0.2rem;
+	margin-bottom: 0;
+}
+.sao img,.xiaoxi img{
+	width:30px;
+	height:30px;
+}
+.sao{
+	float:left;
+	margin-left: 0.1rem;
+	width:1.2rem;
+}
+.sou{
+	background: url(../img/search_06.png) 1.4rem no-repeat;
+	background-size:25px 25px;
+	float:left;
+	text-align: center;	
+	margin-top:5px;
+}
+.shuru{
+	border:none;
+	width:5.0rem;
+	height:35px;	
+	border-radius: 10px;
+	background: rgba(250,250,250,0.7);
+	box-shadow: 0 0 13px rgba(252,146,125,.75);
+	text-align: center;
+	font-size: 0.2rem;
+	outline: none !important;
+}
+.xiaoxi{
+	float:left;
+	padding-left: 0.1rem;
+	width:1.0rem;
+}
+.sou input::-webkit-input-placeholder{
+	text-align: center;
+	padding-left: 0.8rem;
+	color: #fff;
+}
+/*start 商品*/
+.shop{
+	margin: 15px 0;
+	background: #fff;
+	padding: 15px 0;
+}
+.shop-one,.shop-two,.shop-three,.shop-four{
+	float: left;
+	width:1.87rem;
+	text-align: center;
+}
+.shop p{
+	font-family: NotoSansCJKsc;
+	font-size: 0.24rem;
+	color: #333;
+	margin-bottom: 0;
+	padding-top: 5px;
+}
+.shop-one img{
+	width:0.94rem;
+	height:0.92rem;
+}
+.shop-two img{
+	width:0.93rem;
+	height:0.93rem;
+}
+.shop-three img{
+	width:0.92rem;
+	height:0.92rem;
+}
+.shop-four img{
+	width:0.91rem;
+	height:0.91rem;
+}
+/*start 限时惠购*/
+.time-only{
+	background: #fff;
+	padding: 10px 0;
+}
+.time-only ul li{
+	display: inline-block;
+	text-align: center;
+}
+.time-buy{
+	font-family: JLinXin;
+	font-size: 0.32rem;
+	color: #f7594e;
+	width:2.0rem;
+}
+.time-time{
+	font-family: NotoSansCJKsc;
+	font-size: 0.28rem;
+	color: #666;
+	width:3.2rem;
+}
+.one,.two,.three{
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;	
+}
+.one{
+	margin-left: 0.3rem;	
+}
+span img{
+	width: 0.09rem;
+	height:0.24rem;	
+}
+.two,.three{
+	margin-left: 0.1rem;
+}
+.time-first{
+	width:2.0rem;
+	font-family: NotoSansCJKsc;
+	font-size: 0.28rem;
+	color: #f7594e;
+	background: url(../img/you_03.png) right no-repeat;
+	background-size:0.26rem 0.26rem;
+	text-align: center;
+}
+.phone img{
+	width:1.37rem;
+	height:1.41rem;
+}
+.user img{
+	width:1.78rem;
+	height:1.46rem;
+}
+.nai img{
+	width:1.14rem;
+	height:1.38rem;
+}
+.phone{
+	width: 2.3rem;
+}
+.user{
+	width:3.0rem;
+}
+.nai{
+	width:2.0rem;
+}
+.qiang li a{
+	font-size: 0.2rem;
+	color: #d0d0d0;
+}
+.qiang li span{
+	color: #a41f24;
+	font-size: 0.3rem;
+}
+.qiang{
+	margin-bottom: 0;
+}
+.qiang li p{
+	margin-bottom: 0;
+}
+/*start 魅蓝*/
+.meilan{
+	margin: 15px 0;
+}
+.meilan img{
+	width:7.5rem;
+	height:1.38rem;
+}
+/*start 手机通讯*/
+.phone-talk{
+	background: #fff;
+	padding-top: 15px;
+}
+.phone-left{
+	font-family: NotoSansCJKsc;
+	font-size: 0.34rem;
+	color: #333;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+.phone-left img{
+	width: 0.06rem;
+	height:0.24rem;	
+	float: right;
+}
+.xinpin{
+	border-bottom: 1px solid #eee;
+}
+.xinpin li{
+	display: inline-block;
+}
+.oppo{
+	width:3.7rem;
+	float: left;	
+	padding-left: 15px;
+	padding-bottom: 10px;
+}
+.sanxing{
+	float:left;
+	width:3.7rem;
+	padding-left: 15px;
+	border-left:1px solid #eee;
+	padding-bottom: 15px;
+}
+.xinpin li,.xinpin1 li,.xinpin2 li,.xinpin3 li{
+	font-family: NotoSansCJKsc;
+	font-size: 0.26rem;
+	color: #333;
+	padding-top: 15px;
+}
+.number{
+	font-size: 0.2rem;
+	color: #d0d0d0;
+}
+.money{
+	color: #a41f24;
+	font-size: 0.22rem;
+}
+ul{
+	margin-bottom: 0 !important;
+}
+.oppo img{
+	width:1.18rem;
+	height:1.11rem;
+	float: right;
+	margin-right: 20px;
+	
+}
+.sanxing img{
+	width:1.15rem;
+	height:1.32rem;
+	float: right;
+	margin-right: 20px;
+	margin-top:-8px ;
+}
+.huawei{
+	float: left;
+	width:2.5rem;
+	text-align: center;
+	border-right: 1px solid #eee;
+	padding-bottom: 10px;
+}
+.xiaomi2{
+	float: left;
+	width:2.5rem;
+	text-align: center;
+	border-right: 1px solid #eee;
+	padding-bottom: 10px;
+}
+.iphone{
+	float: left;
+	width:2.5rem;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.huawei img,.xiaomi2 img{
+	width:0.9rem;
+	height:1.08rem;
+}
+.iphone img{
+	width:0.85rem;
+	height:1.11rem;
+}
+.xinpin1,.xinpin2{
+	border-bottom: 1px solid #eee;
+}
+.nav2 img{
+	width: 7.5rem;
+	height:1.6rem;
+}
+.life{
+	background: #fff;
+	margin-top: 15px;
+	padding-top: 15px;
+}
+.idea{
+	border-right: 1px solid #eee;
+	padding-bottom: 15px;
+}
+.idea img{
+	width:1.68rem;
+	height:1.23rem;
+}
+.daier{
+	float:left;
+	width:3.7rem;
+	padding-left: 15px;
+}
+.daier img{
+	width:1.39rem;
+	height:0.97rem;
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.x7 img{
+	width:1.05rem;
+	height:1.05rem;
+}
+.huashuo img{
+	width:1.86rem;
+	height:1.03rem;
+}
+.v7 img{
+	width:1.66rem;
+	height:1.05rem;
+}
+/*start 奢侈  宝宝最爱*/
+.shechi,.baobao{
+	margin: 15px 0;
+}
+.shechi img,.baobao img{
+	width:7.5rem;
+	height:1.38rem;
+}
+/*时尚轻奢 */
+.fashion,.baby{
+	background: #fff;
+	padding-top: 15px;
+}
+.buosi{
+	border-right: 1px solid #eee;
+	padding-bottom: 15px;
+}
+.buosi img{
+	width:1.23rem;
+	height:1.39rem;
+}
+.laxiang img{
+	width:0.84rem;
+	height:1.26rem;
+	margin-top: 5px !important;
+}
+.tiding img{
+	width:1.21rem;
+	height:1.04rem;
+}
+.guchi img{
+	width:1.19rem;
+	height:1.04rem;
+}
+.kelu img{
+	width: 0.98rem;
+	height: 1.06rem;
+}
+/*母婴用品*/
+.haima{
+	border-right: 1px solid #eee;
+	padding-bottom: 15px;
+}
+.haima img{
+	width: 1.38rem;
+	height:1.26rem;
+}
+.rabbit img{
+	width: 1.63rem;
+	height:1.11rem;
+	margin-top: 5px !important;
+}
+.naifen img{
+	width: 0.82rem;
+	height:1.04rem;
+}
+.naiping img{
+	width: 1.44rem;
+	height:1.13rem;
+}
+.yizi img{
+	width: 0.85rem;
+	height:1.09rem;
+}
+/*start 教育培训*/
+.edu{
+	background: #fff;
+	margin-top: 15px;
+	padding-top: 15px; 
+}
+.yuyan,.job ,.kaoshi{
+	padding-top: 0.3rem !important;
+	padding-bottom: 0.15rem!important;
+}
+.yuyan p,.job p,.kaoshi p{
+	margin-top: 10px;
+}
+.yuyan img{
+	display: block;
+	margin:  0 auto !important;
+	width:0.9rem;
+	height: 0.9rem;
+	margin: 15px 0;
+}
+.job img{
+	display: block;
+	margin:  0 auto;
+	width:0.9rem;
+	height: 0.9rem;
+}
+.kaoshi img{
+	display: block;
+	margin:  0 auto;
+	width:0.9rem;
+	height: 0.9rem;
+}
+/*start 为你优选*/
+.choose{
+	padding: 10px 0;
+	text-align: center;
+}
+.choose img{
+	display:inline-block;
+	width:0.38rem;
+	height:0.34rem;
+}
+.choose p{
+	display:inline-block;
+	font-family: NotoSansCJKsc;
+    font-size: 0.34rem;
+    color: #333;
+    margin-bottom: 0;
+}
+/*start 商品*/
+.shops{
+	margin-bottom: 1.3rem;
+}
+.shops p{
+	margin: 0;
+}
+.shops ul li{
+	display: inline-block;
+	float: left;
+	width:3.7rem;
+}
+.shops-one{
+	background: url(../img/shop-one.png) no-repeat;
+}
+.p-shop{
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	font-family: NotoSansCJKsc;
+	font-size: 0.22rem;
+	color: #333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.fen{
+	padding-top: 0.1rem;
+	color: #d0d0d0;
+	font-size: 0.2rem;
+	display: inline-block;
+	padding-left: 0.2rem;
+}
+.fen .money{
+	font-size: 0.24rem;
+}
+.fukuan{
+	display: inline-block;
+	float: right;
+	font-family: NotoSansCJKsc;
+	font-size: 0.2rem;
+	color: #999;
+	margin-top: 0.1rem !important;
+	margin-right: 0.2rem !important;
+	padding-bottom: 0.2rem !important;
+}
+.fukuan img{
+	width:0.21rem;
+	height:0.05rem;
+}
+.shops-two{
+	margin-left: 0.08rem;
+	background: url(../img/shop-two.png) no-repeat;
+}
+.shops-three{
+	background: url(../img/shop-three.png) no-repeat;
+	margin-top: 0.1rem;
+}
+.shops-four{
+	background: url(../img/shop-four.png) no-repeat;
+	margin-left: 0.08rem;
+	margin-top: 0.1rem;
+}
+.shops-five{
+	background: url(../img/shop-five.png) no-repeat;
+	margin-top: 0.1rem;
+}
+.shops-six{
+	background: url(../img/shop-six.png) no-repeat;
+	margin-top: 0.1rem;
+	margin-left: 0.08rem;
+}
+.shops-one,.shops-two,.shops-three,.shops-four,.shops-five,.shops-six{
+	background-size:3.7rem 5.2rem;
+	padding-top: 3.85rem;
+}
+/*start foot*/
+.foot{
+	background: #fff;
+	position: fixed;
+	box-shadow: inset 0 1px rgba(204,204,204,.75);
+	bottom: 0%;
+	z-index: 9999;
+}
+.foot ul li{
+	padding-top: 0.20rem;
+	float: left;
+	width:1.5rem;
+	text-align: center;
+	padding-bottom: 0.15rem;
+}
+.foot ul li img{
+	width:0.5rem;
+	height:0.5rem;
+}
+.foot ul li a{
+	font-family: NotoSansCJKsc;
+	font-size: 0.2rem;
+	color: #333 !important;
+}
+.foot ul li a p{
+	padding-top: 0.1rem;
+	margin-bottom: 0;
+}
+/*start 返回*/
+.return{	
+	position: fixed;
+	bottom:20%;
+	right:12%;
+}
+.return img{
+	width: 0.88rem;
+	height:0.88rem;
+}

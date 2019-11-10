@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>	
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/public.css" />
+	    <link rel="stylesheet" href="css/apply.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="container">
+				<div class="header-left">
+					<img src="img/logo_03.jpg"/>
+				</div>
+				<div class="header-right">				
+					<a href="login.html">登陆</a>
+					<span>|</span>
+					<a href="register.html">注册</a>
+					<span class="code">微信公众号</span>
+					<a  class="accre" id="tab" onclick="test1()" style="margin-left: -10px;">实名认证</a>				
+				</div>
+				<div class="clearfix"></div>
+			</div>			
+		</div>
+		<!--实名认证模态框-->
+		<div id="mask">
+			<div id="mask-content">
+				<div class="body-cover-top-left">
+					<span>实名认证</span>
+				</div>
+				<div class="body-cover-top-right">
+					<img src="img/identify-02_03.png" class="close_icon" onclick="test2()"/>
+				</div>	
+				<div class="body-cover-bottom">
+					<input type="text" placeholder="真实姓名" class="text-ming"/>
+					<input type="text" placeholder="手机号" class="text-phone"/>
+					<div class="input2-success">
+					    <a href="">确定</a>
+					</div>
+				</div>
+		    </div>
+		</div>	
+		<!--申请刻章-->
+		<div class="body">
+			<div class="container">
+				<div class="body-text">
+					<h4>在线申请刻章</h4>
+					<div class="body-text1">
+						<span class="one">1</span>
+						<span class="one-side">选择公章类型</span>
+						<div class="body-text1-type">
+							<a href="" class="body-text1-type-a1">财务专用章</a>
+							<a href="" class="body-text1-type-a2">合同专用章</a>
+							<a href="" class="body-text1-type-a2">法定名称章</a>
+							<a href="" class="body-text1-type-a2">发票专用章</a>
+							<img src="img/apply-01_03.jpg" width="100%"/>
+						</div>
+							
+					</div>
+					<div class="body-text2">
+						<span class="one">2</span>
+						<span class="one-side">上传申报资料</span>
+						<div class="body-text2-type">
+							<div class="body-text2-type-left">
+								<p>1,上传营业执照原件及复印件</p>
+								<div class="img1">
+									<img src="img/apply-02_03.jpg"  width="150px" height="150px"/>
+									<p class="ss">上传原件</p>
+								</div>																	
+								<div class="img2">
+									<img src="img/apply-03_03.jpg" width="150px" height="150px"/>
+									<p class="sp">上传复印件</p>
+								</div>																
+							</div>						
+							<div class="body-text2-type-right">
+								<p>2,单位介绍信</p>
+								<div class="img1">
+									<img src="img/apply-04_03.jpg"  width="150px" height="150px"/>
+									<p class="ss">上传原件</p>
+								</div>
+								
+								<div class="img2">
+									<img src="img/apply-03_03.jpg" width="150px" height="150px"/>
+									<p class="sp">上传复印件</p>
+								</div>								
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="body-text2-type">
+							<div class="body-text2-type-left">
+								<p>3,法人身份证原件及复印件</p>
+								<div class="img1">
+									<img src="img/apply-06_03.jpg"  width="150px" height="200px"/>
+									<p class="ss">上传原件</p>
+								</div>																	
+								<div class="img2">
+									<img src="img/apply-07_03.jpg" width="150px" height="200px"/>
+									<p class="sp">上传复印件</p>
+								</div>																
+							</div>						
+							<div class="body-text2-type-right">
+								<p>4,经办人身份证原件及复印件</p>
+								<div class="img1">
+									<img src="img/apply-06_03.jpg"  width="150px" height="200px"/>
+									<p class="ss">上传原件</p>
+								</div>								
+								<div class="img2">
+									<img src="img/apply-07_03.jpg" width="150px" height="200px"/>
+									<p class="sp">上传复印件</p>
+								</div>								
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="submit">
+							<a href="">提交资料</a>
+						</div>
+					</div>										
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-center">
+					<p class="center-block">&copy;河南印章网 京ICP证030173号 京公网安备11000002000001号</p>
+					<img src="img/user-09_03.jpg" />
+				</div>
+			</div>						
+		</div>				
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	</body>
+</html>
+<!--点击事件-->
+	<script type="text/javascript">
+		function test1(){
+			document.getElementById("mask").style.display="block";
+		}	
+		function test2(){
+			document.getElementById("mask").style.display="none";
+		}
+	</script>

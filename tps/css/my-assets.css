@@ -1,0 +1,164 @@
+body{
+	background:#fff;
+}
+/*start 我的资产*/
+.top{
+	width: 7.5rem;
+	padding:0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	vertical-align: middle;
+	margin-left: 2.0rem;
+}
+.assets{
+	border-bottom: 1px solid #F5F5DC;
+	width: 7.5rem;
+	background: #fff;
+}
+.assets p{
+	width: 2.4rem;
+	display: inline-block;
+	text-align: center;
+	padding: 0.3rem 0;
+	font-size: 0.35rem;
+	color: grey;
+}
+.active{
+	border-bottom: 1.5px solid #0675BB;
+	color: #000 !important;
+}
+.one{
+	padding: 0.2rem;
+}
+.one-fen{
+	background: #FF6600;
+	color: #fff;
+	border-radius: 10px;
+	height: 3.5rem;
+	padding-left: 0.5rem;
+	opacity: 0.8;
+}
+.one-fen p:first-child,.yu{
+	font-size: 0.35rem;
+	padding-top: 0.7rem;
+}
+.one-fen p:nth-of-type(2n),.money{
+	font-size: 0.6rem !important;
+	padding-top: 0.3rem !important;
+	padding-bottom: 0.3rem !important;
+}
+.one-fen p:last-child{
+	font-size: 0.3rem;
+	padding-top: 0.3rem;
+}
+.first{
+	padding-top: 0.5rem;
+	color: grey;
+	position: relative;
+	padding-left: 0.3rem;
+}
+.second{
+	color: grey;
+	padding-top: 0.1rem;
+	position: relative;
+	padding-left: 0.3rem;
+}
+.first:before{
+	content: '';
+	width: 0.15rem;
+	height: 0.15rem;
+	background: #FF6600;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top:71%;
+}
+.second:before{
+	content: '';
+	width: 0.15rem;
+	height: 0.15rem;
+	background: #FF6600;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top:50%;
+}
+.four:before{
+	content: '';
+	width: 0.15rem;
+	height: 0.15rem;
+	background: #007AFF;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top:71%;
+}
+.five:before{
+	content: '';
+	width: 0.15rem;
+	height: 0.15rem;
+	background: #007AFF;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top:50%;
+}
+.six:before{
+	content: '';
+	width: 0.15rem;
+	height: 0.15rem;
+	background: coral;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top:71%;
+}
+.seven:before{
+	content: '';
+	width: 0.15rem;
+	height: 0.15rem;
+	background: coral;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top:50%;
+}
+
+.jiang{
+	margin-top: 0.4rem;
+	text-align: center;
+	background: #FF6600;
+	color: #fff;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-radius: 5px;
+	font-size: 0.32rem;
+}
+.jiang a{
+	color: #fff;
+}
+.zhuan{
+	margin-top: 0.2rem;
+	text-align: center;
+	border: 1px solid #F5F5DC;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-radius: 5px;
+	font-size: 0.32rem;
+}
+.two{
+	background: #007AFF;
+}
+.three{
+	background: coral;
+}
+.go{
+	background: coral;
+	margin-top: 1.0rem;
+}

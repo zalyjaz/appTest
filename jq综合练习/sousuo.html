@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!DOCTYPE html style="font-size:100px;">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	  	<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css" />
+	  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/sousuo.css"/>
+		<title>首页</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+
+				document.documentElement.style.fontSize = w + 'px'//
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<ul class="head">
+			<li>
+				<a href="index.html"><img src="img/sousuo/back_03.png"/>		</a>	
+			</li>
+			<li class="sousuo">					
+				<input type="text" placeholder="iPhone"/>
+				<img src="img/sousuo/ss_06.png"/>					
+			</li>
+			<div class="clearfix">
+				
+			</div>
+		</ul>
+		<div class="content">
+			<ul class="history col-xs-12">
+				<li class=" col-xs-6 his">历史记录</li>
+				<li class=" col-xs-6 del">
+					<img src="img/sousuo/del_07.png"/>
+					<span>清除历史</span>
+				</li>
+				<div class="clearfix">
+					
+				</div>
+			</ul>
+			<ul class="jilu">
+				<li>手机</li>
+				<li>培训</li>
+				<li>奥迪A7</li>
+				<li>英语8级</li>
+				<li>电脑</li>
+				<li>服装</li>
+				<div class="clearfix">
+					
+				</div>
+			</ul>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>

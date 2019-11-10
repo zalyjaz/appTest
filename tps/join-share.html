@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>加盟& 分享</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/join-share.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--start 加盟 分享-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">加盟& 分享</span>
+			
+		</div>
+		<!--end 加盟 分享-->
+		<ul class="join">
+			<li>
+				<a href="my-share.html">
+					<span>我的分享二维码</span>
+					<img src="img/more.png" />
+				</a>
+			</li>
+			<li class="my-share">
+				<a href="#">
+					<span>我的分享链接</span>
+					<img src="img/more.png" />
+				</a>
+				
+			</li>
+		</ul>
+		<!--start 我的分享链接弹框-->
+		<div class="form" style="display: none;">
+			<div class="my-link">
+				<p class="share">我的分享链接</p>
+				<p class="link">https://1390342432.tps138.com/enroll</p>
+				<div class="copy"><p class="conceal">取消</p><p>复制</p></div>
+			</div>
+		</div>
+		<!--end 我的分享链接弹框-->
+	</body>
+
+</html>
+<script>
+	/*我的分享链接*/
+	$(".my-share").click(function(){
+		$(".form").show();
+		$(".conceal").click(function(){
+			$(".form").hide();
+		})
+	})
+	$(".form").click(function(){
+		$(this).hide();
+	})
+</script>

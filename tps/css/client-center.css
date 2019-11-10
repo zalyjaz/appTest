@@ -1,0 +1,113 @@
+body{
+	background: #F5F5DC;
+}
+
+/*start 客服中心*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+.top a{
+	float: right;
+	color: #000;
+	font-size: 0.3rem;
+	margin-top: 0.05rem;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 待处理、处理中、已处理*/
+.handle{
+	background: #fff;
+	border-top: 1px solid #F5F5DC;
+}
+.handle ul li{
+	display: inline-block;
+	padding: 0.3rem 0;
+	width: 2.44rem;
+	text-align: center;
+	color: #A9A9A9;
+	font-size: 0.32rem;
+	cursor: pointer;
+}
+.active{
+	border-bottom: 1.5px solid #0D1331;
+	color: #000 !important;
+}
+/*start 待处理*/
+.time{
+	padding: 0.3rem;
+	font-size: 0.3rem;
+}
+.no{
+	background: #fff;
+	padding: 0.3rem 0.2rem;
+}
+.no:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.no-left{
+	float: left;
+}
+.no-right{
+	float: right;
+}
+.no-right img{
+	width: 0.7rem;
+	vertical-align: middle;
+	margin-top: 0.15rem;
+}
+.no-left p:first-child{
+	font-size: 0.35rem;
+	color: #000;
+	padding-bottom: 0.1rem;
+}
+.no-left p:last-child{
+	color: grey;
+	font-size: 0.3rem;
+}
+/*start 无工单*/
+.no-work{
+	padding-top: 1.0rem;
+	text-align: center;
+	display: none;
+}
+.no-work img{
+	width: 2.0rem;
+}
+.problem{
+	font-size: 0.35rem;
+	color: gray;
+	padding-top: 0.3rem;
+	padding-bottom: 0.2rem;
+}
+.no-work p:nth-of-type(2n){
+	font-size: 0.3rem;
+	color: darkgray;
+}
+.no-work p:last-child{
+	color: #fff;
+	width: 1.8rem;
+	margin: 0 auto;
+	background: #191970;
+	border-radius: 5px;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	text-align: center;
+	margin-top: 0.4rem;
+	font-size: 0.3rem;
+}

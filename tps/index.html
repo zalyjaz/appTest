@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px'//
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body scroll="no">
+		<!--start 搜索-->
+		<div class="search">
+			<img src="img/logo.png" class="logo"/>
+			<input type="text" placeholder="请输入关键字"/>
+			<img src="img/zhong.png" class="zhong"/>
+			<div class="shop">
+				<div class="shops">
+					<p>商城首页</p>
+					<p>新品上市</p>
+					<p>口碑热卖</p>
+					<p>特惠专区</p>
+					<p>全球购</p>
+					<p>特惠专区</p>
+					<p>新品上市</p>
+				</div>
+			</div>
+		</div>
+		<!--end 搜索-->
+		<!--start 轮播-->
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	        	<a class="swiper-slide" href="#">
+	        		<img src="img/lun01.jpg" class="one"/>	
+	        	</a>
+	        	<a class="swiper-slide" href="#">
+	        		<img src="img/lun02.jpg" class="one"/>	
+	        	</a>
+	        	<a class="swiper-slide" href="#" >		
+	        		<img src="img/lun03.jpg" class="one"/>
+	        	</a>
+	       		<a class="swiper-slide" href="#">
+	        		<img src="img/lun04.jpg"  class="one"/>
+	        	</a>
+	        	<a class="swiper-slide" href="#">
+	        		<img src="img/lun05.jpg"  class="one"/>
+	        	</a>
+	        	<a class="swiper-slide" href="#">
+	        		<img src="img/lun06.jpg"  class="one"/>
+	        	</a>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	    </div>
+		<!--end 轮播-->
+		<!--start 新品上架-->
+		<div class="box">
+			<div class="new-shops">
+				<p class="left">新品上架</p>
+				<div class="right">
+					<p>更多</p>
+					<img src="img/more.png" />
+				</div>
+				<div class="clear"></div>
+				<img src="img/new.jpg" class="new"/>
+				<div class="goods">
+					<ul>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/han.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/mei.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--end 新品上架-->
+			<!--start 热卖推荐-->
+			<div class="new-shops">
+				<p class="left">热卖推荐</p>
+				<div class="right">
+					<p>更多</p>
+					<img src="img/more.png" />
+				</div>
+				<div class="clear"></div>
+				<img src="img/new.jpg" class="new"/>
+				<div class="goods">
+					<ul>
+						<li>	
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+							
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/han.png" />								
+							</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/mei.png" />								
+							</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li class="swiper-slide">
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+						<li>
+							<img src="img/cheng1.jpg" class="cheng"/>
+							<p class="mean">橙香公主赣州赣南普通装大果100# 橙子10斤</p>
+							<p class="price">
+								<span class="left">¥196.41</span>
+								<img src="img/zhong.png" />								
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--end 热卖推荐-->
+		</div>
+		<!--start 底部-->
+		<div class="foot">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img src="img/shouye-01.png" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="classify.html">
+						<img src="img/fen2.png" />
+						<p>分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="collect.html">
+						<img src="img/shou1.png" />
+						<p>收藏</p>
+					</a>
+				</li>
+				<li>
+					<a href="car.html">
+						<img src="img/car2.png" />
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="my.html">
+						<img src="img/my1.png" />
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<!--end 底部-->
+		<script type="text/javascript" src="js/jquery.nicescroll.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+	</body>
+</html>
+<script> 
+	var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 1,
+    paginationClickable: true,
+    autoplayDisableOnInteraction:false,
+    loop: true,
+    autoplay: 3000,
+    observer:true,
+    observeParents:true,
+    setWrapperSize:true,
+}); 
+
+$(".shops p").click(function(){
+	$(this).css("border-bottom","1.5px solid #000").siblings().css("border-bottom","none"); 	
+})
+</script>

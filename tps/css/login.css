@@ -1,0 +1,101 @@
+body{
+	background: #fff;
+}
+/*start 登陆*/
+.login{
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.login img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.login p{
+	display: inline-block;
+	margin-left: 2.2rem;
+	font-size: 0.4rem;
+	color: #0D1331;
+	vertical-align: middle;
+}
+.login-info{
+	padding: 0.4rem 0.1rem 0.3rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	color: grey;
+}
+.login-info img{
+	display: none;
+}
+.id{
+	color: grey;
+	font-size: 0.35rem;
+	padding-bottom: 0.3rem;
+}
+.input-id:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.input-id input{
+	float: left;
+	width: 6.5rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	border:none;
+}
+.input-id img{
+	width: 0.5rem;
+	float: right;
+	vertical-align: middle;
+	margin-top: 0.1rem;
+	
+}
+
+/*start 提交*/
+.submit{
+	padding: 0.2rem;
+	margin-top: 0.5rem;
+}
+.submit button{
+	width: 7.1rem;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.35rem;
+	border-radius: 5px;
+}
+/*start 注册*/
+.register{
+	margin-top: 0.5rem;
+	padding: 0.2rem;
+}
+.register:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.fast{
+	display: block;
+	float: left;
+}
+.sao{
+	display: block;
+	float: right;
+}
+.register a{
+	color: #0D1331;
+	font-size: 0.35rem;
+	border: 1px solid #0D1331;
+	padding: 0.1rem 0.2rem;
+	border-radius: 5px;
+}
+.forget-pwd{
+	text-align: center;
+	padding-top: 0.5rem;
+}
+.forget-pwd a{
+	color: #000;
+	font-size: 0.3rem;
+}

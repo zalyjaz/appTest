@@ -1,0 +1,185 @@
+/*租车中心页面 样式*/
+body{
+	background: #f3f3f3 !important;	
+}
+/*start top*/
+.top{
+	background: url(../img/zu1_02.jpg) no-repeat;
+	height:0.90rem;
+}
+.top-left{
+	float:left;
+	width: 1.57rem;
+	height: 0.54rem;
+	margin-left: 0.25rem;
+	margin-top: 0.16rem;
+}
+.top-right{
+	float:right;
+	width: 0.84rem;
+	height: 0.82rem;
+	margin-right: 0.25rem;
+	margin-top: 0.035rem;
+}
+/*start 电动车*/
+.che img{
+	border: 3px solid #ffd15c;
+}
+/*start 租车、订单、个人中心*/
+.three{
+	margin-top: 0.2rem;
+	background: #fff;
+	padding: 0.15rem 0;
+}
+/*.three a{
+	display: inline-block;
+}*/
+.three-one{
+	background: #f6911d;
+	width:1.55rem;
+	padding: 0.1rem 0.1rem 0.03rem 0.25rem;
+	border-radius: 0.30rem;
+	display: inline-block;
+	margin-left: 0.3rem;	
+	float: left;
+}
+.three-one img,.three-two img{
+	padding-left: 0.05rem;
+	
+}
+.three-one img,.three-two img,.three-three img{
+	width: 1.0rem;
+	height:1.0rem;
+}
+.three-three img{
+	padding-left: 0.06rem;
+}
+.three-one a,.three-two a,.three-three a{
+	font-size: 0.28rem;		
+	font-family: PingFang !important;
+	color: #fff;	
+}
+.three-two{
+	background: #6bba43;
+	width:1.55rem;
+	padding: 0.1rem 0.1rem 0.03rem 0.25rem;
+	border-radius: 0.30rem;
+	display: inline-block;
+	margin-left: 1.14rem;
+}
+.three-three{
+	background: #65322e;
+	width:1.55rem;
+	padding: 0.1rem 0.1rem 0.03rem 0.25rem;
+	border-radius: 0.30rem;
+	display: inline-block;
+	margin-left: 1.05rem;
+	float:right;
+	margin-right: 0.3rem;
+}
+/*start 链接*/
+.four{
+	padding-top:0.2rem;
+	height:7.0rem;
+}
+.bike{
+	width:3.5rem;
+	height:2rem;
+	background: #fbdd90;
+	float:left;
+	margin-left: 0.23rem;	
+}
+.bike img{
+	text-align: center;
+	margin-left: 0.2rem;
+	margin-top: 0.38rem;
+	width:1.4rem;
+	height:1.19rem;
+}
+.four a{
+	font-family: PingFang;
+	font-size: 0.36rem;
+	color: #fefcfd;
+	margin-left: 0.95rem;
+	margin-top: -0.1rem;
+	letter-spacing: 0.09rem;
+	font-style: italic;	
+	display: block;
+}
+.a1{
+	
+}
+.ball{
+	width:3.5rem;
+	height:2rem;
+	background: #97cc7c;
+	float:right;
+	margin-right: 0.23rem;
+}
+.ball img{
+	margin-left: 0.15rem;
+	margin-top: 0.25rem;
+	width:1.39rem;
+	height:1.30rem;
+}
+.yijian img{
+	margin-left: 0.15rem;
+	margin-top: 0.32rem;
+	width:1.39rem;
+	height:1.15rem;
+	padding-bottom: 0.08rem;	
+}
+.repair{
+	width:3.5rem;
+	height:2rem;
+	background: #95ba12;
+	float:left;
+	margin-left: 0.23rem;
+	margin-top: 0.1rem;
+}
+.repair img{
+	margin-left: 0.3rem;
+	margin-top: 0.44rem;
+	width:0.98rem;
+	height:0.94rem;
+	margin-bottom: 0.1rem;
+}
+.kefu{
+	width:3.5rem;
+	height:2rem;
+	background: #fbb33e;
+	float:right;
+	margin-right: 0.23rem;
+	margin-top: 0.1rem;
+}
+.yijian{
+	width:3.5rem;
+	height:2rem;
+	background: #6dabde;
+	float:left;
+	margin-left: 0.23rem;
+	margin-top: 0.1rem;
+}
+.kefu img{
+	margin-left: 0.14rem;
+	margin-top: 0.27rem;
+	width:1.39rem;
+	height:1.15rem;
+	margin-bottom: 0.09rem;
+}
+.know{
+	width:3.5rem;
+	height:2rem;
+	background: #fbb33e;
+	float:right;
+	margin-right: 0.23rem;
+	margin-top: 0.1rem;
+}
+.know img{
+	margin-left: -0.2rem;
+	margin-top: 0.45rem;
+	width:1.96rem;
+	height:0.81rem;
+	margin-bottom: 0.2rem;
+	padding-bottom: 0.1rem;
+}

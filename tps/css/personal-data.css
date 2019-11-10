@@ -1,0 +1,72 @@
+body{
+	background: #F5F5DC;
+}
+
+/*start 个人资料*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.top span{
+	font-size: 0.4rem;
+	color: #000;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+
+/*start 个人资料信息*/
+.personal-info{
+	margin-top: 0.15rem;
+	background: #fff;
+}
+.personal-info ul li{
+	padding:0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.personal-info ul li:first-child{
+	padding:0.05rem 0.2rem !important;
+	vertical-align: middle;
+}
+.hui{
+	margin-top: 0.23rem !important;
+}
+.personal-info ul li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.personal-info ul li a{
+	color: #000;
+}
+.head{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.more{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.p-left{
+	float: left;
+	font-size: 0.3rem;
+	vertical-align: middle;
+	margin-top: 0.05rem;
+}
+.p-right{
+	float: right;
+	vertical-align: middle;
+	font-size: 0.3rem;
+}
+.name{
+	color: grey;
+}
+.no{
+	color: red;
+}

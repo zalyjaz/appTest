@@ -1,0 +1,116 @@
+<!DOCTYPE html style="font-size:100px;" >
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<title>租车中心</title>
+		<link href="css/index1.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				document.documentElement.style.fontSize = w + 'px' //
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--start top-->
+		<div class="top">
+			<div class="top-left">
+				<a href="index1.html"><img src="img/zu1.png" class="img-responsive" /></a>
+			</div>
+			<div class="top-right">
+				<a href="zu.html"><img src="img/zu3.png" class="img-responsive" /></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--end top-->
+		<!--start 电动车-->
+		<div class="che">
+			<img src="img/zu4_03.jpg" class="img-responsive" />
+		</div>
+		<!--end 电动车-->
+		<!--start 租车、订单、个人中心-->
+		<div class="three">
+			<a href="wo_rent.html" class="three-one">	
+				<img src="img/word1.png" class="img-responsive" />
+				<p>我要租车</p>
+			</a>
+			<a href="order1.html" class="three-two">
+				<img src="img/word2.png" class="img-responsive" />
+				<p>租车订单</p>
+			</a>
+			<a href="zu.html" class="three-three">	
+				<img src="img/word3.png" class="img-responsive" />
+				<p>个人中心</p>
+				<div class="clearfix"></div>
+			</a>
+		</div>
+		<!--end 租车、订单、个人中心-->
+		<!--start 链接-->
+		<div class="four">
+			<a href="bike.html" class="a1">
+				<div class="bike">
+					<img src="img/index1.png" class="img-responsive" />
+					<a href="bike.html">我的车辆</a>
+				</div>				
+			</a>
+			<a href="">
+				<div class="ball">
+					<img src="img/ball.png" class="img-responsive" />
+					<a href="">鲜菜商场</a>
+				</div>
+				<div class="clearfix"></div>
+			</a>
+			
+     		<a href="order.html">
+     			<div class="repair">
+					<img src="img/index02.png" class="img-responsive" />
+					<a href="order.html">维修订单</a>
+				</div>
+     		</a>
+			
+			<a href="zhao.html">
+				<div class=" kefu">
+					<img src="img/kefu.png" class="img-responsive" />
+					<a href="zhao.html">骑租客服</a>
+				</div>
+				<div class="clearfix"></div>
+			</a>
+   			<a href="">		
+				<div class="yijian">
+					<img src="img/yijian.png" class="img-responsive" />
+					<a href="">意见反馈</a>
+				</div>				
+			</a>
+			<a href="">
+				<div class=" know">
+					<img src="img/zulast.jpg" class="img-responsive" />
+					<a href="">了解更多</a>
+				</div>				
+			</a>			
+		</div>
+		<!--end 链接-->
+	</body>
+
+</html>

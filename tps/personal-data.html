@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/personal-data.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px'//
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 个人资料-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span>个人资料</span>
+		</div>
+		<!--end 个人资料-->
+		
+		<!--start 个人资料信息-->
+		<div class="personal-info">
+			<ul>
+				<li>
+					<p class="p-left hui">会员图像</p>
+					<p class="p-right">
+						<img src="img/head.jpg" class="head"/>
+						<img src="img/more.png" class="more"/>
+					</p>
+				</li>
+				<li>
+					<p class="p-left">真实姓名</p>
+					<p class="p-right name">张靓靓</p>
+				</li>
+				<li>
+					<p class="p-left">所在地区</p>
+					<p class="p-right name">中国</p>
+				</li>
+				<li>
+					<a href="#">
+						<p class="p-left">账户邮箱</p>
+						<p class="p-right">
+							<span class="no">未绑定</span>
+							<img src="img/more.png"  class="more"/>
+						</p>
+					</a>
+				</li>
+				<li>
+					<p class="p-left">更改手机号码</p>
+					<p class="p-right">
+						<span class="name">18889654890</span>
+						<img src="img/more.png"  class="more"/>
+					</p>
+				</li>
+				<li>
+					<p class="p-left">身份证号</p>
+					<p class="p-right">
+						<span class="no">未设置</span>
+						<img src="img/more.png"  class="more"/>
+					</p>
+				</li>
+				<li>
+					<p class="p-left">资金密码</p>
+					<p class="p-right">
+						<span class="no">未设置</span>
+						<img src="img/more.png"  class="more"/>
+					</p>
+				</li>
+				<li>
+					<p class="p-left">收获地址</p>
+					<p class="p-right">
+						<img src="img/more.png"  class="more"/>
+					</p>
+				</li>
+				<li>
+					<p class="p-left">账户管理</p>
+					<p class="p-right">
+						<img src="img/more.png"  class="more"/>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<!--end 个人资料信息-->
+		
+		
+		
+	</body>
+</html>
+<script>
+	
+
+</script>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/order-details.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+	<!--start 订单详情-->
+	<div class="box">
+		<!--start 订单详情-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">订单详情</span>
+		</div>
+		<!--end 订单详情-->
+		
+		<!--start 买家信息-->
+		<div class="info">
+			<p>张靓靓</p>
+			<div class="pepole">
+				<p>15800298300</p>
+				<p><span>466000</span><img src="img/more.png"/></p>
+			</div>
+			<p>河南省 郑州市 金水区 白庙小区</p>
+		</div>
+		<!--end 买家信息-->
+		
+		<!--start 订单商品-->
+		<div class="shops">
+			<ul>
+				<li>
+					<img src="" />
+					<div class="infos">
+						<p>仙人掌胶囊</p>
+						<p class="price">¥60.00</p>
+						<p class="number">
+							<span>x1</span>
+							<span>数量</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<img src="" />
+					<div class="infos">
+						<p>仙人掌胶囊</p>
+						<p class="price">¥60.00</p>
+						<p class="number">
+							<span>x1</span>
+							<span>数量</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<img src="" />
+					<div class="infos">
+						<p>仙人掌胶囊</p>
+						<p class="price">¥60.00</p>
+						<p class="number">
+							<span>x1</span>
+							<span>数量</span>
+						</p>
+					</div>
+				</li>
+			
+			</ul>
+			<div class="amount">
+				<div class="first">
+					<span class="left">商品金额</span>
+					<span class="right">¥130.00</span>
+					<div class="clear"></div>
+				</div>
+				<div>
+					<span class="left">运费</span>
+					<span class="right">¥0.00</span>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="order-price">
+				<span class="left">订单金额</span>
+				<span class="right">¥130.00</span>
+			</div>
+			<div class="order-price">
+				<p class="left ">
+					<label class="voucher">
+						<input type="radio" name="coupon" value="1"/>代金券凑单
+					</label>
+				</p>
+				
+				<p class="right">
+					<label class="voucher">
+						<input type="radio" name="coupon" value="2"/>使用
+					</label>
+					
+				</p>
+			</div>
+			<div class="cash">
+				<div class="order-price">
+					<p class="left">10元代金券</p>
+					<p class="right">
+						<input type="range" />
+						<span>10</span>
+					</p>
+				</div>
+				<div class="order-price">
+					<p class="left">50元代金券</p>
+					<p class="right">
+						<input type="range" />
+						<span>10</span>
+					</p>
+				</div>
+				<div class="order-price">
+					<p class="left">80元代金券</p>
+					<p class="right">
+						<input type="range" />
+						<span>10</span>
+					</p>
+				</div>
+				<div class="order-price">
+					<p class="left">100元代金券</p>
+					<p class="right">
+						<input type="range" />
+						<span>10</span>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		<!--end 订单商品-->
+		
+		<!--start 买家留言-->
+		<div class="words">
+			<p>买家留言:</p>
+			<textarea>限制字数</textarea>
+		</div>
+		<!--end 买家留言-->
+		
+		<!--start 提交订单-->
+		<div class="submit">
+			<p>实付款:<span>¥0.00</span></p>
+			<p>提交订单</p>
+		</div>
+		<!--end 提交订单-->
+	</div>
+	<!--start 订单详情-->
+	<!--start 选择收获地址-->
+	<div class="box1" style="display: none;">
+		<!--start 选择收获地址-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center center1">选择收获地址</span>
+			<a class="manager" href="addr.html">管理</a>
+		</div>
+		<!--end 选择收获地址-->
+		<!--start 收货地址-->
+		<div class="addr">
+			<ul>
+				<li>
+					<p>张靓靓</p>
+					<p class="first">
+						<span class="left">12673883894</span>
+						<span class="right">466000</span>
+						<div class="clear"></div>
+					</p>
+					<p>河南省 郑州市 金水区 白庙小区</p>
+				</li>
+			</ul>
+			
+		</div>
+		
+		<!--end 收货地址-->
+	</div>
+	<!--end 选择收获地址-->
+	</body>
+</html>
+<script>
+	$(document).ready(function(){	
+		$('[name="coupon"]').change(function(){
+			var status=$('[name="coupon"]:checked').val()
+			$(".cash").slideToggle("slow");	
+			
+		})
+	})
+
+	$(function() {
+		$("textarea").focus(function() {
+			$(this).html('');
+		})
+		$("textarea").blur(function() {
+			$(this).html('限制字数');
+		})
+	})
+	
+	$(".info").click(function(){
+		$(".box").hide().next().show();
+		
+		
+	})
+	
+	
+	
+</script>

@@ -1,0 +1,291 @@
+@media (min-width: 320px) {
+.header{
+	background: #2268c7;
+	padding-top:10px;
+	padding-bottom: 80px;
+	position: relative;
+}
+.header-left{
+	text-align: left;
+	padding-bottom: 10px;
+}
+.header-left img{
+	width: 30%;
+}
+.search{
+	position: absolute;
+	left:4%;
+	top:60px;
+}
+ .search input[type="text"]{
+ 	width: 75%;
+ 	border-radius: 3px;
+ 	border: none;
+ 	padding: 5px;
+ 	margin-bottom: 15px;
+ 	font-size: 15px;
+ }
+.search .start{
+	padding: 9px 15px;
+	background: #00baff;
+	text-align: center;
+	border-radius:3px;
+	margin-left: -5.5px;
+}
+.search a span{
+	font-size: 12px;
+	padding-right:5px ;
+}	
+.search a:hover span{
+	color: white;
+}
+.header-right{
+	position: absolute;
+	left:3%;
+	top:65%;
+	font-size: 13px;
+	margin-top: 15px;
+}
+.header-right span,a{
+	color: white;
+	font-size: 14px;
+}	
+.header-right:hover a{
+	color: white;
+}
+.code{
+	background: url(../img/index-01_03.png) 80px  no-repeat;
+	padding-left: 10px;	
+	padding-right: 25px;
+}
+.body{
+	background: #eff8ff;
+	padding: 20px 0;
+}	
+.body-pay{
+	background: white;
+	padding: 15px 15px;
+	box-shadow: 0 0 1px orchid;
+}	
+.body-pay h4{
+	color: #333;
+	margin-bottom: 30px;
+}	
+.body-pay p{
+	background: url(../img/user-07_03.jpg) left no-repeat;
+	padding-left: 15px;
+}	
+table{
+	width: 97%;
+	margin:  0 auto;
+	font-size: 13px;
+	color: #555;
+	margin-bottom: 20px;
+}
+table tr{
+	line-height: 40px;
+	text-align: center;
+	border:1px solid #e3e3eb;
+}	
+.body-bottom-pay{
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	margin-top: 20px;
+}
+.body-bottom-pay1{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.body-bottom-pay ul li{
+	display: inline-block;
+}
+.body-bottom-pay1 li.active a img{
+	background: url(../img/pay-01_03.jpg) 5px no-repeat;
+}
+.pay-start{
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 20%;
+}
+.pay-start a{
+	padding: 10px 70px;
+	background: #4963ae;
+	text-align: center;
+	border-radius: 5px;
+}
+.pay-start:hover a{
+	color: white;
+}
+.footer{
+	background: #dff1ff;
+	height: 50px;
+	display: inline-block;
+	width: 100%;
+}
+.footer .container{
+	padding: 0;
+}
+.footer-center{
+	width:100%;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;	
+}
+.footer p{
+	text-align: center;
+	color: #c1cbd3;
+	line-height: 50px;
+	font-size: 10px;
+	display: inline-block;
+}	
+}
+
+
+
+@media (min-width:992px ) {
+.header{
+	background: #2268c7;
+	padding-top:10px;
+	position: relative;
+}
+.header-left{
+	text-align: left;
+	padding-bottom: 10px;
+}
+.header-left img{
+	width: 15%;
+}
+.search{
+	position: absolute;
+	left:35.5%;
+	top:20px;
+}
+.search input[type="text"]{
+ 	width: 320px;
+ 	border-radius: 3px;
+ 	border: none;
+ 	padding: 5px;
+ 	margin-bottom: 15px;
+ 	font-size: 15px;
+}
+.search .start{
+	padding: 7px 16px;
+	background: #00baff;
+	text-align: center;
+	border-radius:3px;
+	margin-left: -5.5px;
+}
+.search a span{
+	font-size: 16px;
+	padding-right:5px;
+}	
+.search a:hover span{
+	color: white;
+}
+.header-right{
+	position: absolute;
+	left:84%;
+	top:10px;
+	font-size: 10px;
+	margin-top: 15px;
+}
+.header-right span,a{
+	color: white;
+	font-size: 16px;
+}	
+.header-right:hover a{
+	color: white;
+}
+.code{
+	background: url(../img/index-01_03.png) right  no-repeat;
+	padding-left: 10px;	
+	padding-right: 25px;
+}
+.body{
+	background: #eff8ff;
+	padding: 20px 0;
+}	
+.body-pay{
+	background: white;
+	padding: 15px 15px;
+	box-shadow: 0 0 1px orchid;
+}	
+.body-pay h4{
+	color: #333;
+	margin-bottom: 30px;
+	font-size: 24px;
+}	
+.body-pay p{
+	background: url(../img/user-07_03.jpg) left no-repeat;
+	padding-left: 15px;
+	font-size: 16px;
+}	
+table{
+	width: 97%;
+	margin:  0 auto;
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 20px;
+}
+table tr{
+	line-height: 40px;
+	text-align: center;
+	border:1px solid #e3e3eb;
+}	
+.body-bottom-pay{
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	margin-top: 10px;
+}
+.body-bottom-pay1{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.body-bottom-pay ul li{
+	display: inline-block;
+}
+.body-bottom-pay1 li.active a img{
+	background: url(../img/pay-01_03.jpg) 5px no-repeat;
+}
+.left{
+	margin-left: 80px;
+}
+.pay-start{
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 20%;
+}
+.pay-start a{
+	padding: 10px 70px;
+	background: #4963ae;
+	text-align: center;
+	border-radius: 5px;
+}
+.pay-start:hover a{
+	color: white;
+}
+.footer{	
+	background: #dff1ff;
+	height: 50px;
+}
+.footer-center{
+	width: 100%;
+	text-align: center;
+}
+.footer p{
+	text-align: center;
+	color: #c1cbd3;
+	line-height: 50px;
+	font-size: 14px;
+	display: inline-block;
+}	
+}
+@media (min-width: 1230px) {
+.container{
+	width:1230px;
+}
+}

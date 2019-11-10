@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/login.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>		
+	</head>
+	<body>
+		<!--start 登陆-->
+		<div class="login">
+			<img src="img/return1.png" />
+			<p>用户登录</p>
+		</div>
+		<!--end 登陆-->
+		<!--start 登陆信息-->
+		<div class="login-info">
+			<p class="id">登陆账户</p>
+			<p class="input-id">
+				<input type="text" placeholder="请输入邮箱/手机号/ID" />
+				<img src="img/delete.png" />
+			</p>
+		</div>
+		<div class="login-info">
+			<p class="id">登陆密码</p>
+			<p class="input-id">
+				<input type="text" placeholder="请输入密码" />
+				<img src="img/delete.png" />
+			</p>
+		</div>
+		<!--end 登陆信息-->
+		
+		<!--start 提交-->
+		<div class="submit">
+			<button>登陆</button>
+		</div>
+		<!--end 提交-->
+		<!--start 注册-->
+		<div class="register">
+			
+			<a href="register.html" class="fast"><p>快速注册</p></a>
+			<a href="#" class="sao"><p>扫码加盟</p></a>
+			
+		</div>
+		
+		<p class="forget-pwd"><a href="#">忘记密码？点击这里</a></p>
+		<!--end 注册-->
+	</body>
+</html>
+<script>
+	$("input").keyup(function(){
+		$(this).next().show();
+		if($(this).val()==''){
+			$(this).next().hide();
+		}
+	})
+</script>

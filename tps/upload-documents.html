@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>上传证件</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/upload-documents.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>	
+		<!--start 上传证件-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">上传证件</span>
+			<a href="#"><span>完成</span></a>
+		</div>
+		<!--end 上传证件-->
+		
+		<!--start 身份证号-->
+		<div class="card">
+			<span>身份证号:</span>
+			<input type="text" placeholder="身份证号码"/>
+		</div>
+		<!--end 身份证号-->
+		<!--start 身份证正反面照片-->
+		<div class="photo">
+			<p>身份证正反面照片</p>
+			<div class="upload">
+				<label class="btn1">
+					<input type="file" id="" name="file" accept=""/>
+					<span class="line1"></span>
+					<span class="line2"></span>
+					<p>仅提现使用</p>
+				</label>
+				<!--<p>仅提现使用</p>-->
+				<label class="btn1">
+					<input type="file" id="" name="file" accept=""/>
+					<span class="line1"></span>
+					<span class="line2"></span>
+					<p>仅提现使用</p>
+				</label>
+			</div>
+			<div class="imgs">
+				<img src="" />
+				<img src="" />
+			</div>
+			
+			
+		</div>
+		<!--end 身份证正反面照片-->
+		<div class="prompt">温馨提示:为确保您可以提现顺利完成，请上传真实有效的身份证正反面。身份证及照片仅用于提现用途，请放心上传。</p>
+	</body>
+</html>
+<script>
+	/*$(".next").click(function(){
+		$(".box").hide().next().show();
+		$(".finish").click(function(){	
+		})
+	})*/
+</script>

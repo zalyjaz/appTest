@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的账本</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/my-book.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px' //
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>	
+		<!--start 我的账本-->
+		<div class="top">
+			<img src="img/return1.png" />
+			<span class="center">我的账本</span>
+			<span class="right">筛选</span>
+		</div>
+		<div class="book">
+			<p class="active">提现明细</p>
+			<p>分红点明细</p>
+		</div>
+		<!--end 我的资产-->		
+	</body>
+</html>
+<script>
+	$(".book p").click(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+		var index=$(this).index();
+		$(".box").children(".one").eq(index).show().siblings().hide();
+	})
+</script>

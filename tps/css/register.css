@@ -1,0 +1,86 @@
+body{
+	background: #fff;
+}
+/*start 登陆*/
+.register{
+	padding: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.register img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.register p{
+	display: inline-block;
+	margin-left: 2.2rem;
+	font-size: 0.4rem;
+	color: #0D1331;
+	vertical-align: middle;
+}
+.login-info{
+	padding: 0.4rem 0.1rem 0.1rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+	color: #000;
+}
+.login-info img{
+	display: none;
+}
+.id{
+	font-size: 0.35rem;
+	padding-bottom: 0.3rem;
+}
+.input-id:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.input-id input{
+	float: left;
+	width: 6.5rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	border:none;
+}
+.input-id img{
+	width: 0.5rem;
+	float: right;
+	vertical-align: middle;
+	margin-top: 0.1rem;
+}
+.code{
+	width: 5.6rem !important;
+	border-right: 1px solid #F5F5DC !important;
+}
+.input-id span{
+	float: right;
+	margin-top: 0.2rem;
+	
+}
+input::-webkit-input-placeholder{
+	color: grey;
+}
+
+/*start 提交*/
+.submit{
+	padding: 0.2rem;
+	margin-top: 0.5rem;
+}
+.submit button{
+	width: 7.1rem;
+	border: none;
+	background: #FF6600;
+	color: #fff;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.35rem;
+	border-radius: 5px;
+}
+.agree{
+	text-align: center;
+	padding-top: 0.5rem;
+	
+}
+.agree span{
+	color: #0000FF;
+}

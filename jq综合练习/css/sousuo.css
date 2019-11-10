@@ -1,0 +1,106 @@
+body{
+	background-color: #f0f3f5;
+}
+.head {
+	width: 7.5rem;
+	padding: 0.2rem 0.3rem;
+	text-align: center;
+	background-color: #fff;
+}
+.head li:first-child {
+	float:left;
+}
+.head li:first-child img {
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-top: 0.15rem;
+}
+.head .sousuo {
+	width: 5rem;
+	-webkit-border-radius: 0.30rem;
+	-moz-border-radius: 0.30rem;
+	border-radius: 0.30rem;
+	background-color: #F5F5F5;
+	margin: 0 auto;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.head .sousuo input{
+	border: none;
+	outline: none;
+	float: left;
+    width: 4rem;
+    margin-left: 0.25rem;
+	background-color: #F5F5F5;
+}
+.head .sousuo input::-webkit-input-placeholder { 
+	font-family: NotoSansCJKsc;
+	font-size: 0.24rem;
+	color: #999;
+} 
+.head .sousuo input:-moz-placeholder { 
+	font-family: NotoSansCJKsc;
+	font-size: 0.24rem;
+	color: #999;
+} 
+.head .sousuo input::-moz-placeholder { 
+	font-family: NotoSansCJKsc;
+	font-size: 0.24rem;
+	color: #999;
+} 
+.head .sousuo input:-ms-input-placeholder{ 
+	font-family: NotoSansCJKsc;
+	font-size: 0.24rem;
+	color: #999;
+}
+.head .sousuo img{
+	width: 0.32rem;
+	height: 0.32rem;
+}
+
+
+.content{
+	width: 7.5rem;
+}
+.content .history{
+	padding: 0;
+}
+.content .history .his{
+	font-family: NotoSansCJKsc;
+	font-size: 0.24rem;
+	color: #666;
+}
+.content .history .del{
+	text-align: right;
+}
+.content .history .del img{
+	width: 0.31rem;
+	height: 0.31rem;
+	margin-right: 0.2rem;
+} 
+.content .history .del span{
+	font-family: NotoSansCJKsc;
+	font-size: 0.24rem;
+	color: #666;
+}
+.content .jilu{
+	background-color: #fff;
+	padding: 0.2rem 0.3rem;
+}
+.content .jilu li{
+	width: 1.9rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	border: 1px solid #999999;
+	-webkit-border-radius: 0.30rem;
+	-moz-border-radius: 0.30rem;
+	border-radius: 0.30rem;
+	background-color: #fff;
+	font-family: NotoSansCJKsc;
+	font-size: 0.24rem;
+	color: #333;
+	text-align: center;
+	margin-bottom: 0.2rem;
+	float: left;
+	margin: 0.1rem 0.2rem;
+}

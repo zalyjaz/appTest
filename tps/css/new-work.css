@@ -1,0 +1,179 @@
+body{
+	background: #fff !important;
+}
+/*start 新建工单*/
+.top{
+	background: #fff;
+	padding: 0.2rem 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.top img{
+	width: 0.5rem;
+	vertical-align: middle;
+}
+.center{
+	font-size: 0.4rem;
+	color: #000;
+	vertical-align: middle;
+	margin-left: 2.2rem;
+}
+.top a{
+	float: right;
+	color: #000;
+	font-size: 0.3rem;
+	margin-top: 0.05rem;
+}
+.top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*start 工单信息*/
+.work-info{
+	padding: 0.2rem 0.1rem;
+	position: relative;
+}
+.problem-type{
+	border:1px solid #F5F5DC;
+	padding: 0.15rem 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.type{
+	padding: 0 0.2rem !important;
+}
+#problem_picker{
+	width: 7.3rem;
+	border:1px solid #F5F5DC;
+	padding: 0.5rem 0.2rem;
+	margin-bottom: 0.2rem;
+	position: absolute;
+	left:0.1rem;
+	top:0.2rem;
+}
+.problem-type:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.problem-type p{
+	float: left;
+	vertical-align: middle;
+	color: grey;
+}
+.problem-type img{
+	width: 0.6rem;
+	float: right;
+	vertical-align: middle;
+	margin-top: 0.2rem;
+}
+.problem-type input{
+	border: none;
+	width: 100%;
+	height: 0.58rem;
+}
+.problem-type textarea{
+	resize: none;
+	width: 100%;
+	border: none;
+	height: 2.0rem;
+	padding-top: 0.2rem;
+}
+.upload p{
+	font-size: 0.3rem;
+	padding-bottom: 0.2rem;
+	padding-left: 0.2rem;
+}
+.upload input{
+	display: none;
+}
+.btn1 {
+    border: 0.04rem solid #e8e6e6 !important;
+    border-radius: 0.2rem !important;
+    padding: 0.1rem 0.1rem !important;
+    width: 1.50rem;
+    height: 1.5rem;
+    display: block;
+    margin-left: 0.2rem;
+    position: relative;
+}
+.btn1 span.line1 {
+    width: 0.95rem;
+    display: block;
+    border-bottom: 0.04rem solid #e8e6e6;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 0.65rem;
+}
+.btn1 span.line2 {
+    position: absolute;
+    height: 0.95rem;
+    border-left: 0.04rem solid #e8e6e6;
+    display: block;
+    left: 0.7rem;
+    top: 0.25rem;
+}
+.upload img{
+	width:1.5rem;
+	height:1.5rem;	
+	display: none;
+}
+.format{
+	color: gainsboro;
+	padding-left: 0.2rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+.submit{
+	background: gainsboro;
+	padding:0 0.2rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	font-size:0.35rem;
+}
+/*start 问题类型弹框*/
+.picker-columns {
+    width: 7.5rem !important;
+    z-index: 11500;
+}
+.bar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 1.0rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    background-color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.bar span{
+	font-size: 0.35rem !important;
+}
+.bar h5{
+	font-size: 0.4rem;
+}
+.title {
+    line-height: 1.0rem;
+}
+.bar .button-link {
+    line-height: 1.0rem;
+}
+.picker-items {
+    font-size: 0.35rem !important;
+}
+.form{
+	height: 5.0rem !important;
+}
+.picker-columns {
+    width: 100%;
+    height: 5.0rem;
+    z-index: 11500;
+}
+.bar+.picker-items {
+    height: 4.2rem;
+}
+.picker-modal {
+    background: rgb(220,220,200,0.7); 
+}

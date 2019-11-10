@@ -1,0 +1,13 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+   	font-family: Arial, Helvetica,"微软雅黑";
+}
+body a{
+	text-decoration: none !important;
+}
+ul{
+	list-style: none;
+}

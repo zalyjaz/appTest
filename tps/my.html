@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/my.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px'//
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 个人中心头像等信息-->
+		<div class="top">
+			<div class="top-img">
+				<img src="img/head.jpg" />
+				<p>普通用户</p>
+			</div>
+			<div class="top-info">
+				<p class="name">张靓靓</p>
+				<p class="id">ID:<span>16738299290</span> <span class="grade">LV1</span></p>
+				<p class="share"><span>138共享点:</span><span class="num">0</span></p>
+			</div>			
+		</div>
+		<!--end 个人中心头像等信息-->
+		<!--start 个人中心第一部分-->
+		<div class="my-one">
+			<ul>
+				<li>
+					<p class="p-left">
+						<img src="img/jia.png" />
+						<span>加盟& &nbsp;分享</span>
+					</p>
+					<p class="p-right">
+						<span>分享店铺，发展您的团队</span>
+						<img src="img/more.png" />
+					</p>
+				</li>
+				<li>
+					<p class="p-left">
+						<img src="img/ge.png" />
+						<span>个人资料</span>
+					</p>
+					<p class="p-right">
+						<span>账户信息未完善</span>
+						<img src="img/more.png" />
+					</p>
+				</li>
+				<li>
+					<p class="p-left">
+						<img src="img/jia.png" />
+						<span>客服中心</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p class="p-left">
+						<img src="img/dian.png" />
+						<span>店铺升级</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+				<li>
+					<p class="p-left">
+						<img src="img/fen.png" />
+						<span>分店铺列表</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+				<li>
+					<p class="p-left">
+						<img src="img/bao.png" />
+						<span>资金变动报表</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p class="p-left">
+						<img src="img/zi.png" />
+						<span>我的资产</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+				<li>
+					<p class="p-left">
+						<img src="img/ding.png" />
+						<span>我的订单</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+				<li>
+					<p class="p-left">
+						<img src="img/bu.png" />
+						<span>资金补单</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+				<li>
+					<p class="p-left">
+						<img src="img/zhang.png" />
+						<span>我的账本</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p class="p-left">
+						<img src="img/gong.png" />
+						<span>公告</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+				<li>
+					<p class="p-left">
+						<img src="img/she.png" />
+						<span>设置</span>
+					</p>
+					<p class="p-right">
+						<img src="img/more.png" />
+					</p>
+				</li>
+			</ul>			
+		</div>
+		<!--end 个人中心第一部分-->
+		<!--start 底部-->
+		<div class="foot">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img src="img/shouye.png" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="classify.html">
+						<img src="img/fen2.png" />
+						<p>分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="collect.html">
+						<img src="img/shou1.png" />
+						<p>收藏</p>
+					</a>
+				</li>
+				<li>
+					<a href="car.html">
+						<img src="img/car2.png" />
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="my.html">
+						<img src="img/my2.png" />
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+		</div>-->
+		<!--end 底部-->	
+	</body>
+</html>
+<script>
+	
+
+</script>

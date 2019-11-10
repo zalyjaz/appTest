@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!--	<link rel="stylesheet" href="css/index.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="left pull-left">
+					<img class="logo" src="img/logo.png" alt="" />
+				</div>
+				
+				<div class="right pull-right">
+					<ul>
+						<li>
+							<a class="login" href="#">登录</a>
+						</li>
+						<li>
+							<a href="#">注册</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		
+		<button id="tab" onclick="test1()">点我</button>
+		
+		<div id="mask">
+			<div id="mask-content">
+				<h3>标题</h3>
+				<img class="close_icon" src="img/close_icon.png" alt="" onclick="test2()" />
+				<!--<img class="close_icon" src="img/close_icon.png" alt="" onclick="test2()" />-->
+			
+			</div>
+		</div>
+		
+		第一章 总则
+
+第一条
+
+为了加强印章社会治安管理，预防和打击违法犯罪活动，根据国务院《关于国家行政机关和企业事业单位社会团体印章管理规定》和国家有关规定，制定本办法。
+
+	</body>
+
+</html>
+
+
+<script type="text/javascript">
+	function test1(){
+		document.getElementById("mask").style.display="block";
+	}
+	
+	function test2(){
+				document.getElementById("mask").style.display="none";
+//		document.getElementById("mask-content").getElementsByTagName("img")[0].style.display="none";
+	}
+</script>
+

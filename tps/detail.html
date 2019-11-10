@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/detail.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+		<script>
+			//移动端设置屏幕宽度 自适应
+			var b = document.getElementsByTagName("body")[0];
+			//获取屏幕的宽度    
+			var w = window.innerWidth / 7.5;
+			//大于750px ，让宽度设置为750px
+			if(w > 100) {
+				w = 100;
+			}
+			document.documentElement.style.fontSize = w + 'px'//
+			//onresize事件会在窗口或框架被调整大小时发生
+			window.onresize = function() {
+				var w = window.innerWidth / 7.5;
+				//屏幕的宽度大于750px 宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+				console.log(w);
+				document.documentElement.style.fontSize = w + 'px'
+			}
+		</script>
+	</head>
+	<body>
+		<!--start 详情顶部-->
+		<div class="top">
+			<ul>
+				<li class="return"><img src="img/return.png"/></li>
+				<li class="detail">
+					<a href="#" class="active"><span>宝贝</span></a>
+					<a href="#"><span>详情</span></a>
+					<a href="#"><span>推荐</span></a>
+				</li>
+				<li class="right"><img src="img/car-top.png"/></li>
+			</ul>
+		</div>
+		<!--end 详情顶部-->
+		<!--start 宝贝、详情、推荐-->
+		<div class="box">
+			<!--start 宝贝-->
+			<div class="img-detail">
+				<div class="swiper-container">
+			        <div class="swiper-wrapper">
+			        	<a class="swiper-slide" href="#">
+			        		<img src="img/naifen.jpg" class="one"/>	
+			        	</a>
+			        	<a class="swiper-slide" href="#">
+			        		<img src="img/ying.jpg" class="one"/>	
+			        	</a>
+			        	<a class="swiper-slide" href="#" >		
+			        		<img src="img/xiang.jpg" class="one"/>
+			        	</a>
+			       		<a class="swiper-slide" href="#">
+			        		<img src="img/naifen.jpg"  class="one"/>
+			        	</a>
+			        	<a class="swiper-slide" href="#">
+			        		<img src="img/naifen.jpg"  class="one"/>
+			        	</a>
+			        	<a class="swiper-slide" href="#">
+			        		<img src="img/naifen.jpg"  class="one"/>
+			        	</a>
+			        </div>
+			        <!--<div class="swiper-pagination"></div>-->
+			   </div>
+				<!--start 商品详情-->
+				<div class="shop-detail">
+					<div class="new">
+						<p class="p-new"><span>新品</span><span>包邮</span></p>
+						<p class="code"><span>SKU:</span><sapn>27189200743</sapn></p>
+					</div>
+					<p class="p-name">婴幼儿奶粉100g/罐婴幼儿奶粉100g/罐婴幼儿奶粉100g/罐</p>
+					<p class="price">¥197.72</p>
+					<div class="other">
+						<p>库存<span>495</span></p>
+						<p>发货地&nbsp;&nbsp;&nbsp;<span>上海市</span></p>
+						<p>产地<span>中国</span></p>
+					</div>
+					<div class="number">
+						<p class="num-left">数量</p>
+						<p class="num-right">
+							<img src="img/add.png" class="add"/>
+							<input type="text" value="1"/>
+							<img src="img/sub.png" class="sub"/>
+						</p>
+					</div>
+				</div>
+				<!--end 商品详情-->
+			</div>
+			<!--end 宝贝-->
+			<!--start 图文详情-->
+			<div class="img-detail">
+				<div class="title">图文详情</div>
+				<div class="images">
+					<img src="img/cheng1.jpg"/>
+					<img src="img/cheng1.jpg"/>
+					<img src="img/cheng1.jpg"/>
+					<img src="img/cheng1.jpg"/>
+					<img src="img/cheng1.jpg"/>
+				</div>
+			</div>
+			<!--end 图文详情-->
+			<!--start 相关推荐-->
+			<div class="img-detail">
+				<div class="title">相关推荐</div>
+				<div class="suggest">
+					<ul>
+						<li>
+							<img src="img/ying.jpg" class="ying"/>
+							<p class="explain">钙铁锌咀嚼片 4-17岁幼儿、钙铁锌咀嚼片 4-17岁幼儿</p>
+							<p class="money">
+								<span>¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>	
+						</li>
+						<li>
+							<img src="img/ying.jpg" class="ying"/>
+							<p class="explain">钙铁锌咀嚼片 4-17岁幼儿、钙铁锌咀嚼片 4-17岁幼儿</p>
+							<p class="money">
+								<span>¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>	
+						</li>
+						<li>
+							<img src="img/ying.jpg" class="ying"/>
+							<p class="explain">钙铁锌咀嚼片 4-17岁幼儿、钙铁锌咀嚼片 4-17岁幼儿</p>
+							<p class="money">
+								<span>¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>	
+						</li>
+						<li>
+							<img src="img/ying.jpg" class="ying"/>
+							<p class="explain">钙铁锌咀嚼片 4-17岁幼儿、钙铁锌咀嚼片 4-17岁幼儿</p>
+							<p class="money">
+								<span>¥196.41</span>
+								<img src="img/zhong.png" />
+							</p>	
+						</li>
+					</ul>				
+				</div>
+			</div>
+			<!--end 相关推荐-->
+		</div>
+		<!--end 宝贝、详情、推荐-->		
+		<!--start 加入购物车弹框-->
+		<div class="pop-up">
+			<img src="img/ok.png"/>
+			<p>添加成功</p>
+		</div>
+		<!--end 加入购物车弹框-->		
+		<!--start 底部加入购物车、购买-->
+		<div class="car-buy">
+			<div class="index">
+				<a href="index.html">
+					<img src="img/shouye.png"/>
+					<p>首页</p>
+				</a>
+			</div>
+			<div class="collect">
+				<a href="#">
+					<img src="img/shou1.png"/>
+					<p>收藏</p>
+				</a>
+			</div>
+			<div class="add-car">
+				<a hef="#">加入购物车</a>
+			</div>
+				<div class="buy">
+					<a href="#">立即购买</a>
+				</div>
+		</div>
+		<!--end 底部加入购物车、购买-->
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+	</body>
+</html>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+}); 
+	/*改变商品数量*/
+	$(".add").click(function(){
+		var num=$(this).next().val()*1;
+		$(this).next().attr("value",num*1+1);
+		var number=$(this).next().val();
+	})
+	$(".sub").click(function(){
+		var num=$(this).prev().val()*1;
+		$(this).prev().attr("value",num*1-1);
+		var number=$(this).prev().val();
+		if(number < 1){
+			number=1;
+			$(this).prev().val(number);
+		}
+	})	
+	/*宝贝、详情、推荐切换*/
+	$(".detail a").click(function(){
+		var index=$(this).index();
+		$(this).addClass("active").siblings().removeClass("active");
+
+	})
+	/*加入购物车弹框*/
+	$(".add-car").click(function(){
+		$(".pop-up").show().delay(800).hide(1000);
+	})
+
+	$(".detail a").click(function(){		
+		var index=$(this).index();
+		$(this).addClass("active").siblings().removeClass("active");
+		/*console.log(index);
+		$(".box").children().eq(index).css("top","0");*/	
+	})					
+</script>

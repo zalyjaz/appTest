@@ -1,0 +1,217 @@
+body{
+	background: #fff;
+}
+/*start 购物车*/
+.house{
+	width: 7.5rem;
+	padding: 0.25rem 0;
+	border-bottom: 1px solid #F5F5DC;
+	background: #fff;
+	position: fixed;
+	top:0;
+}
+.house p:first-child{
+	width: 60%;
+	text-align: right;
+	font-size: 0.4rem;
+	display: inline-block;
+	
+}
+.house p:last-child{
+	width: 36%;
+	text-align: right;
+	display: inline-block;
+	font-size: 0.35rem;
+	color: grey;
+}
+.box{
+	margin-bottom: 2.15rem;
+}
+/*start 全部宝贝*/
+.objects{
+	margin-top: 1.1rem;
+}
+.objects ul{
+	padding-top: 0.1rem;
+}
+.objects ul li{
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #F5F5DC;
+}
+.summary1:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.price{
+	color: red;
+	float: left;
+	display: inline-block;
+}
+.number{
+	float: right;
+	display: inline-block;
+}
+.number img{
+	width: 0.4rem;
+}
+.number input[type="text"]{
+	border:none;
+	width: 0.8rem;
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	margin-top: -0.3rem;
+	vertical-align: middle;
+	font-size: 0.3rem;
+}
+.name{
+	overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    padding-bottom: 0.7rem;
+}
+.no{
+	width: 0.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -1.9rem;
+	margin-left: 0.2rem;
+}
+.nai1{
+	width: 1.9rem;
+}
+.summary1{
+	display: inline-block;
+	width: 4.5rem;
+	padding-right: 0.2rem;
+}
+.delete,.edit{
+	position: fixed;
+	bottom: 1.1rem;
+	width: 7.5rem;
+	background: #fff;
+}
+.delete:after,.edit:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.p-choose{
+	float: left;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+.p-choose img{
+	width: 0.5rem;
+	margin-top: 0.05rem;
+	vertical-align: middle;
+	margin-left: 0.2rem;
+}
+.p-choose span{
+	display: block;
+	vertical-align: middle;
+	margin-top: -0.45rem;
+	margin-left: 0.8rem;
+}
+.p-delete{
+	float: right;
+	background: #F5F5DC;
+	width: 2.0rem;
+	height:1.0rem;
+	line-height: 1.0rem;
+	text-align: center;
+}
+.p-total{
+	float: right;
+}
+.total{
+	display: inline-block;
+	color: #000;
+}
+.total span{
+	color: darkorange;
+	font-size: 0.35rem;
+	font-weight: 600;
+	padding-left: 0.1rem;
+}
+.cut{
+	background: #F5F5DC;
+	width: 2.0rem;
+	height:1.0rem;
+	line-height: 1.0rem;
+	text-align: center;
+	display: inline-block;
+}
+/*start 为你推荐*/
+.suggest{
+	border-top:10px solid #F5F5DC;
+	padding-top:0.2rem;
+	padding-bottom: 0.2rem;
+}
+.you{
+	text-align: center;
+	font-size: 0.4rem;
+	color: #000;
+}
+.suggest ul li{
+	display: inline-block;
+	width:3.7rem;
+}
+.ying{
+	width:3.4rem;
+	text-align: center;
+}
+.explain{
+	white-space: nowrap;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-left: 0.2rem;
+	padding-right:0.2rem;
+}
+.money{
+	content: '';
+	display: block;
+	clear: both;
+	padding-top: 0.2rem;
+}
+.money span{
+	color: red;
+	float: left;
+	padding-left: 0.2rem;
+}
+.money img{
+	width: 0.35rem;
+	height: 0.35rem;
+	border-radius: 50%;
+	float: right;
+	margin-top: -0.05rem;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+}
+
+/*start 底部*/
+.foot{
+	background: #fff;
+	padding: 0.1rem 0;
+	position: fixed;
+	bottom: 0;
+	width: 7.5rem;
+	border-top:1px solid #F5F5DC;
+}
+.foot ul li a{
+	color: #000;
+	display: block;
+}
+.foot ul li{
+	display: inline-block;
+	width: 1.4rem;
+	text-align: center;
+}
+.foot ul li a img{
+	width: 0.5rem;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<title>租车订单无</title>
+		<link href="css/order.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript">
+			window.onload = function() {
+				var b = document.getElementsByTagName("body")[0];
+				//获取屏幕的宽度    
+				var w = window.innerWidth / 7.5;
+				//大于750px ，让宽度设置为750px
+				if(w > 100) {
+					w = 100;
+				}
+
+				document.documentElement.style.fontSize = w + 'px'//
+
+				//onresize事件会在窗口或框架被调整大小时发生
+				window.onresize = function() {
+					var w = window.innerWidth / 7.5;
+					//屏幕的宽度大于750px 宽度设置为750px
+					if(w > 100) {
+						w = 100;
+					}
+					console.log(w);
+					document.documentElement.style.fontSize = w + 'px'
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<!--start top-->
+		<div class="top">							
+			<div class="top-left">
+				<a href="index1.html"><img src="img/zu1.png" class="img-responsive"/></a>
+			</div>
+			<div class="top-right">
+				<a href="zu.html"><img src="img/zu3.png" class="img-responsive"/></a>
+			</div>
+			<div class="clearfix"></div>						
+		</div>	
+		<!--end top-->
+		<!--start 无订单-->
+		<div class="no-order">
+			<img src="img/order_03.png" />
+			<div class="order-span">
+				<span>您还没有订单。。。。。。</span>
+			</div>
+			
+		</div>
+		<!--end 有订单-->
+		
+		
+	</body>
+</html>
